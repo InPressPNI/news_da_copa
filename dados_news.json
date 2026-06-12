@@ -72,8 +72,8 @@
       "blocos": [
         {
           "titulo": "SAY WHAT?!?!?!?!",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Parece lineup de festival, mas não é: com três sedes, a Copa vai contar com shows antes dos primeiros jogos no México, Canadá e EUA, trazendo artistas como Shakira, J. Balvin, Alanis Morissette, Michael Bublé e Katy Perry, entre outros. E claro que o Brasil não ia ficar de fora dessa, com o show da Anitta no evento de abertura nos EUA, que acontece amanhã. </span></p>",
-          "corFundo": "#2f50ff",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">O Brasil já marcou presença no primeiro jogo - e no primeiro meme - da Copa: a partida foi apitada por Wilton Pereira Sampaio que, além do recorde de cartões vermelhos para um jogo de abertura, viveu também o pesadelo de falar inglês em público. E que público: 80 mil pessoas lotavam o Estádio Azteca quando o juiz brasileiro foi informar a decisão do VAR e, apesar do esforço, o resultado deixou os jogadores sul-africanos confusos. E olha que eles já conviveram com o nosso rei da língua inglesa, o ex-técnico Joel Santana.</span></p><p><br></p><p><br></p>",
+          "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
           "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
