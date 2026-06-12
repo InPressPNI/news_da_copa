@@ -104,7 +104,7 @@
       "blocos": [
         {
           "titulo": "3",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">cartões vermelhos colocaram o brasileiro Wilton Pereira Sampaio na história. Além de ser o primeiro brasileiro a apitar uma partida de abertura, Wilton mandou pela primeira vez na história das Copas três jogadores mais cedo para o chuveiro. Para efeitos comparativos, nas edições de 2018 e 2022 tivemos 4 cartões vermelhos em todo o torneio.&nbsp;</span></p><p><br></p><p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">cartões vermelhos colocaram o brasileiro Wilton Pereira Sampaio na história. Além de ser o primeiro brasileiro a apitar uma partida de abertura, Wilton mandou pela primeira vez na história das Copas três jogadores mais cedo para o chuveiro. Para efeitos comparativos, nas edições de 2018 e 2022 tivemos 4 cartões vermelhos em todo o torneio.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "México x África do Sul",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Pela primeira vez uma partida de abertura se repetiu em uma Copa mas, diferente da primeira vez na qual África do Sul e México empataram, agora os mexicanos saíram - e bem - na frente do seu grupo com uma vitória tranquila. A partida também marca a sexta Copa do goleiro Ochoa, recordista de participações no torneio.</span></p>",
+          "titulo": "Tem Brasil em campo de novo!",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Hoje é dia de Anitta ao vivo, direto do Estádio de Los Angeles, no show de abertura da Copa nos EUA, às 20:30. A cantora brasileira vai dividir o palco, ou melhor, o campo com Katy Perry, LISA, Rema, Tyla e Future. E esse não é o único show do dia: em Toronto, no Canadá, o time da casa estreia contra a Bósnia e Herzegovina após os shows de Alanis Morissette, Alessia Cara, Elyanna, Jessie Reyez, Michael Bublé, Nora Fatehi, Sanjoy, Vegedream e William Prince.</span></p><p><br></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
