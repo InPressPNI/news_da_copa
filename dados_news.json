@@ -7,12 +7,12 @@
       "tipo": "unico",
       "blocos": [
         {
-          "titulo": "Menções por hora:",
+          "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781232026400.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781232026400.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781290952966.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781290952966.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
