@@ -18,12 +18,21 @@
     <style>
         :root { --primary: #000000; --bg: #f4f7f6; --accent: #d23c2f; }
         
+        /* 🖥️ ESTILOS PARA EXIBIÇÃO NA TELA */
         @media screen {
             body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
             #editor-panel { width: 40%; padding: 2% 5%; background: #ededf5; overflow-y: auto; box-shadow: 2px 0 10px rgba(0,0,0,0.05); font-family: 'Arial', sans-serif; }
             #preview-panel { width: 60%; padding: 40px 20px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; background: #fcfcfc; }
             #render-area { background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 650px; transition: all 0.3s ease; }
             .no-print { display: block; }
+        }
+
+        /* 🖨️ BASE DA CONFIGURAÇÃO DE IMPRESSÃO */
+        @media print {
+            body { background: white !important; display: block !important; overflow: visible !important; font-family: 'Inter', sans-serif !important; }
+            #editor-panel, #gh-status-bar, .no-print, .btn, hr { display: none !important; }
+            #preview-panel { width: 100% !important; padding: 0 !important; background: white !important; overflow: visible !important; display: block !important; }
+            #render-area { background: white !important; box-shadow: none !important; width: 650px !important; margin: 0 auto !important; display: block !important; }
         }
 
         h2 { font-weight: 800; color: var(--primary); margin-top: 0; border-bottom: 1px solid var(--primary); padding-bottom: 10px; font-family: 'Inter', sans-serif; }
@@ -42,7 +51,7 @@
         .btn-export:hover { background: #218838; }
         .btn-pdf { background: #ff8400; color: white; }
         .btn-pdf:hover { background: #d35400; }
-        .btn-html { background: #6f42c1; color: white; }
+        .btn-html { background: #6f42c1; color: white; margin-bottom: 5px; }
         .btn-html:hover { background: #5a32a3; }
         .btn-clear { background: #e60000; color: white; margin-top: 20px; font-size: 11px; padding: 8px; width: auto; display: block; margin-left: auto; margin-right: auto; }
         
@@ -85,7 +94,7 @@
     <div id="lista-sessoes"></div>
     
     <hr>
-    <button id="btn-gerar-pdf" class="btn btn-pdf" onclick="generarPDFUnico()">📥 Baixar PDF</button>
+    <button id="btn-gerar-pdf" class="btn btn-pdf" onclick="generarPDFUnico()">📥 Salvar / Imprimir PDF</button>
     <button class="btn btn-export" onclick="exportarEmail()">📋 Copiar para E-mail (Visual)</button>
     <button class="btn btn-html" onclick="exportarHTML()">💻 Copiar Código HTML</button>
     <button class="btn btn-clear" onclick="limparRascunho()">🗑️ Apagar rascunho</button>
@@ -96,21 +105,19 @@
 </div>
 
 <script>
-    // 🚨 SISTEMA ANTI-APAGÃO: Captura erros ocultos e exibe um alerta real se algo quebrar
     window.onerror = function(msg, url, line) {
         alert(`❌ O script falhou! \nErro: ${msg}\nLinha: ${line}\nPor favor, me envie essa mensagem para eu corrigir.`);
         return false;
     };
 
     // =================----------------------------------------------------------------=======
-    // ⚙️ CONFIGURAÇÃO DO REPOSITÓRIO (Insira seus dados reais aqui)
+    // ⚙️ CONFIGURAÇÃO DO REPOSITÓRIO
     // =================----------------------------------------------------------------=======
     const GH_REPO = "InPressPNI/news_da_copa";
     const GH_PATH = "dados_news.json";
     
-    // 🔥 DIVISÃO SEGURA ANTI-ROBÔ: Cole o início "ghp_" na parte 1 e o restante do seu token na parte 2
     const TOKEN_PARTE_1 = "ghp_"; 
-    const TOKEN_PARTE_2 = "3YQgyiFmd7SoATkFHS1hDxzHZLC0Ts0lB6qG"; 
+    const TOKEN_PARTE_2 = "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI"; 
 
     const GH_TOKEN = TOKEN_PARTE_1 + TOKEN_PARTE_2;
     // =================----------------------------------------------------------------=======
@@ -142,7 +149,6 @@
 
     const URL_IMAGEM_DESTAQUE_FIXA = "https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/img_dados_do_dashboard.png";
 
-    // Conversores binários seguros contra estouro de memória (Stack Overflow)
     function bytesToBase64(bytes) {
         let binary = '';
         const len = bytes.byteLength;
@@ -158,7 +164,6 @@
     function init() {
         editorDestaques = new Quill('#quill-destaques', { theme: 'snow', modules: { toolbar: toolbarOptions } });
 
-        // Nova chave de cache 'v9_final' para ignorar de vez restos de códigos passados
         const rascunho = localStorage.getItem('rascunho_boletim_v9_final');
         if (rascunho) {
             try {
@@ -174,7 +179,6 @@
         
         editorDestaques.on('text-change', () => { marcarAlteracaoNuvem(); });
         
-        // Garante o desenho imediato do preview na tela
         atualizarPreview();
 
         if (TOKEN_PARTE_2 !== "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI" && TOKEN_PARTE_2 !== "") {
@@ -184,7 +188,6 @@
             document.getElementById('gh-status').style.color = "#ff8400";
         }
 
-        // Timer de 60 segundos para gravação em lote
         setInterval(async () => {
             if (temAlteracoesNuvem && TOKEN_PARTE_2 !== "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI" && TOKEN_PARTE_2 !== "") {
                 await salvarDadosNoGitHub(); 
@@ -196,7 +199,7 @@
         temAlteracoesNuvem = true;
         const statusEl = document.getElementById('gh-status');
         if (GH_TOKEN && TOKEN_PARTE_2 !== "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI") {
-            statusEl.innerText = "打 Alterações pendentes (Salvando em 1 min...)";
+            statusEl.innerText = "🟠 Alterações pendentes (Salvando em 1 min...)";
             statusEl.style.color = "#ff8400";
         }
         salvarRascunhoLocal();
@@ -205,25 +208,25 @@
     function validarEstruturaBase() {
         if (!sessoesDados || sessoesDados.length !== ESTRUTURA_MAPA.length) {
             sessoesDados = ESTRUTURA_MAPA.map(config => {
-                let corDef = "#ffffff";
-                if (config.sessao === 6) corDef = "#2f50ff";
-                if (config.sessao === 7 || config.sessao === 10) corDef = "#eeeeee";
-                if (config.sessao === 8) corDef = "#fce5cd";
+                let colDef = "#ffffff";
+                if (config.sessao === 6) colDef = "#2f50ff";
+                if (config.sessao === 7 || config.sessao === 10) colDef = "#eeeeee";
+                if (config.sessao === 8) colDef = "#fce5cd";
 
                 return { 
                     sessao: config.sessao, 
                     tipo: config.tipo, 
-                    blocos: [{ titulo: "", texto: "", corFundo: corDef, layout: "text-only", imagem: "", imagemAltaRes: "", btnTexto: "Acessar Dashboard", btnUrl: "#" }] 
+                    blocos: [{ titulo: "", texto: "", corFundo: colDef, layout: "text-only", imagem: "", imagemAltaRes: "", btnTexto: "Acessar Dashboard", btnUrl: "#" }] 
                 };
             });
         } else {
             sessoesDados.forEach((sessao) => {
                 if (!sessao.blocos || !Array.isArray(sessao.blocos) || sessao.blocos.length === 0) {
-                    let corDef = "#ffffff";
-                    if (sessao.sessao === 6) corDef = "#2f50ff";
-                    if (sessao.sessao === 7 || sessao.sessao === 10) corDef = "#eeeeee";
-                    if (sessao.sessao === 8) corDef = "#fce5cd";
-                    sessao.blocos = [{ titulo: "", texto: "", corFundo: corDef, layout: "text-only", imagem: "", imagemAltaRes: "", btnTexto: "Acessar Dashboard", btnUrl: "#" }];
+                    let colDef = "#ffffff";
+                    if (sessao.sessao === 6) colDef = "#2f50ff";
+                    if (sessao.sessao === 7 || sessao.sessao === 10) colDef = "#eeeeee";
+                    if (sessao.sessao === 8) colDef = "#fce5cd";
+                    sessao.blocos = [{ titulo: "", texto: "", corFundo: colDef, layout: "text-only", imagem: "", imagemAltaRes: "", btnTexto: "Acessar Dashboard", btnUrl: "#" }];
                 }
             });
         }
@@ -607,9 +610,39 @@
             </table>`;
     }
 
+    // 🔥 ENGENHARIA DE IMPRESSÃO DINÂMICA (CORRIGIDA E SEM ERROS DE SINTAXE)
+    function generarPDFUnico() {
+        const element = document.getElementById('render-area');
+        if (!element) return;
+        
+        const alturaReal = element.offsetHeight;
+        
+        const antigoEstilo = document.getElementById('estilo-impressao-dinamica');
+        if (antigoEstilo) antigoEstilo.remove();
+        
+        const estilo = document.createElement('style');
+        estilo.id = 'estilo-impressao-dinamica';
+        estilo.innerHTML = `
+            @media print { 
+                @page { 
+                    size: 650px ${alturaReal}px !important; 
+                    margin: 0 !important; 
+                } 
+                body, html {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    height: ${alturaReal}px !important;
+                    overflow: hidden !important;
+                }
+            }
+        `;
+        document.head.appendChild(estilo);
+        
+        window.print();
+    }
+
     function exportarEmail() { atualizarPreview(false); const tabela = document.getElementById('tabela-principal'); if(!tabela) return; tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px"; const range = document.createRange(); range.selectNode(document.getElementById('render-area')); window.getSelection().removeAllRanges(); window.getSelection().addRange(range); try { document.execCommand('copy'); alert("Conteúdo visual copiado!"); } catch (err) { alert("Erro ao copiar."); } }
     function exportarHTML() { atualizarPreview(false); const tabela = document.getElementById('tabela-principal'); if(!tabela) return; tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px"; const htmlCode = tabela.outerHTML; const tempTextArea = document.createElement("textarea"); tempTextArea.value = htmlCode; document.body.appendChild(tempTextArea); tempTextArea.select(); try { document.execCommand('copy'); alert("Código HTML copiado!"); } catch (err) { alert("Erro ao copiar."); } finally { document.body.removeChild(tempTextArea); } }
-    async function gerarPDFUnico() { atualizarPreview(true); const btn = document.getElementById('btn-gerar-pdf'); const originalText = btn.innerHTML; btn.innerHTML = "⏳ Gerando PDF HD..."; btn.disabled = true; const element = document.getElementById('render-area'); const pdfWidth = element.offsetWidth; const pdfHeight = element.offsetHeight; try { const canvas = await html2canvas(element, { scale: 3, useCORS: true, backgroundColor: '#ffffff' }); const imgData = canvas.toDataURL('image/jpeg'); const { jsPDF } = window.jspdf; const pdf = new jsPDF({ orientation: pdfWidth > pdfHeight ? 'l' : 'p', unit: 'px', format: [pdfWidth, pdfHeight] }); pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight); pdf.save('news_da_copa.pdf'); } catch (error) { console.error(error); alert("Erro ao processar PDF."); } finally { btn.innerHTML = originalText; btn.disabled = false; atualizarPreview(false); } }
 
     init();
 </script>
