@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News da Copa</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <style>
+        :root { --primary: #000000; --bg: #f4f7f6; --accent: #d23c2f; }
+        
+        @media screen {
+            body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
+            #editor-panel { width: 40%; padding: 2% 5%; background: #ededf5; overflow-y: auto; box-shadow: 2px 0 10px rgba(0,0,0,0.05); font-family: 'Arial', sans-serif; }
+            #preview-panel { width: 60%; padding: 40px 20px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; background: #fcfcfc; }
+            #render-area { background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 650px; transition: all 0.3s ease; }
+            .no-print { display: block; }
+        }
+
+        h2 { font-weight: 800; color: var(--primary); margin-top: 0; border-bottom: 1px solid var(--primary); padding-bottom: 10px; font-family: 'Inter', sans-serif; }
+        .session-container { background: #e9ecef; padding: 15px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid #6c757d; }
+        .session-title { font-size: 14px; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #495057; display: flex; justify-content: space-between; font-family: 'Inter', sans-serif; }
+        .block-box { background: #fcfcfc; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.05); border-radius: 6px; margin-bottom: 10px; border: 1px solid #ced4da; }
+        .quill-editor { background: white; height: 180px; margin-bottom: 10px; font-family: 'Inter', sans-serif !important; }
+        
+        label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #000; display: block; margin-bottom: 5px; margin-top: 10px; font-family: 'Inter', sans-serif; }
+        input[type="text"], input[type="password"], select { font-family: 'Inter', sans-serif; width: 100%; box-sizing: border-box; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="color"] { width: 60px; height: 40px; border: 1px solid #ccc; cursor: pointer; margin-bottom: 15px; display: block; }
+        input[type="file"] { margin-bottom: 10px; font-size: 12px; }
+
+        .btn { font-family: 'Inter', sans-serif; padding: 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: 700; margin-bottom: 10px; width: 100%; text-transform: uppercase; letter-spacing: 1px; transition: 0.2s; text-align: center; }
+        .btn-gh { background: #24292e; color: white; }
+        .btn-gh:hover { background: #555; }
+        .btn-export { background: #28a745; color: white; }
+        .btn-export:hover { background: #218838; }
+        .btn-pdf { background: #ff8400; color: white; }
+        .btn-pdf:hover { background: #d35400; }
+        .btn-html { background: #6f42c1; color: white; }
+        .btn-html:hover { background: #5a32a3; }
+        .btn-clear { background: #e60000; color: white; margin-top: 20px; font-size: 11px; padding: 8px; width: auto; display: block; margin-left: auto; margin-right: auto; }
+        
+        #gh-status { font-size: 12px; font-weight: bold; margin-left: 10px; text-transform: none; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        
+        .img-preview-box { background: #eee; padding: 5px; border-radius: 4px; text-align: center; margin-bottom: 10px; }
+        .img-preview-box img { max-height: 80px; max-width: 100%; }
+        
+        .ql-editor { word-break: break-word; overflow-wrap: break-word; font-family: 'Inter', sans-serif !important; }
+        .ql-editor img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+<div id="editor-panel" class="no-print">
+    <h2>EDITOR</h2>
+
+    <div class="session-container" style="border-left-color: #24292e; background: #f8f9fa;">
+        <div class="session-title">Sincronização Online (GitHub) <span id="gh-status" style="color: #666;">Status: Offline</span></div>
+        <div class="block-box" style="padding: 15px;">
+            <label>GitHub Personal Token</label>
+            <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" onchange="salvarConfigGitHub()">
+            <label>Repositório (usuario/repositorio)</label>
+            <input type="text" id="gh-repo" placeholder="InPressPNI/news_da_copa" onchange="salvarConfigGitHub()">
+            <label>Caminho do Arquivo JSON</label>
+            <input type="text" id="gh-path" value="dados_news.json" onchange="salvarConfigGitHub()">
+            
+            <button class="btn btn-gh" style="padding: 8px; font-size: 12px;" onclick="carregarDadosDoGitHub()">🔄 Puxar Dados da Nuvem</button>
+            <button class="btn btn-export" style="padding: 8px; font-size: 12px; background: #0075ea;" onclick="salvarDadosNoGitHub()">☁️ Salvar Alterações na Nuvem</button>
+        </div>
+    </div>
+
+    <div class="session-container" style="border-left-color: #0075ea;">
+        <div class="session-title">1ª Sessão: Configurações do Topo / Destaque</div>
+        <div class="block-box">
+            <div style="background: #f1f3f5; padding: 10px; border-radius: 4px; margin-bottom: 15px; font-size: 11px; color: #495057;">
+                <strong>Bloco Esquerdo:</strong> Imagem Fixa ativa no preview.
+            </div>
+            
+            <strong style="font-size:12px; color:#212529;">CONTEÚDO DO BLOCO DIREITO</strong>
+            <label>Título do Destaque</label>
+            <input type="text" id="titulo-destaque" placeholder="Digite o título do destaque" oninput="atualizarPreview(); salvarRascunhoLocal();">
+            
+            <label>Texto do Destaque</label>
+            <div id="quill-destaques" class="quill-editor"></div>
+        </div>
+    </div>
+
+    <div id="lista-sessoes"></div>
+    
+    <hr>
+    <button id="btn-gerar-pdf" class="btn btn-pdf" onclick="gerarPDFUnico()">📥 Baixar PDF</button>
+    <button class="btn btn-export" onclick="exportarEmail()">📋 Copiar para E-mail (Visual)</button>
+    <button class="btn btn-html" onclick="exportarHTML()">💻 Copiar Código HTML</button>
+    <button class="btn btn-clear" onclick="limparRascunho()">🗑️ Apagar rascunho</button>
+</div>
+
+<div id="preview-panel">
+    <div id="render-area"></div>
+</div>
+
+<script>
+    const ESTRUTURA_MAPA = [
+        { sessao: 2, tipo: 'unico' },
+        { sessao: 3, tipo: 'unico' },
+        { sessao: 4, tipo: 'unico' },
+        { sessao: 5, tipo: 'unico' }, 
+        { sessao: 6, tipo: 'split-esq' }, 
+        { sessao: 7, tipo: 'texto-only' }, 
+        { sessao: 8, tipo: 'split-esq' }, 
+        { sessao: 9, tipo: 'split-dir' }, 
+        { sessao: 10, tipo: 'split-esq-no-title' }, 
+        { sessao: 11, tipo: 'cta-only' }
+    ];
+
+    let sessoesDados = [];
+    let editorDestaques;
+    let currentFileSha = ""; // Necessário para atualizações na API do GitHub
+    
+    const toolbarOptions = [
+        ['bold', 'italic', 'underline', 'link'], 
+        [{ 'color': [] }], 
+        [{ 'list': 'bullet' }], 
+        ['clean']
+    ];
+
+    const URL_IMAGEM_DESTAQUE_FIXA = "https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/img_dados_do_dashboard.png";
+    const MAX_IMAGE_SIZE_MB = 2; 
+
+    function init() {
+        editorDestaques = new Quill('#quill-destaques', { theme: 'snow', modules: { toolbar: toolbarOptions } });
+
+        // Carrega as configurações de conexão do GitHub salvas localmente
+        document.getElementById('gh-token').value = localStorage.getItem('gh_boletim_token') || '';
+        document.getElementById('gh-repo').value = localStorage.getItem('gh_boletim_repo') || '';
+        document.getElementById('gh-path').value = localStorage.getItem('gh_boletim_path') || 'dados_news.json';
+
+        const rascunho = localStorage.getItem('rascunho_boletim_v7');
+        if (rascunho) {
+            try {
+                const dados = JSON.parse(rascunho);
+                document.getElementById('titulo-destaque').value = dados.tituloDestaque || '';
+                editorDestaques.root.innerHTML = dados.textoDestaque || '';
+                sessoesDados = dados.sessoesDados || [];
+            } catch (e) { console.error("Erro ao carregar rascunho local."); }
+        }
+
+        validarEstruturaBase();
+        renderizarPainelEditor();
+        
+        editorDestaques.on('text-change', () => { salvarRascunhoLocal(); });
+        
+        // Se houver configuração prévia, tenta puxar automaticamente do GitHub no início
+        if (document.getElementById('gh-token').value && document.getElementById('gh-repo').value) {
+            carregarDadosDoGitHub();
+        } else {
+            atualizarPreview();
+        }
+    }
+
+    function validarEstruturaBase() {
+        if (sessoesDados.length !== ESTRUTURA_MAPA.length) {
+            sessoesDados = ESTRUTURA_MAPA.map(config => {
+                let corDef = "#ffffff";
+                if (config.sessao === 6) corDef = "#2f50ff";
+                if (config.sessao === 7 || config.sessao === 10) corDef = "#eeeeee";
+                if (config.sessao === 8) corDef = "#fce5cd";
+
+                return { 
+                    sessao: config.sessao, 
+                    tipo: config.tipo, 
+                    blocos: [{ 
+                        titulo: "", 
+                        texto: "", 
+                        corFundo: corDef, 
+                        layout: "text-only", 
+                        imagem: "", 
+                        imagemAltaRes: "",
+                        btnTexto: "Acessar Dashboard", 
+                        btnUrl: "#"
+                    }] 
+                };
+            });
+        }
+    }
+
+    function salvarConfigGitHub() {
+        localStorage.setItem('gh_boletim_token', document.getElementById('gh-token').value);
+        localStorage.setItem('gh_boletim_repo', document.getElementById('gh-repo').value);
+        localStorage.setItem('gh_boletim_path', document.getElementById('gh-path').value);
+    }
+
+    // 🔄 FUNÇÃO: Puxa o JSON atualizado diretamente do repositório
+    async function carregarDadosDoGitHub() {
+        const token = document.getElementById('gh-token').value;
+        const repo = document.getElementById('gh-repo').value;
+        const path = document.getElementById('gh-path').value;
+        const statusEl = document.getElementById('gh-status');
+
+        if (!token || !repo || !path) {
+            alert("Preencha todas as configurações do GitHub para conectar.");
+            return;
+        }
+
+        statusEl.innerText = "⏳ Sincronizando...";
+        statusEl.style.color = "#ff8400";
+
+        try {
+            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+            const response = await fetch(url, {
+                headers: { 'Authorization': `token ${token}` }
+            });
+
+            if (response.status === 404) {
+                statusEl.innerText = "🟢 Arquivo novo (Pronto para salvar)";
+                statusEl.style.color = "#28a745";
+                currentFileSha = "";
+                return;
+            }
+
+            if (!response.ok) throw new Error("Erro na requisição");
+
+            const data = await response.json();
+            currentFileSha = data.sha;
+            
+            // Decodifica o conteúdo Base64 retornado pelo GitHub
+            const decodedContent = decodeURIComponent(atob(data.content).split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+
+            const dadosNuvem = JSON.parse(decodedContent);
+
+            // Sobrescreve o estado atual com os dados da nuvem
+            document.getElementById('titulo-destaque').value = dadosNuvem.tituloDestaque || '';
+            editorDestaques.root.innerHTML = dadosNuvem.textoDestaque || '';
+            sessoesDados = dadosNuvem.sessoesDados || [];
+            
+            validarEstruturaBase();
+            renderizarPainelEditor();
+            atualizarPreview();
+
+            statusEl.innerText = "🟢 Sincronizado";
+            statusEl.style.color = "#28a745";
+        } catch (error) {
+            console.error(error);
+            statusEl.innerText = "🔴 Erro de conexão";
+            statusEl.style.color = "#e60000";
+            alert("Não foi possível carregar dados do GitHub. Verifique o Token e o Repositório.");
+        }
+    }
+
+    // ☁️ FUNÇÃO: Salva o rascunho completo gerando um commit automático no GitHub
+    async function salvarDadosNoGitHub() {
+        const token = document.getElementById('gh-token').value;
+        const repo = document.getElementById('gh-repo').value;
+        const path = document.getElementById('gh-path').value;
+        const statusEl = document.getElementById('gh-status');
+
+        if (!token || !repo || !path) {
+            alert("Preencha as configurações do GitHub antes de salvar na nuvem.");
+            return;
+        }
+
+        statusEl.innerText = "⏳ Salvando na Nuvem...";
+        statusEl.style.color = "#ff8400";
+
+        const dadosParaSalvar = {
+            tituloDestaque: document.getElementById('titulo-destaque').value,
+            textoDestaque: editorDestaques.root.innerHTML,
+            sessoesDados: sessoesDados
+        };
+
+        try {
+            // Se não tivermos o SHA atual, fazemos uma checagem rápida para evitar conflitos
+            if (!currentFileSha) {
+                const checkUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
+                const checkRes = await fetch(checkUrl, { headers: { 'Authorization': `token ${token}` } });
+                if (checkRes.ok) {
+                    const checkData = await checkRes.json();
+                    currentFileSha = checkData.sha;
+                }
+            }
+
+            const jsonStr = JSON.stringify(dadosParaSalvar, null, 2);
+            // Conversão segura UTF-8 para Base64
+            const b64Content = btoa(encodeURIComponent(jsonStr).replace(/%([0-9A-F]{2})/g, function(match, p1) {
+                return String.fromCharCode('0x' + p1);
+            }));
+
+            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+            const bodyPayload = {
+                message: "Atualização de Conteúdo - Dashboard Copa via CMS",
+                content: b64Content,
+                branch: "main"
+            };
+
+            if (currentFileSha) {
+                bodyPayload.sha = currentFileSha;
+            }
+
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': application/json'
+                },
+                body: JSON.stringify(bodyPayload)
+            });
+
+            if (!response.ok) throw new Error("Erro ao salvar arquivo.");
+
+            const resData = await response.json();
+            currentFileSha = resData.content.sha; // Atualiza o SHA local com o novo gerado
+
+            statusEl.innerText = "🟢 Atualizado na Nuvem";
+            statusEl.style.color = "#28a745";
+            alert("Alterações salvas com sucesso no GitHub!");
+        } catch (error) {
+            console.error(error);
+            statusEl.innerText = "🔴 Falha ao salvar";
+            statusEl.style.color = "#e60000";
+            alert("Erro ao enviar alterações para o GitHub.");
+        }
+    }
+
+    function salvarRascunhoLocal() {
+        const dados = {
+            tituloDestaque: document.getElementById('titulo-destaque').value,
+            textoDestaque: editorDestaques.root.innerHTML,
+            sessoesDados: sessoesDados
+        };
+        try {
+            localStorage.setItem('rascunho_boletim_v7', JSON.stringify(dados));
+        } catch (e) { console.warn("Rascunho local excedeu memória."); }
+        atualizarPreview();
+    }
+
+    function limparRascunho() {
+        if(confirm("🗑️ Deseja realmente apagar todo o conteúdo local e recomeçar?")) {
+            localStorage.removeItem('rascunho_boletim_v7');
+            location.reload();
+        }
+    }
+
+    function uploadImagem(event, sIndex, bIndex) {
+        const file = event.target.files[0];
+        if (!file) return;
+        if ((file.size / 1024 / 1024) > MAX_IMAGE_SIZE_MB) { alert("Imagem muito pesada. Máx 2MB."); return; }
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const base64Original = e.target.result;
+            const bloco = sessoesDados[sIndex].blocos[bIndex];
+            if (bloco.layout === "text-only") bloco.layout = "img-top";
+            bloco.imagemAltaRes = base64Original;
+            
+            const isSplitRow = ['split-esq', 'split-dir', 'split-esq-no-title'].includes(sessoesDados[sIndex].tipo);
+            const targetWidth = isSplitRow ? 185 : 590;
+
+            redimensionarImagemFisicamente(base64Original, targetWidth, function(resizedBase64) {
+                bloco.imagem = resizedBase64; 
+                salvarRascunhoLocal(); 
+                renderizarPainelEditor(); 
+                atualizarPreview();
+            });
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function atualizarCampo(sIndex, bIndex, campo, valor) {
+        sessoesDados[sIndex].blocos[bIndex][campo] = valor;
+        salvarRascunhoLocal(); 
+        if (campo === 'layout') renderizarPainelEditor();
+        atualizarPreview();
+    }
+
+    function renderizarPainelEditor() {
+        const lista = document.getElementById('lista-sessoes');
+        lista.innerHTML = '';
+        
+        sessoesDados.forEach((sessao, sIndex) => {
+            const container = document.createElement('div');
+            container.className = 'session-container';
+            
+            let rotuloSessao = `${sessao.sessao}ª Sessão`;
+            let corpoFormHtml = '';
+            const b = sessao.blocos[0];
+            let previewImagemHtml = b.imagem ? `<div class="img-preview-box"><img src="${b.imagem}"><br><a href="#" onclick="removerImagem(${sIndex}, 0); return false;" style="color: red; font-size: 10px;">Remover Imagem</a></div>` : '';
+
+            if (['unico'].includes(sessao.tipo)) {
+                rotuloSessao += ` (Largura Cheia - Flexível)`;
+                corpoFormHtml = `
+                    <div class="block-box">
+                        <label>Título da Sessão</label>
+                        <input type="text" value="${b.titulo || ''}" placeholder="Digite o título" oninput="atualizarCampo(${sIndex}, 0, 'titulo', this.value)">
+                        <div style="display: flex; gap: 10px; align-items: flex-end;">
+                            <div style="flex: 1;"><label>Cor fundo:</label><input type="color" value="${b.corFundo}" onchange="atualizarCampo(${sIndex}, 0, 'corFundo', this.value)"></div>
+                            <div style="flex: 3;"><label>Layout Imagem:</label>
+                                <select onchange="atualizarCampo(${sIndex}, 0, 'layout', this.value)">
+                                    <option value="text-only" ${b.layout === 'text-only' ? 'selected' : ''}>Apenas Texto</option>
+                                    <option value="img-top" ${b.layout === 'img-top' ? 'selected' : ''}>Imagem Acima (No Topo)</option>
+                                    <option value="img-bottom" ${b.layout === 'img-bottom' ? 'selected' : ''}>Imagem Abaixo do Texto</option>
+                                    <option value="img-left" ${b.layout === 'img-left' ? 'selected' : ''}>Imagem à Esquerda</option>
+                                    <option value="img-right" ${b.layout === 'img-right' ? 'selected' : ''}>Imagem à Direita</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label>Imagem (Máx 2MB):</label><input type="file" accept="image/*" onchange="uploadImagem(event, ${sIndex}, 0)">${previewImagemHtml}
+                        <label>Texto:</label><div id="editor-${sessao.sessao}-0" class="quill-editor"></div>
+                    </div>`;
+            } 
+            else if (['split-esq', 'split-dir'].includes(sessao.tipo)) {
+                let direcao = sessao.tipo === 'split-esq' ? 'Imagem à Esquerda' : 'Imagem à Direita';
+                rotuloSessao += ` (Layout Dividido - ${direcao})`;
+                corpoFormHtml = `
+                    <div class="block-box">
+                        <label>Título da Sessão</label>
+                        <input type="text" value="${b.titulo || ''}" placeholder="Digite o título" oninput="atualizarCampo(${sIndex}, 0, 'titulo', this.value)">
+                        <label>Cor fundo:</label><input type="color" value="${b.corFundo}" onchange="atualizarCampo(${sIndex}, 0, 'corFundo', this.value)">
+                        <label>Carregar Imagem (Máx 2MB):</label><input type="file" accept="image/*" onchange="uploadImagem(event, ${sIndex}, 0)">${previewImagemHtml}
+                        <label>Texto do Conteúdo:</label><div id="editor-${sessao.sessao}-0" class="quill-editor"></div>
+                    </div>`;
+            }
+            else if (sessao.tipo === 'split-esq-no-title') {
+                rotuloSessao += ` (Layout Dividido - Sem Título)`;
+                corpoFormHtml = `
+                    <div class="block-box">
+                        <label>Cor fundo:</label><input type="color" value="${b.corFundo}" onchange="atualizarCampo(${sIndex}, 0, 'corFundo', this.value)">
+                        <label>Imagem da Esquerda (Máx 2MB):</label><input type="file" accept="image/*" onchange="uploadImagem(event, ${sIndex}, 0)">${previewImagemHtml}
+                        <label>Texto da Direita:</label><div id="editor-${sessao.sessao}-0" class="quill-editor"></div>
+                    </div>`;
+            }
+            else if (sessao.tipo === 'texto-only') {
+                rotuloSessao += ` (Apenas Título e Texto)`;
+                corpoFormHtml = `
+                    <div class="block-box">
+                        <label>Título da Sessão</label>
+                        <input type="text" value="${b.titulo || ''}" placeholder="Digite o título" oninput="atualizarCampo(${sIndex}, 0, 'titulo', this.value)">
+                        <label>Cor fundo:</label><input type="color" value="${b.corFundo}" onchange="atualizarCampo(${sIndex}, 0, 'corFundo', this.value)">
+                        <label>Texto:</label><div id="editor-${sessao.sessao}-0" class="quill-editor"></div>
+                    </div>`;
+            }
+            else if (sessao.tipo === 'cta-only') {
+                rotuloSessao += ` (Título Centralizado + Botão Call To Action)`;
+                corpoFormHtml = `
+                    <div class="block-box">
+                        <label>Título Centralizado</label>
+                        <input type="text" value="${b.titulo || ''}" placeholder="Ex: CONFIRA TODAS AS INFORMAÇÕES" oninput="atualizarCampo(${sIndex}, 0, 'titulo', this.value)">
+                        <label>Cor do fundo da Linha:</label><input type="color" value="${b.corFundo}" onchange="atualizarCampo(${sIndex}, 0, 'corFundo', this.value)">
+                        <label>Texto do Botão</label>
+                        <input type="text" value="${b.btnTexto || ''}" placeholder="Ex: Acessar Dashboard" oninput="atualizarCampo(${sIndex}, 0, 'btnTexto', this.value)">
+                        <label>URL / Link do Botão</label>
+                        <input type="text" value="${b.btnUrl || ''}" placeholder="https://..." oninput="atualizarCampo(${sIndex}, 0, 'btnUrl', this.value)">
+                    </div>`;
+            }
+
+            container.innerHTML = `<div class="session-title"><span>${rotuloSessao}</span></div>` + corpoFormHtml;
+            lista.appendChild(container);
+
+            if (sessao.tipo !== 'cta-only') {
+                const quill = new Quill(`#editor-${sessao.sessao}-0`, { theme: 'snow', modules: { toolbar: toolbarOptions } });
+                quill.root.innerHTML = b.texto || '';
+                quill.on('text-change', () => { sessoesDados[sIndex].blocos[0].texto = quill.root.innerHTML; salvarRascunhoLocal(); });
+            }
+        });
+    }
+
+    function renderizarLinhaCustomizada(sessao, b, isParaPDF) {
+        const textoLimpo = processarTextoEmail(b.texto);
+        const fonteImagem = (isParaPDF && b.imagemAltaRes) ? b.imagemAltaRes : b.imagem;
+        const corFundoAtual = b.corFundo || '#ffffff';
+        
+        let estiloTitulo = "font-family: 'Inter', Arial, sans-serif; line-height: 1.3; ";
+        let estiloTexto = "font-family: 'Inter', Arial, sans-serif; line-height: 1.5; word-wrap: break-word; overflow-wrap: break-word; ";
+
+        if (sessao.sessao === 2) {
+            estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;";
+            estiloTexto += "font-size: 15px; color: #333333;";
+        }
+        else if (sessao.sessao === 3) {
+            estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;";
+            estiloTexto += "font-size: 15px; color: #333333;";
+        }
+        else if (sessao.sessao === 4) {
+            estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;";
+            estiloTexto += "font-size: 15px; color: #333333;";
+        }
+        else if (sessao.sessao === 5) {
+            estiloTitulo += "font-size: 24px; font-weight: 700; color: #000000; margin-bottom: 12px;";
+            estiloTexto += "font-size: 15px; color: #333333;";
+        }
+        else if (sessao.sessao === 6) {
+            const corT = corFundoAtual.toLowerCase() === "#2f50ff" ? "#ffffff" : "#fe3e09";
+            const corTxt = corFundoAtual.toLowerCase() === "#2f50ff" ? "#ffffff" : "#595959";
+            estiloTitulo += `font-size: 20px; font-weight: 800; color: ${corT}; margin-bottom: 10px;`;
+            estiloTexto += `font-size: 15px; color: ${corTxt};`;
+        }
+        else if (sessao.sessao === 7) {
+            estiloTitulo += "font-size: 35px; font-weight: 600; color: #666666; margin-bottom: 10px;";
+            estiloTexto += "font-size: 15px; color: #595959;";
+        }
+        else if (sessao.sessao === 8) {
+            estiloTitulo += "font-size: 45px; font-weight: 800; color: #fe3e09; margin-bottom: 10px;";
+            estiloTexto += "font-size: 15px; color: #595959;";
+        }
+        else if (sessao.sessao === 9) {
+            estiloTitulo += "font-size: 24px; font-weight: 800; color: #2f50ff; margin-bottom: 10px;";
+            estiloTexto += "font-size: 15px; color: #595959;";
+        }
+        else if (sessao.sessao === 10) {
+            estiloTexto += "font-size: 15px; color: #595959;";
+        }
+        else if (sessao.sessao === 11) {
+            estiloTitulo += "font-size: 24px; font-weight: 800; color: #fe3e09; margin-bottom: 20px; text-transform: uppercase; text-align: center;";
+        }
+
+        const tituloHtml = b.titulo && b.titulo.trim() !== "" ? `<div style="${estiloTitulo}">${b.titulo}</div>` : '';
+        const textoHtml = `<div style="${estiloTexto}">${textoLimpo}</div>`;
+        
+        const placeholderImg = `<div style="width:185px; height:130px; background:rgba(0,0,0,0.05); border:2px dashed #ccc; display:block;"></div>`;
+        const imagemHtml = fonteImagem ? `<img src="${fonteImagem}" width="185" style="width: 100%; max-width: 185px; height: auto; display: block; border: 0;">` : placeholderImg;
+
+        if (['split-esq', 'split-esq-no-title'].includes(sessao.tipo)) {
+            return `
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;">
+                    <tr>
+                        <td width="185" valign="middle" style="width: 185px;">${imagemHtml}</td>
+                        <td width="20" style="width: 20px;">&nbsp;</td>
+                        <td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">
+                            ${tituloHtml}
+                            ${textoHtml}
+                        </td>
+                    </tr>
+                </table>`;
+        }
+        
+        if (sessao.tipo === 'split-dir') {
+            return `
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;">
+                    <tr>
+                        <td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">
+                            ${tituloHtml}
+                            ${textoHtml}
+                        </td>
+                        <td width="20" style="width: 20px;">&nbsp;</td>
+                        <td width="185" valign="middle" style="width: 185px;">${imagemHtml}</td>
+                    </tr>
+                </table>`;
+        }
+
+        if (sessao.tipo === 'texto-only') {
+            return `${tituloHtml}${textoHtml}`;
+        }
+
+        if (sessao.tipo === 'cta-only') {
+            const tituloCta = b.titulo && b.titulo.trim() !== "" ? b.titulo : "CONFIRA TODAS AS INFORMAÇÕES";
+            return `
+                <div style="text-align: center; font-family: 'Inter', Arial, sans-serif; padding: 10px 0;">
+                    <div style="${estiloTitulo}">${tituloCta}</div>
+                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                        <tr>
+                            <td align="center" bgcolor="#fe3e09" style="border-radius: 6px;">
+                                <a href="${b.btnUrl || '#'}" target="_blank" style="font-size: 16px; font-family: 'Inter', Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 6px; padding: 14px 35px; border: 1px solid #fe3e09; display: inline-block; font-weight: bold; letter-spacing: 0.5px;">
+                                    ${b.btnTexto || 'Acessar Dashboard'}
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>`;
+        }
+
+        if (sessao.tipo === 'unico') {
+            if (b.layout === 'text-only' || !b.imagem) return tituloHtml + textoHtml;
+            if (b.layout === 'img-top') return tituloHtml + `<div style="margin-bottom: 15px;"><img src="${fonteImagem}" width="590" style="width: 100%; max-width: 590px; height: auto; display: block; border-radius: 5px; border: 0;"></div>` + textoHtml;
+            if (b.layout === 'img-bottom') return tituloHtml + textoHtml + `<div style="margin-top: 15px;"><img src="${fonteImagem}" width="590" style="width: 100%; max-width: 590px; height: auto; display: block; border-radius: 5px; border: 0;"></div>`;
+            if (b.layout === 'img-left') return tituloHtml + `<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;"><tr><td width="190" valign="middle" style="padding-right: 15px; width: 190px;"><img src="${fonteImagem}" width="190" style="width: 190px; max-width: 190px; height: auto; display: block; border-radius: 5px; border: 0;"></td><td valign="middle">${textoHtml}</td></tr></table>`;
+            if (b.layout === 'img-right') return tituloHtml + `<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;"><tr><td valign="middle" style="padding-right: 15px;">${textoHtml}</td><td width="190" valign="middle" style="width: 190px;"><img src="${fonteImagem}" width="190" style="width: 190px; max-width: 190px; height: auto; display: block; border-radius: 5px; border: 0;"></td></tr></table>`;
+        }
+
+        return tituloHtml + textoHtml;
+    }
+
+    function atualizarPreview(isParaPDF = false) {
+        const renderArea = document.getElementById('render-area');
+        if (!renderArea) return;
+
+        const tDest = document.getElementById('titulo-destaque').value.trim();
+        const cDestRaw = editorDestaques ? editorDestaques.root.innerHTML : '';
+        const cDestVazio = !cDestRaw || cDestRaw === '<p><br></p>' || cDestRaw.trim() === '';
+        const cDestProcessado = processarTextoEmail(cDestRaw);
+
+        let htmlLinhasDinâmicas = "";
+
+        if (tDest || !cDestVazio) {
+            htmlLinhasDinâmicas += `
+                <tr>
+                    <td style="padding: 15px 30px 25px 30px; font-family: 'Inter', Arial, sans-serif;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;">
+                            <tr>
+                                <td width="185" valign="middle" style="width: 185px;">
+                                    <img src="${URL_IMAGEM_DESTAQUE_FIXA}" width="185" style="width: 100%; max-width: 185px; height: auto; display: block; border-radius: 0px; border: 0;">
+                                </td>
+                                <td width="20" style="width: 20px;">&nbsp;</td>
+                                <td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">
+                                    ${tDest ? `<div style="font-size: 34px; font-weight: 800; margin-bottom: 10px; color: #fe3e09; line-height: 1.3; font-family: 'Inter', Arial, sans-serif;">${tDest}</div>` : ''}
+                                    <div style="font-size: 22px; color: #595959; line-height: 1.5; word-wrap: break-word; font-family: 'Inter', Arial, sans-serif;">${cDestProcessado}</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>`;
+        }
+
+        sessoesDados.forEach(sessao => {
+            const b = sessao.blocos[0];
+            const conteudoHtml = renderizarLinhaCustomizada(sessao, b, isParaPDF);
+            const isSangradaTotal = ['split-esq', 'split-dir', 'split-esq-no-title', 'texto-only', 'cta-only'].includes(sessao.tipo);
+            const corFundoAtual = b.corFundo || '#ffffff';
+
+            if (isSangradaTotal) {
+                htmlLinhasDinâmicas += `
+                    <tr>
+                        <td bgcolor="${corFundoAtual}" style="padding: 25px 30px; font-family: 'Inter', Arial, sans-serif;">
+                            ${conteudoHtml}
+                        </td>
+                    </tr>`;
+            } else {
+                if (corFundoAtual.toLowerCase() !== "#ffffff") {
+                    htmlLinhasDinâmicas += `
+                        <tr>
+                            <td style="padding: 10px 30px 0px 30px; font-family: 'Inter', Arial, sans-serif;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="${corFundoAtual}" style="width: 100%; background-color: ${corFundoAtual}; border-collapse: collapse;">
+                                    <tr><td style="padding: 20px; border-radius: 5px;">${conteudoHtml}</td></tr>
+                                </table>
+                            </td>
+                        </tr>`;
+                } else {
+                    htmlLinhasDinâmicas += `<tr><td style="padding: 10px 30px 0px 30px; font-family: 'Inter', Arial, sans-serif;">${conteudoHtml}</td></tr>`;
+                }
+            }
+        });
+
+        renderArea.innerHTML = `
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="650" id="tabela-principal" style="table-layout: fixed; border-collapse: collapse; background-color: #ffffff; font-family: 'Inter', Arial, sans-serif; width: 650px; max-width: 650px; word-wrap: break-word; overflow-wrap: break-word;">
+                <tr>
+                    <td align="center" bgcolor="#FFFFFF" style="padding: 0px; font-family: 'Inter', Arial, sans-serif;">
+                         <img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/header_dash_copa.png" alt="Header Copa" style="max-width: 650px; width: 100%; display: block;">
+                    </td>
+                </tr>
+                ${htmlLinhasDinâmicas}
+                <tr>
+                    <td align="center" bgcolor="#FFFFFF" style="padding: 0; font-family: 'Inter', Arial, sans-serif;">
+                         <img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/rodape_dash_copa.png" alt="Rodapé Copa" style="max-width: 650px; width: 100%; display: block;">
+                    </td>
+                </tr>
+            </table>
+        `;
+    }
+
+    // Mantido as funções de exportação idênticas
+    function exportarEmail() {
+        atualizarPreview(false); const tabela = document.getElementById('tabela-principal');
+        if(!tabela) return;
+        tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px";
+        const range = document.createRange(); range.selectNode(document.getElementById('render-area'));
+        window.getSelection().removeAllRanges(); window.getSelection().addRange(range);
+        try { document.execCommand('copy'); alert("Conteúdo visual copiado!"); } catch (err) { alert("Erro ao copiar."); }
+    }
+
+    function exportarHTML() {
+        atualizarPreview(false); const tabela = document.getElementById('tabela-principal');
+        if(!tabela) return;
+        tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px";
+        const htmlCode = tabela.outerHTML; const tempTextArea = document.createElement("textarea");
+        tempTextArea.value = htmlCode; document.body.appendChild(tempTextArea); tempTextArea.select();
+        try { document.execCommand('copy'); alert("Código HTML copiado!"); } catch (err) { alert("Erro ao copiar."); } finally { document.body.removeChild(tempTextArea); }
+    }
+
+    async function gerarPDFUnico() {
+        atualizarPreview(true); const btn = document.getElementById('btn-gerar-pdf');
+        const originalText = btn.innerHTML; btn.innerHTML = "⏳ Gerando PDF HD..."; btn.disabled = true;
+        const element = document.getElementById('render-area');
+        const pdfWidth = element.offsetWidth; const pdfHeight = element.offsetHeight;
+        try {
+            const canvas = await html2canvas(element, { scale: 3, useCORS: true, backgroundColor: '#ffffff' });
+            const imgData = canvas.toDataURL('image/jpeg'); const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF({ orientation: pdfWidth > pdfHeight ? 'l' : 'p', unit: 'px', format: [pdfWidth, pdfHeight] });
+            pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight); pdf.save('news_da_copa.pdf');
+        } catch (error) { console.error(error); alert("Erro ao processar PDF."); } finally { btn.innerHTML = originalText; btn.disabled = false; atualizarPreview(false); }
+    }
+
+    init();
+</script>
+</body>
+</html>
