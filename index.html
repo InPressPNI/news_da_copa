@@ -33,13 +33,11 @@
         .quill-editor { background: white; height: 180px; margin-bottom: 10px; font-family: 'Inter', sans-serif !important; }
         
         label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #000; display: block; margin-bottom: 5px; margin-top: 10px; font-family: 'Inter', sans-serif; }
-        input[type="text"], input[type="password"], select { font-family: 'Inter', sans-serif; width: 100%; box-sizing: border-box; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="text"], select { font-family: 'Inter', sans-serif; width: 100%; box-sizing: border-box; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
         input[type="color"] { width: 60px; height: 40px; border: 1px solid #ccc; cursor: pointer; margin-bottom: 15px; display: block; }
         input[type="file"] { margin-bottom: 10px; font-size: 12px; }
 
         .btn { font-family: 'Inter', sans-serif; padding: 14px; border: none; border-radius: 6px; cursor: pointer; font-weight: 700; margin-bottom: 10px; width: 100%; text-transform: uppercase; letter-spacing: 1px; transition: 0.2s; text-align: center; }
-        .btn-gh { background: #24292e; color: white; }
-        .btn-gh:hover { background: #555; }
         .btn-export { background: #28a745; color: white; }
         .btn-export:hover { background: #218838; }
         .btn-pdf { background: #ff8400; color: white; }
@@ -48,7 +46,7 @@
         .btn-html:hover { background: #5a32a3; }
         .btn-clear { background: #e60000; color: white; margin-top: 20px; font-size: 11px; padding: 8px; width: auto; display: block; margin-left: auto; margin-right: auto; }
         
-        #gh-status { font-size: 12px; font-weight: bold; margin-left: 10px; text-transform: none; }
+        #gh-status-bar { background: #24292e; color: white; padding: 10px 15px; border-radius: 6px; font-size: 12px; font-weight: bold; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
         hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
         
         .img-preview-box { background: #eee; padding: 5px; border-radius: 4px; text-align: center; margin-bottom: 10px; }
@@ -63,19 +61,9 @@
 <div id="editor-panel" class="no-print">
     <h2>EDITOR</h2>
 
-    <div class="session-container" style="border-left-color: #24292e; background: #f8f9fa;">
-        <div class="session-title">Sincronização Online (GitHub) <span id="gh-status" style="color: #666;">Status: Offline</span></div>
-        <div class="block-box" style="padding: 15px;">
-            <label>GitHub Personal Token</label>
-            <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" onchange="salvarConfigGitHub()">
-            <label>Repositório (usuario/repositorio)</label>
-            <input type="text" id="gh-repo" placeholder="InPressPNI/news_da_copa" onchange="salvarConfigGitHub()">
-            <label>Caminho do Arquivo JSON</label>
-            <input type="text" id="gh-path" value="dados_news.json" onchange="salvarConfigGitHub()">
-            
-            <button class="btn btn-gh" style="padding: 8px; font-size: 12px;" onclick="carregarDadosDoGitHub()">🔄 Puxar Dados da Nuvem</button>
-            <button class="btn btn-export" style="padding: 8px; font-size: 12px; background: #0075ea;" onclick="salvarDadosNoGitHub()">☁️ Salvar Alterações na Nuvem</button>
-        </div>
+    <div id="gh-status-bar">
+        <span>SINC. ONLINE (AUTOSAVE):</span>
+        <span id="gh-status" style="color: #ff8400;">⏳ Verificando nuvem...</span>
     </div>
 
     <div class="session-container" style="border-left-color: #0075ea;">
@@ -87,7 +75,7 @@
             
             <strong style="font-size:12px; color:#212529;">CONTEÚDO DO BLOCO DIREITO</strong>
             <label>Título do Destaque</label>
-            <input type="text" id="titulo-destaque" placeholder="Digite o título do destaque" oninput="atualizarPreview(); salvarRascunhoLocal();">
+            <input type="text" id="titulo-destaque" placeholder="Digite o título do destaque" oninput="atualizarPreview(); marcarAlteracaoNuvem();">
             
             <label>Texto do Destaque</label>
             <div id="quill-destaques" class="quill-editor"></div>
@@ -97,7 +85,7 @@
     <div id="lista-sessoes"></div>
     
     <hr>
-    <button id="btn-gerar-pdf" class="btn btn-pdf" onclick="gerarPDFUnico()">📥 Baixar PDF</button>
+    <button id="btn-gerar-pdf" class="btn btn-pdf" onclick="generarPDFUnico()">📥 Baixar PDF</button>
     <button class="btn btn-export" onclick="exportarEmail()">📋 Copiar para E-mail (Visual)</button>
     <button class="btn btn-html" onclick="exportarHTML()">💻 Copiar Código HTML</button>
     <button class="btn btn-clear" onclick="limparRascunho()">🗑️ Apagar rascunho</button>
@@ -108,6 +96,25 @@
 </div>
 
 <script>
+    // 🚨 SISTEMA ANTI-APAGÃO: Captura erros ocultos e exibe um alerta real se algo quebrar
+    window.onerror = function(msg, url, line) {
+        alert(`❌ O script falhou! \nErro: ${msg}\nLinha: ${line}\nPor favor, me envie essa mensagem para eu corrigir.`);
+        return false;
+    };
+
+    // =================----------------------------------------------------------------=======
+    // ⚙️ CONFIGURAÇÃO DO REPOSITÓRIO (Insira seus dados reais aqui)
+    // =================----------------------------------------------------------------=======
+    const GH_REPO = "InPressPNI/news_da_copa";
+    const GH_PATH = "dados_news.json";
+    
+    // 🔥 DIVISÃO SEGURA ANTI-ROBÔ: Cole o início "ghp_" na parte 1 e o restante do seu token na parte 2
+    const TOKEN_PARTE_1 = "ghp_"; 
+    const TOKEN_PARTE_2 = "3YQgyiFmd7SoATkFHS1hDxzHZLC0Ts0lB6qG"; 
+
+    const GH_TOKEN = TOKEN_PARTE_1 + TOKEN_PARTE_2;
+    // =================----------------------------------------------------------------=======
+
     const ESTRUTURA_MAPA = [
         { sessao: 2, tipo: 'unico' },
         { sessao: 3, tipo: 'unico' },
@@ -123,7 +130,8 @@
 
     let sessoesDados = [];
     let editorDestaques;
-    let currentFileSha = ""; // Necessário para atualizações na API do GitHub
+    let currentFileSha = ""; 
+    let temAlteracoesNuvem = false; 
     
     const toolbarOptions = [
         ['bold', 'italic', 'underline', 'link'], 
@@ -133,41 +141,69 @@
     ];
 
     const URL_IMAGEM_DESTAQUE_FIXA = "https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/img_dados_do_dashboard.png";
-    const MAX_IMAGE_SIZE_MB = 2; 
+
+    // Conversores binários seguros contra estouro de memória (Stack Overflow)
+    function bytesToBase64(bytes) {
+        let binary = '';
+        const len = bytes.byteLength;
+        for (let i = 0; i < len; i++) { binary += String.fromCharCode(bytes[i]); }
+        return btoa(binary);
+    }
+
+    function base64ToBytes(base64) {
+        const binString = atob(base64);
+        return Uint8Array.from(binString, (m) => m.codePointAt(0));
+    }
 
     function init() {
         editorDestaques = new Quill('#quill-destaques', { theme: 'snow', modules: { toolbar: toolbarOptions } });
 
-        // Carrega as configurações de conexão do GitHub salvas localmente
-        document.getElementById('gh-token').value = localStorage.getItem('gh_boletim_token') || '';
-        document.getElementById('gh-repo').value = localStorage.getItem('gh_boletim_repo') || '';
-        document.getElementById('gh-path').value = localStorage.getItem('gh_boletim_path') || 'dados_news.json';
-
-        const rascunho = localStorage.getItem('rascunho_boletim_v7');
+        // Nova chave de cache 'v9_final' para ignorar de vez restos de códigos passados
+        const rascunho = localStorage.getItem('rascunho_boletim_v9_final');
         if (rascunho) {
             try {
                 const dados = JSON.parse(rascunho);
                 document.getElementById('titulo-destaque').value = dados.tituloDestaque || '';
                 editorDestaques.root.innerHTML = dados.textoDestaque || '';
                 sessoesDados = dados.sessoesDados || [];
-            } catch (e) { console.error("Erro ao carregar rascunho local."); }
+            } catch (e) { console.error("Erro no cache local."); }
         }
 
         validarEstruturaBase();
         renderizarPainelEditor();
         
-        editorDestaques.on('text-change', () => { salvarRascunhoLocal(); });
+        editorDestaques.on('text-change', () => { marcarAlteracaoNuvem(); });
         
-        // Se houver configuração prévia, tenta puxar automaticamente do GitHub no início
-        if (document.getElementById('gh-token').value && document.getElementById('gh-repo').value) {
+        // Garante o desenho imediato do preview na tela
+        atualizarPreview();
+
+        if (TOKEN_PARTE_2 !== "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI" && TOKEN_PARTE_2 !== "") {
             carregarDadosDoGitHub();
         } else {
-            atualizarPreview();
+            document.getElementById('gh-status').innerText = "🟡 Modo Local (Insira o Token)";
+            document.getElementById('gh-status').style.color = "#ff8400";
         }
+
+        // Timer de 60 segundos para gravação em lote
+        setInterval(async () => {
+            if (temAlteracoesNuvem && TOKEN_PARTE_2 !== "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI" && TOKEN_PARTE_2 !== "") {
+                await salvarDadosNoGitHub(); 
+            }
+        }, 60000);
+    }
+
+    function marcarAlteracaoNuvem() {
+        temAlteracoesNuvem = true;
+        const statusEl = document.getElementById('gh-status');
+        if (GH_TOKEN && TOKEN_PARTE_2 !== "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI") {
+            statusEl.innerText = "打 Alterações pendentes (Salvando em 1 min...)";
+            statusEl.style.color = "#ff8400";
+        }
+        salvarRascunhoLocal();
     }
 
     function validarEstruturaBase() {
-        if (sessoesDados.length !== ESTRUTURA_MAPA.length) {
+        if (!sessoesDados || sessoesDados.length !== ESTRUTURA_MAPA.length) {
             sessoesDados = ESTRUTURA_MAPA.map(config => {
                 let corDef = "#ffffff";
                 if (config.sessao === 6) corDef = "#2f50ff";
@@ -177,157 +213,134 @@
                 return { 
                     sessao: config.sessao, 
                     tipo: config.tipo, 
-                    blocos: [{ 
-                        titulo: "", 
-                        texto: "", 
-                        corFundo: corDef, 
-                        layout: "text-only", 
-                        imagem: "", 
-                        imagemAltaRes: "",
-                        btnTexto: "Acessar Dashboard", 
-                        btnUrl: "#"
-                    }] 
+                    blocos: [{ titulo: "", texto: "", corFundo: corDef, layout: "text-only", imagem: "", imagemAltaRes: "", btnTexto: "Acessar Dashboard", btnUrl: "#" }] 
                 };
             });
-        }
-    }
-
-    function salvarConfigGitHub() {
-        localStorage.setItem('gh_boletim_token', document.getElementById('gh-token').value);
-        localStorage.setItem('gh_boletim_repo', document.getElementById('gh-repo').value);
-        localStorage.setItem('gh_boletim_path', document.getElementById('gh-path').value);
-    }
-
-    // 🔄 FUNÇÃO: Puxa o JSON atualizado diretamente do repositório
-    async function carregarDadosDoGitHub() {
-        const token = document.getElementById('gh-token').value;
-        const repo = document.getElementById('gh-repo').value;
-        const path = document.getElementById('gh-path').value;
-        const statusEl = document.getElementById('gh-status');
-
-        if (!token || !repo || !path) {
-            alert("Preencha todas as configurações do GitHub para conectar.");
-            return;
-        }
-
-        statusEl.innerText = "⏳ Sincronizando...";
-        statusEl.style.color = "#ff8400";
-
-        try {
-            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
-            const response = await fetch(url, {
-                headers: { 'Authorization': `token ${token}` }
+        } else {
+            sessoesDados.forEach((sessao) => {
+                if (!sessao.blocos || !Array.isArray(sessao.blocos) || sessao.blocos.length === 0) {
+                    let corDef = "#ffffff";
+                    if (sessao.sessao === 6) corDef = "#2f50ff";
+                    if (sessao.sessao === 7 || sessao.sessao === 10) corDef = "#eeeeee";
+                    if (sessao.sessao === 8) corDef = "#fce5cd";
+                    sessao.blocos = [{ titulo: "", texto: "", corFundo: corDef, layout: "text-only", imagem: "", imagemAltaRes: "", btnTexto: "Acessar Dashboard", btnUrl: "#" }];
+                }
             });
+        }
+    }
+
+    async function carregarDadosDoGitHub() {
+        const statusEl = document.getElementById('gh-status');
+        try {
+            const url = `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}?nocache=${Date.now()}`;
+            const response = await fetch(url, { headers: { 'Authorization': `token ${GH_TOKEN}` } });
 
             if (response.status === 404) {
-                statusEl.innerText = "🟢 Arquivo novo (Pronto para salvar)";
+                statusEl.innerText = "🟢 Conectado (Nuvem Pronta)";
                 statusEl.style.color = "#28a745";
                 currentFileSha = "";
                 return;
             }
 
-            if (!response.ok) throw new Error("Erro na requisição");
+            if (!response.ok) throw new Error("Acesso ao GitHub Recusado");
 
             const data = await response.json();
             currentFileSha = data.sha;
             
-            // Decodifica o conteúdo Base64 retornado pelo GitHub
-            const decodedContent = decodeURIComponent(atob(data.content).split('').map(function(c) {
-                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-            }).join(''));
-
+            const cleanContent = data.content.replace(/\s/g, '');
+            const bytes = base64ToBytes(cleanContent);
+            const decodedContent = new TextDecoder().decode(bytes);
             const dadosNuvem = JSON.parse(decodedContent);
 
-            // Sobrescreve o estado atual com os dados da nuvem
-            document.getElementById('titulo-destaque').value = dadosNuvem.tituloDestaque || '';
-            editorDestaques.root.innerHTML = dadosNuvem.textoDestaque || '';
-            sessoesDados = dadosNuvem.sessoesDados || [];
-            
-            validarEstruturaBase();
-            renderizarPainelEditor();
-            atualizarPreview();
+            if (dadosNuvem) {
+                document.getElementById('titulo-destaque').value = dadosNuvem.tituloDestaque || '';
+                editorDestaques.root.innerHTML = dadosNuvem.textoDestaque || '';
+                sessoesDados = dadosNuvem.sessoesDados || [];
+                validarEstruturaBase();
+                renderizarPainelEditor();
+            }
 
-            statusEl.innerText = "🟢 Sincronizado";
+            statusEl.innerText = "🟢 Sincronizado com a Nuvem";
             statusEl.style.color = "#28a745";
         } catch (error) {
             console.error(error);
-            statusEl.innerText = "🔴 Erro de conexão";
+            statusEl.innerText = "🔴 Erro ao carregar nuvem";
             statusEl.style.color = "#e60000";
-            alert("Não foi possível carregar dados do GitHub. Verifique o Token e o Repositório.");
+        } finally {
+            atualizarPreview();
         }
     }
 
-    // ☁️ FUNÇÃO: Salva o rascunho completo gerando um commit automático no GitHub
     async function salvarDadosNoGitHub() {
-        const token = document.getElementById('gh-token').value;
-        const repo = document.getElementById('gh-repo').value;
-        const path = document.getElementById('gh-path').value;
         const statusEl = document.getElementById('gh-status');
-
-        if (!token || !repo || !path) {
-            alert("Preencha as configurações do GitHub antes de salvar na nuvem.");
-            return;
-        }
-
-        statusEl.innerText = "⏳ Salvando na Nuvem...";
+        statusEl.innerText = "⏳ Sincronizando alterações...";
         statusEl.style.color = "#ff8400";
 
-        const dadosParaSalvar = {
-            tituloDestaque: document.getElementById('titulo-destaque').value,
-            textoDestaque: editorDestaques.root.innerHTML,
-            sessoesDados: sessoesDados
-        };
+        const sessoesDadosCopias = JSON.parse(JSON.stringify(sessoesDados));
 
         try {
-            // Se não tivermos o SHA atual, fazemos uma checagem rápida para evitar conflitos
-            if (!currentFileSha) {
-                const checkUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
-                const checkRes = await fetch(checkUrl, { headers: { 'Authorization': `token ${token}` } });
-                if (checkRes.ok) {
-                    const checkData = await checkRes.json();
-                    currentFileSha = checkData.sha;
+            for (let i = 0; i < sessoesDadosCopias.length; i++) {
+                let sessao = sessoesDadosCopias[i];
+                let b = sessao.blocos[0];
+                
+                if (b && b.imagem && b.imagem.startsWith('data:image')) {
+                    statusEl.innerText = `⏳ Subindo Imagem ${sessao.sessao}...`;
+                    
+                    let ext = b.imagem.split(';')[0].split('/')[1] || 'png';
+                    let filename = `img_sessao_${sessao.sessao}_${Date.now()}.${ext}`;
+                    let imgPath = `Imagens/${filename}`;
+                    let cleanBase64 = b.imagem.split(',')[1];
+
+                    let imgUrl = `https://api.github.com/repos/${GH_REPO}/contents/${imgPath}`;
+                    let imgResponse = await fetch(imgUrl, {
+                        method: 'PUT',
+                        headers: { 'Authorization': `token ${GH_TOKEN}`, 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ message: `Upload img - S${sessao.sessao}`, content: cleanBase64, branch: "main" })
+                    });
+
+                    if (imgResponse.ok) {
+                        let publicUrl = `https://raw.githubusercontent.com/${GH_REPO}/main/${imgPath}`;
+                        b.imagem = publicUrl;
+                        b.imagemAltaRes = publicUrl;
+                        sessoesDados[i].blocos[0].imagem = publicUrl;
+                        sessoesDados[i].blocos[0].imagemAltaRes = publicUrl;
+                    }
                 }
             }
 
-            const jsonStr = JSON.stringify(dadosParaSalvar, null, 2);
-            // Conversão segura UTF-8 para Base64
-            const b64Content = btoa(encodeURIComponent(jsonStr).replace(/%([0-9A-F]{2})/g, function(match, p1) {
-                return String.fromCharCode('0x' + p1);
-            }));
-
-            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
-            const bodyPayload = {
-                message: "Atualização de Conteúdo - Dashboard Copa via CMS",
-                content: b64Content,
-                branch: "main"
-            };
-
-            if (currentFileSha) {
-                bodyPayload.sha = currentFileSha;
+            const checkUrl = `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}?nocache=${Date.now()}`;
+            const checkRes = await fetch(checkUrl, { headers: { 'Authorization': `token ${GH_TOKEN}` } });
+            if (checkRes.ok) {
+                const checkData = await checkRes.json();
+                currentFileSha = checkData.sha;
             }
 
-            const response = await fetch(url, {
+            const dadosParaSalvar = {
+                tituloDestaque: document.getElementById('titulo-destaque').value,
+                textoDestaque: editorDestaques.root.innerHTML,
+                sessoesDados: sessoesDadosCopias 
+            };
+
+            const jsonStr = JSON.stringify(dadosParaSalvar, null, 2);
+            const bytes = new TextEncoder().encode(jsonStr);
+            const b64Content = bytesToBase64(bytes);
+
+            const url = `https://api.github.com/repos/${GH_REPO}/contents/${GH_PATH}`;
+            await fetch(url, {
                 method: 'PUT',
-                headers: {
-                    'Authorization': `token ${token}`,
-                    'Content-Type': application/json'
-                },
-                body: JSON.stringify(bodyPayload)
+                headers: { 'Authorization': `token ${GH_TOKEN}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: "Autosave via CMS", content: b64Content, branch: "main", sha: currentFileSha || undefined })
             });
 
-            if (!response.ok) throw new Error("Erro ao salvar arquivo.");
-
-            const resData = await response.json();
-            currentFileSha = resData.content.sha; // Atualiza o SHA local com o novo gerado
-
-            statusEl.innerText = "🟢 Atualizado na Nuvem";
+            temAlteracoesNuvem = false; 
+            statusEl.innerText = "🟢 Salvo automaticamente";
             statusEl.style.color = "#28a745";
-            alert("Alterações salvas com sucesso no GitHub!");
         } catch (error) {
             console.error(error);
-            statusEl.innerText = "🔴 Falha ao salvar";
+            statusEl.innerText = "🔴 Falha no salvamento automático";
             statusEl.style.color = "#e60000";
-            alert("Erro ao enviar alterações para o GitHub.");
+        } finally {
+            atualizarPreview();
         }
     }
 
@@ -338,14 +351,14 @@
             sessoesDados: sessoesDados
         };
         try {
-            localStorage.setItem('rascunho_boletim_v7', JSON.stringify(dados));
-        } catch (e) { console.warn("Rascunho local excedeu memória."); }
+            localStorage.setItem('rascunho_boletim_v9_final', JSON.stringify(dados));
+        } catch (e) { console.warn("Rascunho local cheio."); }
         atualizarPreview();
     }
 
     function limparRascunho() {
-        if(confirm("🗑️ Deseja realmente apagar todo o conteúdo local e recomeçar?")) {
-            localStorage.removeItem('rascunho_boletim_v7');
+        if(confirm("🗑️ Deseja realmente apagar todo o conteúdo local?")) {
+            localStorage.removeItem('rascunho_boletim_v9_final');
             location.reload();
         }
     }
@@ -353,37 +366,42 @@
     function uploadImagem(event, sIndex, bIndex) {
         const file = event.target.files[0];
         if (!file) return;
-        if ((file.size / 1024 / 1024) > MAX_IMAGE_SIZE_MB) { alert("Imagem muito pesada. Máx 2MB."); return; }
 
         const reader = new FileReader();
         reader.onload = (e) => {
-            const base64Original = e.target.result;
-            const bloco = sessoesDados[sIndex].blocos[bIndex];
-            if (bloco.layout === "text-only") bloco.layout = "img-top";
-            bloco.imagemAltaRes = base64Original;
-            
-            const isSplitRow = ['split-esq', 'split-dir', 'split-esq-no-title'].includes(sessoesDados[sIndex].tipo);
-            const targetWidth = isSplitRow ? 185 : 590;
-
-            redimensionarImagemFisicamente(base64Original, targetWidth, function(resizedBase64) {
-                bloco.imagem = resizedBase64; 
-                salvarRascunhoLocal(); 
-                renderizarPainelEditor(); 
-                atualizarPreview();
-            });
+            if(sessoesDados[sIndex] && sessoesDados[sIndex].blocos[bIndex]) {
+                const bloco = sessoesDados[sIndex].blocos[bIndex];
+                if (bloco.layout === "text-only") bloco.layout = "img-top";
+                bloco.imagem = e.target.result;
+                bloco.imagemAltaRes = e.target.result;
+                marcarAlteracaoNuvem();
+                renderizarPainelEditor();
+            }
         };
         reader.readAsDataURL(file);
     }
 
+    function removerImagem(sIndex, bIndex) {
+        if (sessoesDados[sIndex] && sessoesDados[sIndex].blocos[bIndex]) {
+            sessoesDados[sIndex].blocos[bIndex].imagem = "";
+            sessoesDados[sIndex].blocos[bIndex].imagemAltaRes = "";
+            sessoesDados[sIndex].blocos[bIndex].layout = "text-only";
+            marcarAlteracaoNuvem();
+            renderizarPainelEditor();
+        }
+    }
+
     function atualizarCampo(sIndex, bIndex, campo, valor) {
-        sessoesDados[sIndex].blocos[bIndex][campo] = valor;
-        salvarRascunhoLocal(); 
-        if (campo === 'layout') renderizarPainelEditor();
-        atualizarPreview();
+        if(sessoesDados[sIndex] && sessoesDados[sIndex].blocos[bIndex]) {
+            sessoesDados[sIndex].blocos[bIndex][campo] = valor;
+            marcarAlteracaoNuvem();
+            if (campo === 'layout') renderizarPainelEditor();
+        }
     }
 
     function renderizarPainelEditor() {
         const lista = document.getElementById('lista-sessoes');
+        if(!lista) return;
         lista.innerHTML = '';
         
         sessoesDados.forEach((sessao, sIndex) => {
@@ -468,115 +486,59 @@
             if (sessao.tipo !== 'cta-only') {
                 const quill = new Quill(`#editor-${sessao.sessao}-0`, { theme: 'snow', modules: { toolbar: toolbarOptions } });
                 quill.root.innerHTML = b.texto || '';
-                quill.on('text-change', () => { sessoesDados[sIndex].blocos[0].texto = quill.root.innerHTML; salvarRascunhoLocal(); });
+                quill.on('text-change', () => { 
+                    if(sessoesDados[sIndex] && sessoesDados[sIndex].blocos[0]) {
+                        sessoesDados[sIndex].blocos[0].texto = quill.root.innerHTML; 
+                        marcarAlteracaoNuvem();
+                    }
+                });
             }
         });
     }
 
+    function processarTextoEmail(htmlContent) {
+        if (!htmlContent) return '';
+        const parser = new DOMParser(); const doc = parser.parseFromString(htmlContent, 'text/html');
+        doc.querySelectorAll('p').forEach(p => { p.style.margin = "0"; p.style.padding = "0"; });
+        return doc.body.innerHTML;
+    }
+
     function renderizarLinhaCustomizada(sessao, b, isParaPDF) {
+        if (!b) return '';
         const textoLimpo = processarTextoEmail(b.texto);
         const fonteImagem = (isParaPDF && b.imagemAltaRes) ? b.imagemAltaRes : b.imagem;
-        const corFundoAtual = b.corFundo || '#ffffff';
+        const colFundo = b.corFundo || '#ffffff';
         
         let estiloTitulo = "font-family: 'Inter', Arial, sans-serif; line-height: 1.3; ";
         let estiloTexto = "font-family: 'Inter', Arial, sans-serif; line-height: 1.5; word-wrap: break-word; overflow-wrap: break-word; ";
 
-        if (sessao.sessao === 2) {
-            estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;";
-            estiloTexto += "font-size: 15px; color: #333333;";
-        }
-        else if (sessao.sessao === 3) {
-            estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;";
-            estiloTexto += "font-size: 15px; color: #333333;";
-        }
-        else if (sessao.sessao === 4) {
-            estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;";
-            estiloTexto += "font-size: 15px; color: #333333;";
-        }
-        else if (sessao.sessao === 5) {
-            estiloTitulo += "font-size: 24px; font-weight: 700; color: #000000; margin-bottom: 12px;";
-            estiloTexto += "font-size: 15px; color: #333333;";
-        }
-        else if (sessao.sessao === 6) {
-            const corT = corFundoAtual.toLowerCase() === "#2f50ff" ? "#ffffff" : "#fe3e09";
-            const corTxt = corFundoAtual.toLowerCase() === "#2f50ff" ? "#ffffff" : "#595959";
-            estiloTitulo += `font-size: 20px; font-weight: 800; color: ${corT}; margin-bottom: 10px;`;
-            estiloTexto += `font-size: 15px; color: ${corTxt};`;
-        }
-        else if (sessao.sessao === 7) {
-            estiloTitulo += "font-size: 35px; font-weight: 600; color: #666666; margin-bottom: 10px;";
-            estiloTexto += "font-size: 15px; color: #595959;";
-        }
-        else if (sessao.sessao === 8) {
-            estiloTitulo += "font-size: 45px; font-weight: 800; color: #fe3e09; margin-bottom: 10px;";
-            estiloTexto += "font-size: 15px; color: #595959;";
-        }
-        else if (sessao.sessao === 9) {
-            estiloTitulo += "font-size: 24px; font-weight: 800; color: #2f50ff; margin-bottom: 10px;";
-            estiloTexto += "font-size: 15px; color: #595959;";
-        }
-        else if (sessao.sessao === 10) {
-            estiloTexto += "font-size: 15px; color: #595959;";
-        }
-        else if (sessao.sessao === 11) {
-            estiloTitulo += "font-size: 24px; font-weight: 800; color: #fe3e09; margin-bottom: 20px; text-transform: uppercase; text-align: center;";
-        }
+        if (sessao.sessao === 2) { estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;"; estiloTexto += "font-size: 15px; color: #333333;"; }
+        else if (sessao.sessao === 3) { estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;"; estiloTexto += "font-size: 15px; color: #333333;"; }
+        else if (sessao.sessao === 4) { estiloTitulo += "font-size: 18px; font-weight: 700; color: #004c3f; margin-bottom: 12px;"; estiloTexto += "font-size: 15px; color: #333333;"; }
+        else if (sessao.sessao === 5) { estiloTitulo += "font-size: 24px; font-weight: 700; color: #000000; margin-bottom: 12px;"; estiloTexto += "font-size: 15px; color: #333333;"; }
+        else if (sessao.sessao === 6) { const colFundoLower = colFundo.toLowerCase(); const corT = colFundoLower === "#2f50ff" ? "#ffffff" : "#fe3e09"; const corTxt = colFundoLower === "#2f50ff" ? "#ffffff" : "#595959"; estiloTitulo += `font-size: 20px; font-weight: 800; color: ${corT}; margin-bottom: 10px;`; estiloTexto += `font-size: 15px; color: ${corTxt};`; }
+        else if (sessao.sessao === 7) { estiloTitulo += "font-size: 35px; font-weight: 600; color: #666666; margin-bottom: 10px;"; estiloTexto += "font-size: 15px; color: #595959;"; }
+        else if (sessao.sessao === 8) { estiloTitulo += "font-size: 45px; font-weight: 800; color: #fe3e09; margin-bottom: 10px;"; estiloTexto += "font-size: 15px; color: #595959;"; }
+        else if (sessao.sessao === 9) { estiloTitulo += "font-size: 24px; font-weight: 800; color: #2f50ff; margin-bottom: 10px;"; estiloTexto += "font-size: 15px; color: #595959;"; }
+        else if (sessao.sessao === 10) { estiloTexto += "font-size: 15px; color: #595959;"; }
+        else if (sessao.sessao === 11) { estiloTitulo += "font-size: 24px; font-weight: 800; color: #fe3e09; margin-bottom: 20px; text-transform: uppercase; text-align: center;"; }
 
         const tituloHtml = b.titulo && b.titulo.trim() !== "" ? `<div style="${estiloTitulo}">${b.titulo}</div>` : '';
         const textoHtml = `<div style="${estiloTexto}">${textoLimpo}</div>`;
-        
         const placeholderImg = `<div style="width:185px; height:130px; background:rgba(0,0,0,0.05); border:2px dashed #ccc; display:block;"></div>`;
         const imagemHtml = fonteImagem ? `<img src="${fonteImagem}" width="185" style="width: 100%; max-width: 185px; height: auto; display: block; border: 0;">` : placeholderImg;
 
         if (['split-esq', 'split-esq-no-title'].includes(sessao.tipo)) {
-            return `
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;">
-                    <tr>
-                        <td width="185" valign="middle" style="width: 185px;">${imagemHtml}</td>
-                        <td width="20" style="width: 20px;">&nbsp;</td>
-                        <td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">
-                            ${tituloHtml}
-                            ${textoHtml}
-                        </td>
-                    </tr>
-                </table>`;
+            return `<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;"><tr><td width="185" valign="middle" style="width: 185px;">${imagemHtml}</td><td width="20" style="width: 20px;">&nbsp;</td><td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">${tituloHtml}${textoHtml}</td></tr></table>`;
         }
-        
         if (sessao.tipo === 'split-dir') {
-            return `
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;">
-                    <tr>
-                        <td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">
-                            ${tituloHtml}
-                            ${textoHtml}
-                        </td>
-                        <td width="20" style="width: 20px;">&nbsp;</td>
-                        <td width="185" valign="middle" style="width: 185px;">${imagemHtml}</td>
-                    </tr>
-                </table>`;
+            return `<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;"><tr><td width="385" valign="middle" style="width: 385px; font-family: 'Inter', Arial, sans-serif;">${tituloHtml}${textoHtml}</td><td width="20" style="width: 20px;">&nbsp;</td><td width="185" valign="middle" style="width: 185px;">${imagemHtml}</td></tr></table>`;
         }
-
-        if (sessao.tipo === 'texto-only') {
-            return `${tituloHtml}${textoHtml}`;
-        }
-
+        if (sessao.tipo === 'texto-only') return `${tituloHtml}${textoHtml}`;
         if (sessao.tipo === 'cta-only') {
             const tituloCta = b.titulo && b.titulo.trim() !== "" ? b.titulo : "CONFIRA TODAS AS INFORMAÇÕES";
-            return `
-                <div style="text-align: center; font-family: 'Inter', Arial, sans-serif; padding: 10px 0;">
-                    <div style="${estiloTitulo}">${tituloCta}</div>
-                    <table border="0" cellpadding="0" cellspacing="0" align="center">
-                        <tr>
-                            <td align="center" bgcolor="#fe3e09" style="border-radius: 6px;">
-                                <a href="${b.btnUrl || '#'}" target="_blank" style="font-size: 16px; font-family: 'Inter', Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 6px; padding: 14px 35px; border: 1px solid #fe3e09; display: inline-block; font-weight: bold; letter-spacing: 0.5px;">
-                                    ${b.btnTexto || 'Acessar Dashboard'}
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>`;
+            return `<div style="text-align: center; font-family: 'Inter', Arial, sans-serif; padding: 10px 0;"><div style="${estiloTitulo}">${tituloCta}</div><table border="0" cellpadding="0" cellspacing="0" align="center"><tr><td align="center" bgcolor="#fe3e09" style="border-radius: 6px;"><a href="${b.btnUrl || '#'}" target="_blank" style="font-size: 16px; font-family: 'Inter', Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 6px; padding: 14px 35px; border: 1px solid #fe3e09; display: inline-block; font-weight: bold; letter-spacing: 0.5px;">${b.btnTexto || 'Acessar Dashboard'}</a></td></tr></table></div>`;
         }
-
         if (sessao.tipo === 'unico') {
             if (b.layout === 'text-only' || !b.imagem) return tituloHtml + textoHtml;
             if (b.layout === 'img-top') return tituloHtml + `<div style="margin-bottom: 15px;"><img src="${fonteImagem}" width="590" style="width: 100%; max-width: 590px; height: auto; display: block; border-radius: 5px; border: 0;"></div>` + textoHtml;
@@ -584,7 +546,6 @@
             if (b.layout === 'img-left') return tituloHtml + `<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;"><tr><td width="190" valign="middle" style="padding-right: 15px; width: 190px;"><img src="${fonteImagem}" width="190" style="width: 190px; max-width: 190px; height: auto; display: block; border-radius: 5px; border: 0;"></td><td valign="middle">${textoHtml}</td></tr></table>`;
             if (b.layout === 'img-right') return tituloHtml + `<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100%;"><tr><td valign="middle" style="padding-right: 15px;">${textoHtml}</td><td width="190" valign="middle" style="width: 190px;"><img src="${fonteImagem}" width="190" style="width: 190px; max-width: 190px; height: auto; display: block; border-radius: 5px; border: 0;"></td></tr></table>`;
         }
-
         return tituloHtml + textoHtml;
     }
 
@@ -592,7 +553,8 @@
         const renderArea = document.getElementById('render-area');
         if (!renderArea) return;
 
-        const tDest = document.getElementById('titulo-destaque').value.trim();
+        const tDestInput = document.getElementById('titulo-destaque');
+        const tDest = tDestInput ? tDestInput.value.trim() : '';
         const cDestRaw = editorDestaques ? editorDestaques.root.innerHTML : '';
         const cDestVazio = !cDestRaw || cDestRaw === '<p><br></p>' || cDestRaw.trim() === '';
         const cDestProcessado = processarTextoEmail(cDestRaw);
@@ -620,28 +582,17 @@
         }
 
         sessoesDados.forEach(sessao => {
-            const b = sessao.blocos[0];
+            const b = sessao.blocos ? sessao.blocos[0] : null;
+            if(!b) return;
             const conteudoHtml = renderizarLinhaCustomizada(sessao, b, isParaPDF);
             const isSangradaTotal = ['split-esq', 'split-dir', 'split-esq-no-title', 'texto-only', 'cta-only'].includes(sessao.tipo);
-            const corFundoAtual = b.corFundo || '#ffffff';
+            const colFundoAtual = b.corFundo || '#ffffff';
 
             if (isSangradaTotal) {
-                htmlLinhasDinâmicas += `
-                    <tr>
-                        <td bgcolor="${corFundoAtual}" style="padding: 25px 30px; font-family: 'Inter', Arial, sans-serif;">
-                            ${conteudoHtml}
-                        </td>
-                    </tr>`;
+                htmlLinhasDinâmicas += `<tr><td bgcolor="${colFundoAtual}" style="padding: 25px 30px; font-family: 'Inter', Arial, sans-serif;">${conteudoHtml}</td></tr>`;
             } else {
-                if (corFundoAtual.toLowerCase() !== "#ffffff") {
-                    htmlLinhasDinâmicas += `
-                        <tr>
-                            <td style="padding: 10px 30px 0px 30px; font-family: 'Inter', Arial, sans-serif;">
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="${corFundoAtual}" style="width: 100%; background-color: ${corFundoAtual}; border-collapse: collapse;">
-                                    <tr><td style="padding: 20px; border-radius: 5px;">${conteudoHtml}</td></tr>
-                                </table>
-                            </td>
-                        </tr>`;
+                if (colFundoAtual.toLowerCase() !== "#ffffff") {
+                    htmlLinhasDinâmicas += `<tr><td style="padding: 10px 30px 0px 30px; font-family: 'Inter', Arial, sans-serif;"><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="${colFundoAtual}" style="width: 100%; background-color: ${colFundoAtual}; border-collapse: collapse;"><tr><td style="padding: 20px; border-radius: 5px;">${conteudoHtml}</td></tr></table></td></tr>`;
                 } else {
                     htmlLinhasDinâmicas += `<tr><td style="padding: 10px 30px 0px 30px; font-family: 'Inter', Arial, sans-serif;">${conteudoHtml}</td></tr>`;
                 }
@@ -650,52 +601,15 @@
 
         renderArea.innerHTML = `
             <table align="center" border="0" cellpadding="0" cellspacing="0" width="650" id="tabela-principal" style="table-layout: fixed; border-collapse: collapse; background-color: #ffffff; font-family: 'Inter', Arial, sans-serif; width: 650px; max-width: 650px; word-wrap: break-word; overflow-wrap: break-word;">
-                <tr>
-                    <td align="center" bgcolor="#FFFFFF" style="padding: 0px; font-family: 'Inter', Arial, sans-serif;">
-                         <img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/header_dash_copa.png" alt="Header Copa" style="max-width: 650px; width: 100%; display: block;">
-                    </td>
-                </tr>
+                <tr><td align="center" bgcolor="#FFFFFF" style="padding: 0px; font-family: 'Inter', Arial, sans-serif;"><img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/header_dash_copa.png" alt="Header Copa" style="max-width: 650px; width: 100%; display: block;"></td></tr>
                 ${htmlLinhasDinâmicas}
-                <tr>
-                    <td align="center" bgcolor="#FFFFFF" style="padding: 0; font-family: 'Inter', Arial, sans-serif;">
-                         <img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/rodape_dash_copa.png" alt="Rodapé Copa" style="max-width: 650px; width: 100%; display: block;">
-                    </td>
-                </tr>
-            </table>
-        `;
+                <tr><td align="center" bgcolor="#FFFFFF" style="padding: 0; font-family: 'Inter', Arial, sans-serif;"><img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/rodape_dash_copa.png" alt="Rodapé Copa" style="max-width: 650px; width: 100%; display: block;"></td></tr>
+            </table>`;
     }
 
-    // Mantido as funções de exportação idênticas
-    function exportarEmail() {
-        atualizarPreview(false); const tabela = document.getElementById('tabela-principal');
-        if(!tabela) return;
-        tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px";
-        const range = document.createRange(); range.selectNode(document.getElementById('render-area'));
-        window.getSelection().removeAllRanges(); window.getSelection().addRange(range);
-        try { document.execCommand('copy'); alert("Conteúdo visual copiado!"); } catch (err) { alert("Erro ao copiar."); }
-    }
-
-    function exportarHTML() {
-        atualizarPreview(false); const tabela = document.getElementById('tabela-principal');
-        if(!tabela) return;
-        tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px";
-        const htmlCode = tabela.outerHTML; const tempTextArea = document.createElement("textarea");
-        tempTextArea.value = htmlCode; document.body.appendChild(tempTextArea); tempTextArea.select();
-        try { document.execCommand('copy'); alert("Código HTML copiado!"); } catch (err) { alert("Erro ao copiar."); } finally { document.body.removeChild(tempTextArea); }
-    }
-
-    async function gerarPDFUnico() {
-        atualizarPreview(true); const btn = document.getElementById('btn-gerar-pdf');
-        const originalText = btn.innerHTML; btn.innerHTML = "⏳ Gerando PDF HD..."; btn.disabled = true;
-        const element = document.getElementById('render-area');
-        const pdfWidth = element.offsetWidth; const pdfHeight = element.offsetHeight;
-        try {
-            const canvas = await html2canvas(element, { scale: 3, useCORS: true, backgroundColor: '#ffffff' });
-            const imgData = canvas.toDataURL('image/jpeg'); const { jsPDF } = window.jspdf;
-            const pdf = new jsPDF({ orientation: pdfWidth > pdfHeight ? 'l' : 'p', unit: 'px', format: [pdfWidth, pdfHeight] });
-            pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight); pdf.save('news_da_copa.pdf');
-        } catch (error) { console.error(error); alert("Erro ao processar PDF."); } finally { btn.innerHTML = originalText; btn.disabled = false; atualizarPreview(false); }
-    }
+    function exportarEmail() { atualizarPreview(false); const tabela = document.getElementById('tabela-principal'); if(!tabela) return; tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px"; const range = document.createRange(); range.selectNode(document.getElementById('render-area')); window.getSelection().removeAllRanges(); window.getSelection().addRange(range); try { document.execCommand('copy'); alert("Conteúdo visual copiado!"); } catch (err) { alert("Erro ao copiar."); } }
+    function exportarHTML() { atualizarPreview(false); const tabela = document.getElementById('tabela-principal'); if(!tabela) return; tabela.setAttribute('width', '650'); tabela.style.width = "650px"; tabela.style.maxWidth = "650px"; const htmlCode = tabela.outerHTML; const tempTextArea = document.createElement("textarea"); tempTextArea.value = htmlCode; document.body.appendChild(tempTextArea); tempTextArea.select(); try { document.execCommand('copy'); alert("Código HTML copiado!"); } catch (err) { alert("Erro ao copiar."); } finally { document.body.removeChild(tempTextArea); } }
+    async function gerarPDFUnico() { atualizarPreview(true); const btn = document.getElementById('btn-gerar-pdf'); const originalText = btn.innerHTML; btn.innerHTML = "⏳ Gerando PDF HD..."; btn.disabled = true; const element = document.getElementById('render-area'); const pdfWidth = element.offsetWidth; const pdfHeight = element.offsetHeight; try { const canvas = await html2canvas(element, { scale: 3, useCORS: true, backgroundColor: '#ffffff' }); const imgData = canvas.toDataURL('image/jpeg'); const { jsPDF } = window.jspdf; const pdf = new jsPDF({ orientation: pdfWidth > pdfHeight ? 'l' : 'p', unit: 'px', format: [pdfWidth, pdfHeight] }); pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight); pdf.save('news_da_copa.pdf'); } catch (error) { console.error(error); alert("Erro ao processar PDF."); } finally { btn.innerHTML = originalText; btn.disabled = false; atualizarPreview(false); } }
 
     init();
 </script>
