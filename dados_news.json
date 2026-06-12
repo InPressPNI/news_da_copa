@@ -87,8 +87,8 @@
       "tipo": "texto-only",
       "blocos": [
         {
-          "titulo": "",
-          "texto": "",
+          "titulo": "Golaço das marcas",
+          "texto": "<p><strong style=\"background-color: transparent; color: rgb(67, 67, 67);\">Com Cafu como embaixador, McDonald's volta com as Seleções do Méqui, os sanduíches temáticos da Copa</strong></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(67, 67, 67);\">Prêmios milionários e parceria com a Cazé TV alavancam o Bolão da Copa, do iFood.&nbsp;</strong></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(67, 67, 67);\">Nas latas e no guarda-roupa: Guaraná Antarctica faz parceria com a Renner inspirado pela paixão brasileira pelo futebol</strong></p>",
           "corFundo": "#eeeeee",
           "layout": "text-only",
           "imagem": "",
@@ -103,12 +103,12 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "",
-          "texto": "",
+          "titulo": "US$ 13 bilhões",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">É a projeção de faturamento da FIFA com a Copa, 70% a mais do que a última edição, no Catar. Com 104 jogos (na última foram 64 partidas), o torneio amplia a oportunidade dos patrocinadores e reflete no balanço da entidade maior do futebol mundial. </span></p>",
           "corFundo": "#fce5cd",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -119,12 +119,12 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "",
-          "texto": "",
+          "titulo": "México x África do Sul",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Pela primeira vez uma partida de abertura se repetiu em uma Copa mas, diferente da primeira vez na qual África do Sul e México empataram, agora os mexicanos saíram - e bem - na frente do seu grupo com uma vitória tranquila. A partida também marca a sexta Copa do goleiro Ochoa, recordista de participações no torneio.</span></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -136,11 +136,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "",
+          "texto": "<p><span style=\"background-color: transparent;\">Que tal esperar aquele Coreia do Sul x Chéquia jogando com os maiores craques do torneio? O 7x0 é um simulador que te coloca frente a frente com os times mais icônicos de todas as Copas.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Gritar gol antes pode zicar o time, mas e gritar depois? Para saber como enfrentar o terrível delay das transmissões, confira a tabela da GOAL com a diferença de tempo entre a TV aberta, streamings e o YouTube.</span></p>",
           "corFundo": "#eeeeee",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_10_1781232557682.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_10_1781232557682.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -151,14 +151,14 @@
       "tipo": "cta-only",
       "blocos": [
         {
-          "titulo": "sadasdsdas",
+          "titulo": "Quer ver o nosso dashboard completo?",
           "texto": "",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
           "imagemAltaRes": "",
-          "btnTexto": "Acessar Dashboard",
-          "btnUrl": "#"
+          "btnTexto": "Fale com nosso Time!",
+          "btnUrl": "mailto:marketing@grupoinpress.com.br?subject=Dashboard+Futebol"
         }
       ]
     }
