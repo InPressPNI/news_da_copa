@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "NOVA YORK VERDE E AMARELA",
-          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">A um dia da estreia do Brasil na Copa do Mundo de 2026, a Times Square deixou de ser apenas um dos cartões-postais mais famosos do planeta para se transformar em uma espécie de arquibancada verde e amarela. Centenas de brasileiros tomaram conta do coração de Manhattan, nesta sexta-feira, e criaram uma grande festa improvisada que misturou samba, pagode, altinha e muita expectativa para o duelo contra o Marrocos. Até os escoceses, futuros adversários da nossa Seleção no grupo C, se divertiram com a torcida!</span></p>",
+          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">A um dia da estreia do Brasil na Copa do Mundo de 2026, a Times Square deixou de ser apenas um dos cartões-postais mais famosos do planeta para se transformar em uma espécie de </span><a href=\"https://onefootball.com/en/news/ny-virou-maraca-imagens-da-torcida-brasileira-invadindo-a-times-square-43002278\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">arquibancada verde e amarela</a><span style=\"color: rgb(255, 255, 255);\">. Centenas de brasileiros tomaram conta do coração de Manhattan, nesta sexta-feira, e criaram uma grande festa improvisada que misturou samba, pagode, altinha e muita expectativa para o duelo contra o Marrocos. Até os escoceses, futuros adversários da nossa Seleção no grupo C, se divertiram com a torcida!</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
