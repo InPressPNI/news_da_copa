@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 30.",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">(+176% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 30.052",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-19,6% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -11,8 +11,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781290952966.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781290952966.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781364869774.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781364869774.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -23,8 +23,8 @@
       "tipo": "unico",
       "blocos": [
         {
-          "titulo": "Temas mais comentados do dashboard:",
-          "texto": "<p><strong style=\"background-color: transparent; color: rgb(254, 62, 9);\">Shakira, Shakira!</strong></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">O show de abertura no México movimentou as conversas culturais sobre a Copa, um momento “para todos” onde os fãs e não fãs de futebol participam juntos. O tom foi predominantemente positivo, com alguns posts negativos sobre a organização da festa. Com mais duas aberturas hoje, as marcas têm a oportunidade de celebrar junto, conectando-se ao clima de festa sem dependência do resultado dentro de campo.</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(254, 62, 9);\">A expectativa da estreia do Brasil.</strong></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Assim como na edição de ontem, a Seleção Brasileira continua como um dos temas principais do dash, com a ansiedade da torcida pela estreia, gerando o consumo de conteúdos sobre bastidores e os treinos da equipe antes do primeiro jogo. O tema abre espaço para as marcas falarem da emoção de vestir, mais uma vez, a camisa que mais disputou Copas do Mundo.</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(254, 62, 9);\">A Copa nas ruas!</strong></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Um clássico do torcedor brasileiro, a pintura de ruas virou assunto nas redes, em tom de afeto e nostalgia, rendendo conteúdo autêntico, regional e altamente compartilhável nas redes sociais. Um espaço para as marcas trabalharem a cultura brasileira de forma genuína, celebrando em tom afetivo a criatividade e o orgulho do torcedor com a Seleção.</span></p><p><br></p><p><br></p>",
+          "titulo": "Temas mais comentados do dashboard",
+          "texto": "<p><strong style=\"background-color: transparent; color: rgb(254, 62, 9);\">Nova York Verde </strong></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">O show de abertura no México movimentou as conversas culturais sobre a Copa, um momento “para todos” onde os fãs e não fãs de futebol participam juntos. O tom foi predominantemente positivo, com alguns posts negativos sobre a organização da festa. Com mais duas aberturas hoje, as marcas têm a oportunidade de celebrar junto, conectando-se ao clima de festa sem dependência do resultado dentro de campo.</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(254, 62, 9);\">A expectativa da estreia do Brasil.</strong></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Assim como na edição de ontem, a Seleção Brasileira continua como um dos temas principais do dash, com a ansiedade da torcida pela estreia, gerando o consumo de conteúdos sobre bastidores e os treinos da equipe antes do primeiro jogo. O tema abre espaço para as marcas falarem da emoção de vestir, mais uma vez, a camisa que mais disputou Copas do Mundo.</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(254, 62, 9);\">A Copa nas ruas!</strong></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Um clássico do torcedor brasileiro, a pintura de ruas virou assunto nas redes, em tom de afeto e nostalgia, rendendo conteúdo autêntico, regional e altamente compartilhável nas redes sociais. Um espaço para as marcas trabalharem a cultura brasileira de forma genuína, celebrando em tom afetivo a criatividade e o orgulho do torcedor com a Seleção.</span></p><p><br></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -120,7 +120,7 @@
       "blocos": [
         {
           "titulo": "Tem Brasil em campo de novo!",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Hoje é dia de Anitta ao vivo, direto do Estádio de Los Angeles, no show de abertura da Copa nos EUA, às 20:30. A cantora brasileira vai dividir o palco, </span></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">ou melhor, o campo com Katy Perry, LISA, Rema, Tyla e Future. E esse não é o único show do dia: em Toronto, no Canadá, o time da casa estreia contra a Bósnia e Herzegovina após os shows de Alanis Morissette, Alessia Cara, Elyanna, Jessie Reyez, Michael Bublé, Nora Fatehi, Sanjoy, Vegedream e William Prince.<span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Hoje é dia de Anitta ao vivo, direto do Estádio de Los Angeles, no show de abertura da Copa nos EUA, às 20:30. A cantora brasileira vai dividir o palco, </span></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">ou melhor, o campo com Katy Perry, LISA, Rema, Tyla e Future. E esse não é o único show do dia: em Toronto, no Canadá, o time da casa estreia contra a Bósnia e Herzegovina após os shows de Alanis Morissette, Alessia Cara, Elyanna, Jessie Reyez, Michael Bublé, Nora Fatehi, Sanjoy, Vegedream e William Prince.<span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
