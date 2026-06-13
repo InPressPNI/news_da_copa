@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Para quem quer acompanhar tudo sobre o torneio, o app <strong>GloboPop</strong> reúne, em formato de vídeos curtos verticais, os conteúdos da <strong>TV Globo, SporTV, ge e geTV </strong>nos palcos Copa do Mundo, para um consumo rápido e contínuo ao longo do dia, além de conteúdos originais. Entre eles, o quadro ‘POV da Mari’, com Mariana Spinelli, que acompanha os jogos da Seleção de uma posição exclusiva atrás dos gols, trazendo um ponto de vista imersivo e autoral.&nbsp;</p>",
+          "texto": "<p>Para quem quer acompanhar tudo sobre o torneio, o app <strong>GloboPop</strong> reúne, em formato de vídeos curtos verticais, os conteúdos da <strong>TV Globo, SporTV, ge e geTV </strong>nos gramados da Copa do Mundo, para um consumo rápido e contínuo ao longo do dia, além de conteúdos originais. Entre eles, o quadro ‘POV da Mari’, com Mariana Spinelli, que acompanha os jogos da Seleção de uma posição exclusiva atrás dos gols, trazendo um ponto de vista imersivo e autoral.&nbsp;</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "3",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">cartões vermelhos colocaram o brasileiro Wilton Pereira Sampaio na história. Além de ser o primeiro brasileiro a apitar uma partida de abertura, Wilton mandou pela primeira vez na história das Copas três jogadores mais cedo para o chuveiro. Para efeitos comparativos, nas edições de 2018 e 2022 tivemos 4 cartões vermelhos em todo o torneio.</span></p>",
+          "titulo": "7-1",
+          "texto": "<p>é o histórico de confrontos da Seleção Brasileira contra seleções da África na história da Copa do Mundo. O Brasil ganhou os sete primeiros jogos; uma invencibilidade que perdurou durante 48 anos, até que na Copa de 2022, no Catar, o Brasil foi superado por Camarões na fase de grupos por 1x0. Será que a nossa Seleção volta a registrar um triunfo contra os africanos neste sábado?</p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Tem Brasil em campo de novo!",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">Hoje é dia de Anitta ao vivo, direto do Estádio de Los Angeles, no show de abertura da Copa nos EUA, às 20:30. A cantora brasileira vai dividir o palco, </span></p><p><span style=\"background-color: transparent; color: rgb(89, 89, 89);\">ou melhor, o campo com Katy Perry, LISA, Rema, Tyla e Future. E esse não é o único show do dia: em Toronto, no Canadá, o time da casa estreia contra a Bósnia e Herzegovina após os shows de Alanis Morissette, Alessia Cara, Elyanna, Jessie Reyez, Michael Bublé, Nora Fatehi, Sanjoy, Vegedream e William Prince.<span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
+          "titulo": "É hoje!",
+          "texto": "<p>Oficialmente, começa hoje mais uma jornada rumo ao hexa! Depois de uma preparação que contou com três mudanças de técnicos e vários jogadores testados nos últimos três anos e meio, a Seleção Brasileira comandada por Carlo Ancelotti, entra em campo contra o Marrocos, às 19h (de Brasília), no MetLife Stadium, em East Rutherford, Nova Jersey. Para muitos, este é o duelo de maior dificuldade técnica no Grupo C.</p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
