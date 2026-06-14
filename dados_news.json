@@ -59,8 +59,8 @@
           "texto": "",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781365049777.avif",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781365049777.avif",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781448639916.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781448639916.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "NOVA YORK VERDE E AMARELA",
-          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">A um dia da estreia do Brasil na Copa do Mundo de 2026, a Times Square deixou de ser apenas um dos cartões-postais mais famosos do planeta para se transformar em uma espécie de </span><a href=\"https://onefootball.com/en/news/ny-virou-maraca-imagens-da-torcida-brasileira-invadindo-a-times-square-43002278\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">arquibancada verde e amarela</a><span style=\"color: rgb(255, 255, 255);\">. Centenas de brasileiros tomaram conta do coração de Manhattan, nesta sexta-feira, e criaram uma grande festa improvisada que misturou samba, pagode, altinha e muita expectativa para o duelo contra o Marrocos. Até os escoceses, futuros adversários da nossa Seleção no grupo C, se divertiram com a torcida!</span></p>",
+          "titulo": "O GOLAÇO!",
+          "texto": "<p>Depois do susto de sair atrás no placar com um belo gol do marroquino Ismael Saibari, o Brasil precisou do talento individual de Vini Jr para cortar dois zagueiros marroquinos e bater forte no ângulo, sem chances para o goleiro Bono, do Marrocos. Ficou o gosto amargo do empate mas, ao menos, vimos uma pintura de gol na partida.&nbsp;</p><p><br></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -136,7 +136,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">Com Neymar, </span><a href=\"https://g1.globo.com/educacao/noticia/2026/06/12/com-neymar-panini-lanca-pacote-atualizado-de-figurinhas-da-copa-o-que-a-matematica-diz-sobre-as-chances-de-completar-o-album.ghtml\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">Panini lança pacote</a><span style=\"color: rgb(255, 255, 255);\"> atualizado de figurinhas da Copa: o que a matemática diz sobre as chances de completar o álbum</span></p><p><br></p><p><span style=\"color: rgb(255, 255, 255);\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿</span>Geração 'pós-penta' é a </span><a href=\"https://oglobo.globo.com/esportes/copa-do-mundo-2026/noticia/2026/06/13/geracao-pos-penta-e-a-mais-empolgada-com-a-copa-do-mundo-mas-queda-de-otimismo-no-brasil-liga-alerta.ghtml\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">mais empolgada</a><span style=\"color: rgb(255, 255, 255);\"> com a Copa do Mundo, mas queda de otimismo no Brasil liga alerta</span></p><p><br></p><p><span style=\"color: rgb(255, 255, 255);\">A Copa dos segundos: quem vai ver o </span><a href=\"https://fastcompanybrasil.com/tech/a-copa-dos-segundos-quem-vai-ver-o-gol-primeiro/\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">gol primeiro</a><span style=\"color: rgb(255, 255, 255);\">?</span></p><p><br></p><p><span style=\"color: rgb(255, 255, 255);\">Como os jogos do Brasil vão movimentar o </span><a href=\"https://www.meioemensagem.com.br/marketing/como-os-jogos-do-brasil-vao-movimentar-o-varejo-alimentar\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">varejo alimentar</a><span style=\"color: rgb(255, 255, 255);\">?</span></p>",
+          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">Com Neymar, </span><a href=\"https://g1.globo.com/educacao/noticia/2026/06/12/com-neymar-panini-lanca-pacote-atualizado-de-figurinhas-da-copa-o-que-a-matematica-diz-sobre-as-chances-de-completar-o-album.ghtml\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">Panini lança pacote</a><span style=\"color: rgb(255, 255, 255);\"> atualizado de figurinhas da Copa: o que a matemática diz sobre as chances de completar o álbum</span></p><p><br></p><p><span style=\"color: rgb(255, 255, 255);\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿</span>Geração 'pós-penta' é a </span><a href=\"https://oglobo.globo.com/esportes/copa-do-mundo-2026/noticia/2026/06/13/geracao-pos-penta-e-a-mais-empolgada-com-a-copa-do-mundo-mas-queda-de-otimismo-no-brasil-liga-alerta.ghtml\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">mais empolgada</a><span style=\"color: rgb(255, 255, 255);\"> com a Copa do Mundo, mas queda de otimismo no Brasil liga alerta</span></p><p><br></p><p><span style=\"color: rgb(255, 255, 255);\">A Copa dos segundos: quem vai ver o </span><a href=\"https://fastcompanybrasil.com/tech/a-copa-dos-segundos-quem-vai-ver-o-gol-primeiro/\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">gol primeiro</a><span style=\"color: rgb(255, 255, 255);\">?</span></p><p><br></p><p><span style=\"color: rgb(255, 255, 255);\">Como os jogos do Brasil vão movimentar o </span><a href=\"https://www.meioemensagem.com.br/marketing/como-os-jogos-do-brasil-vao-movimentar-o-varejo-alimentar\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">varejo alimentar</a><span style=\"color: rgb(255, 255, 255);\">?</span></p>",
           "corFundo": "#6e1315",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_10_1781232557682.png",
