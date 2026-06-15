@@ -1,6 +1,6 @@
 {
   "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 30.701",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(+36,4% no volume de menções)</strong></p>",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-37,5% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -11,8 +11,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781448399900.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781448399900.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781537275739.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781537275739.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
