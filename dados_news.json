@@ -59,8 +59,8 @@
           "texto": "",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781448639916.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781448639916.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781537455700.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781537455700.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "O GOLAÇO!",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Depois do susto de sair atrás no placar com um belo gol do marroquino Ismael Saibari, o Brasil precisou do talento individual de Vini Jr para cortar dois zagueiros marroquinos e bater forte no ângulo, sem chances para o goleiro Bono, do Marrocos. Ficou o gosto amargo do empate mas, ao menos, vimos uma pintura de gol na partida.&nbsp;</span></p>",
+          "titulo": "RIVAIS SÓ EM CAMPO.",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Os alemães Jonathan Tah e Felix Nmecha se uniram aos jogadores de Curaçao para uma oração após o final do jogo entre os dois países. A cena ganhou destaque após a partida, vencida por 7 a 1 pela Alemanha. O placar elástico e a rivalidade em campo não impediram jogadores de países diferentes de proferirem sua fé, criando uma imagem que é a cara da Copa do Mundo: o confronto dentro de campo e a união de povos fora dele.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
