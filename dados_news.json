@@ -56,7 +56,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><strong style=\"background-color: transparent; color: rgb(255, 255, 255);\">Materiais necessários para início do projeto</strong></p>",
+          "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781619425984.jpeg",
