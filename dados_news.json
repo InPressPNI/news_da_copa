@@ -40,7 +40,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "",
+          "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
