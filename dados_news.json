@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><span style=\"background-color: transparent;\">A bioeconomia brasileira é o tema da campanha </span><strong style=\"background-color: transparent;\">Biomas FC</strong><span style=\"background-color: transparent;\">, iniciativa do </span><strong style=\"background-color: transparent;\">Mercado Livre</strong><span style=\"background-color: transparent;\"> que conecta moda, cultura e impacto socioambiental, valorizando a biodiversidade brasileira e ampliando a visibilidade sobre o tema no Brasil. A coleção é desenvolvida em parceria com a Dendezeiro e seis artistas independentes e reforça o compromisso do Mercado Livre com o desenvolvimento sustentável, já que 100% do lucro obtido com as vendas irá para a Rede Origens Brasil, organização que promove negócios éticos e a conservação dos territórios e comunidades que vivem da floresta.</span></p>",
+          "texto": "<p><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">Hoje é dia de secar os adversários!</strong></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">Se tem rival em campo, tem torcida contra e cupom de desconto para garantir aquela bebida gelada e no precinho. O Zé Delivery entrou de vez na torcida pela Seleção Brasileira, principalmente quando o tema é secar os principais rivais do Brasil. Então, a cada gol sofrido pelos adversários históricos do Brasil na Copa do Mundo, tem desconto no app. Já foi assim nos jogos de Holanda, Bélgica, Uruguai, e hoje, tem França e Argentina em campo! É hora de preparar o secador e os cupons!</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">Globo faz história com</strong><a href=\"https://www.instagram.com/p/DZnnBTTFY-d/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\"><strong> narração feminina</strong></a><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">.&nbsp;</strong></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">A partida entre Bélgica e Egito foi tratada como marco na televisão esportiva brasileira. O motivo foi ter Renata Silveira como narradora principal de um jogo da Copa do Mundo masculina na TV aberta.&nbsp;</span></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "3,17",
-          "texto": "<p><span style=\"background-color: transparent;\">É a média de gols da Copa após 12 jogos. com mais times e mais partidas, essa média certamente será mais alta que a das outras Copas, apoiada por placares elásticos desse começo de torneio, como EUA 4 x Paraguai 1, Suécia 5 x 1 Tunísia e Alemanha 7 x 1 Curaçao.</span></p>",
+          "titulo": "15/06",
+          "texto": "<p><span style=\"background-color: transparent;\">Mesma data. Mesmo fenômeno.</span></p><p><span style=\"background-color: transparent;\">Ontem foi o único dia na história recente das Copas em que TODAS as partidas terminaram empatadas. Quatro jogos. Zero vencedores. 100% de igualdade no placar. A última vez que isso aconteceu foi na Copa de 1958, na Suécia. E a coincidência? Exatamente no dia 15 de junho. Naquela edição, um jovem de 17 anos chamado Pelé estava prestes a mudar o futebol para sempre.</span></p><p><br></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
