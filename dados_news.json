@@ -8,7 +8,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p>=</p>",
+          "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781619665170.png",
