@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Todo brasileiro tem uma segunda seleção do coração, e os dados não deixam mentir: o México é o xodó das redes nesta Copa, com 3.446 publicações de apoio e simpatia. Não é à toa — foi o protagonista da abertura, é o senhor do Estádio Azteca e carrega aquele combo de torcida, música e clima latino que conversa direto com a gente (sem falar no Chaves, claro). A África do Sul vem em segundo, de carona na estreia, e quem fecha o pódio é a surpresa da vez: o Curaçao, que conquistou o Brasil com a festa do seu gol histórico mesmo na goleada. No fim, a régua da simpatia é simples: quanto mais perto do nosso coração — pela cultura ou pela emoção — mais alto no ranking.</span></p><p><br></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿</span></span></p>",
+          "texto": "<p>=</p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781537275739.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781537275739.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781619665170.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781619665170.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "RIVAIS SÓ EM CAMPO.",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Os alemães Jonathan Tah e Felix Nmecha se uniram aos jogadores de Curaçao para uma oração após o final do jogo entre os dois países. A cena ganhou destaque após a partida, vencida por 7 a 1 pela Alemanha. O placar elástico e a rivalidade em campo não impediram jogadores de países diferentes de proferirem sua fé, criando uma imagem que é a cara da Copa do Mundo: o confronto dentro de campo e a união de povos fora dele.</span></p>",
+          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">O goleiro de Cabo Verde foi eleito o melhor jogador da partida pela Fifa depois de segurar os espanhóis por 90 minutos num 0 a 0 que ninguém esperava. Em Atlanta, diante da Espanha, uma das seleções mais qualificadas do torneio, Vozinha foi muro, foi herói, foi personagem de Copa. Ao fim do jogo, ergueu a bandeira do arquipélago africano, com as luvas ainda nas mãos, e disse que sonhou a vida toda por este momento. Encerrou como o melhor jogador da partida. Uma imagem que resume o que a Copa tem de melhor!</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
