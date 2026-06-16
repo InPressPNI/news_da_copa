@@ -120,7 +120,7 @@
       "blocos": [
         {
           "titulo": "Estreia do Irã",
-          "texto": "<p><span style=\"background-color: transparent;\">Em um dia com jogos de estreia de favoritos às fases finais da Copa, como Espanha e Uruguai, o destaque vai para o primeiro jogo da seleção iraniana contra a Nova Zelândia em Los Angeles, nos Estados Unidos. Com as relações dos dois países estremecidas pelo conflito entre norte-americanos e iranianos, o jogo recebe os olhares do mundo, para acompanhar a reação dos jogadores e torcedores e a influência do conflito na performance dos atletas.</span></p>",
+          "texto": "<p><strong style=\"background-color: transparent;\">Terça dos craques:</strong><span style=\"background-color: transparent;\"> Mbappé, Messi e Haaland estreiam na Copa do Mundo</span></p><p><span style=\"background-color: transparent;\">Os três maiores nomes do futebol mundial estreiam nesta terça-feira. França, Argentina e Noruega entram em campo e metade do planeta vai parar para assistir. Nenhum deles se enfrenta hoje, mas Mbappé e Haaland estão no mesmo grupo e vão se encontrar no dia 26 de junho, na última rodada da fase de grupos. Messi, por enquanto, joga separado dos dois. O que não significa que os caminhos não se cruzem mais pra frente.</span></p><p><br></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
