@@ -24,7 +24,7 @@
       "blocos": [
         {
           "titulo": "Temas mais comentados do dashboard",
-          "texto": "<p><strong style=\"background-color: transparent; color: rgb(230, 0, 0);\">Messi em campo</strong></p><p><span style=\"background-color: transparent;\">O grande ímã de atenção nesta terça-feira foi Messi. A live exclusiva de Argentina x Argélia pela CazéTV foi o maior post do dia (~86,2 mi de interações) e o segundo maior de toda a série da Copa. O craque argentino concentrou a conversa da rodada, com cortes, lances e debates sobre sua atuação circulando em alta no Instagram e YouTube.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Mais craques e mais jogos em destaque</span></p><p><span style=\"background-color: transparent;\">O primeiro confronto do dia, entre França e Senegal, atraiu atenção pelo nível técnico das duas seleções, com transmissões de vários canais e debate sobre o nível do jogo. Foi um dos duelos de maior expectativa da rodada, que se cumpriu com quatro gols, incluindo um golaço de Mbappé. Na sequência, a estreia da Noruega de Haaland contra o Iraque mereceu atenção especial, com o atacante do Manchester City como atração marcando dois gols.&nbsp;</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando Neymar volta a jogar?</span></p><p><span style=\"background-color: transparent;\">A indefinição sobre o retorno de Neymar voltou ao centro: a CBF teria desistido de estabelecer um prazo para a volta do jogador, o que reacendeu o debate sobre sua condição física e seu papel na Seleção. O tema circulou em páginas de grande alcance, com tom negativo, gerando um gatilho de frustração e incerteza nas redes sociais, uma mistura de saudade, cobrança e desconfiança, que é alimentada pela falta de definição. Memes também marcaram o dia, comparando Messi e Mbappé a Neymar.</span></p>",
+          "texto": "<p><strong style=\"background-color: transparent; color: rgb(230, 0, 0);\">Messi em campo</strong></p><p><span style=\"background-color: transparent;\">O grande ímã de atenção nesta terça-feira foi Messi. A live exclusiva de Argentina x Argélia pela CazéTV foi o maior post do dia (~86,2 mi de interações) e o segundo maior de toda a série da Copa. O craque argentino concentrou a conversa da rodada, com cortes, lances e debates sobre sua atuação circulando em alta no Instagram e YouTube.</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(230, 0, 0);\">Mais craques e mais jogos em destaque</strong></p><p><span style=\"background-color: transparent;\">O primeiro confronto do dia, entre França e Senegal, atraiu atenção pelo nível técnico das duas seleções, com transmissões de vários canais e debate sobre o nível do jogo. Foi um dos duelos de maior expectativa da rodada, que se cumpriu com quatro gols, incluindo um golaço de Mbappé. Na sequência, a estreia da Noruega de Haaland contra o Iraque mereceu atenção especial, com o atacante do Manchester City como atração marcando dois gols.&nbsp;</span></p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(230, 0, 0);\">Quando Neymar volta a jogar?</strong></p><p><span style=\"background-color: transparent;\">A indefinição sobre o retorno de Neymar voltou ao centro: a CBF teria desistido de estabelecer um prazo para a volta do jogador, o que reacendeu o debate sobre sua condição física e seu papel na Seleção. O tema circulou em páginas de grande alcance, com tom negativo, gerando um gatilho de frustração e incerteza nas redes sociais, uma mistura de saudade, cobrança e desconfiança, que é alimentada pela falta de definição. Memes também marcaram o dia, comparando Messi e Mbappé a Neymar.</span></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -39,7 +39,7 @@
       "tipo": "unico",
       "blocos": [
         {
-          "titulo": "asdasda",
+          "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
@@ -58,9 +58,9 @@
           "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781619425984.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781619425984.jpeg",
+          "layout": "text-only",
+          "imagem": "",
+          "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
