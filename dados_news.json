@@ -119,7 +119,7 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Terça dos craques",
+          "titulo": "RONALDO, KANE E MODRIC. ",
           "texto": "<p><span style=\"background-color: transparent;\">E tem mais craque logo mais em campo! Às 14h, é a vez de Cristiano Ronaldo estrear naquela que pode ser sua última Copa do Mundo, em jogo contra a República Democrática do Congo, em Houston. Logo na sequência, às 17h, em Dallas, tem a Inglaterra de Harry Kane contra a Croácia de Luka Modric - reedição de uma das semifinais da Copa 2018, quando os croatas levaram a melhor. Por fim, mais duas partidas: Gana x Panamá, às 20h, em Toronto (Canadá); e Uzbequistão x Colômbia, às 23h, no Azteca (México).</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
@@ -136,7 +136,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><a href=\"https://www.instagram.com/brunabiancardi/\" target=\"_blank\" style=\"color: rgb(255, 255, 255); background-color: transparent;\">A filha do Neymar entrou em campo.</a></p><p><br></p><p><a href=\"https://www.instagram.com/reels/DZn_7I1oQ8i/\" target=\"_blank\" style=\"color: rgb(255, 255, 255); background-color: transparent;\">Seleção do Uruguai foi revistada na porta do estádio.</a></p><p><br></p><p><a href=\"https://www.youtube.com/watch?v=bbsjNO8k6Zk\" target=\"_blank\" style=\"color: rgb(255, 255, 255); background-color: transparent;\">Raphinha está sendo injustiçado?</a></p><p><br></p>",
+          "texto": "<p><a href=\"https://www1.folha.uol.com.br/esporte/2026/06/marcas-buscam-tons-vibrantes-e-rosa-domina-chuteiras-da-copa-do-mundo.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Marcas buscam tons vibrantes, e rosa domina chuteiras da Copa do Mundo</a></p><p><br></p><p><a href=\"https://oglobo.globo.com/esportes/copa-do-mundo-2026/noticia/2026/06/17/oculos-inteligencia-artificial-e-reflexos-selecao-do-canada-usa-realidade-virtual-para-acelerar-tomadas-de-decisao-em-campo.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Óculos, inteligência artificial e reflexos: Seleção do Canadá usa realidade virtual para acelerar tomadas de decisão em campo</a></p><p><br></p><p><a href=\"https://oglobo.globo.com/esportes/copa-do-mundo-2026/noticia/2026/06/17/por-que-haaland-mudou-o-nome-na-camisa-para-disputar-a-copa-do-mundo-pela-noruega.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Por que Haaland mudou o nome na camisa para disputar a Copa do Mundo pela Noruega</a></p><p><br></p><p><a href=\"https://ge.globo.com/futebol/times/botafogo/noticia/2026/06/16/josimar-se-emociona-com-historia-de-vozinha-e-convida-goleiro-para-seu-aniversario-me-deixou-sem-palavras.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Josimar se emociona com história de Vozinha e convida goleiro para seu aniversário: \"Me deixou sem palavras\"</a></p><p><br></p>",
           "corFundo": "#6e1315",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_10_1781232557682.png",
