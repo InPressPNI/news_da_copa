@@ -58,9 +58,9 @@
           "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781709467208.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1781709467208.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "DE CABO VERDE PARA O MUNDO.",
-          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">O goleiro de Cabo Verde foi eleito o melhor jogador da partida pela Fifa depois de segurar os espanhóis por 90 minutos num 0 a 0 que ninguém esperava. Em Atlanta, diante da Espanha, uma das seleções mais qualificadas do torneio, Vozinha foi muro, foi herói, foi personagem de Copa. Ao fim do jogo, ergueu a bandeira do arquipélago africano, com as luvas ainda nas mãos, e disse que sonhou a vida toda por este momento. Encerrou como o melhor jogador da partida e, de quebra, ganhou o coração dos brasileiros e mais de 7 milhões de seguidores no Instagram. Uma imagem que resume o que a Copa tem de melhor!</span></p>",
+          "titulo": "O ÚLTIMO TANGO DE MESSI.",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Na tão aguardada rodada dos craques, em que Mbappé e Haaland marcaram, cada um, dois gols, Lionel Messi novamente conseguiu se superar. Aos 38 anos, um dos maiores nomes do futebol anotou o hat-trick que deu a vitória à Argentina contra a Argélia, em jogo realizado em Kansas City, nos EUA. Tão importante quanto a vitória, Messi chegou a 16 gols, empatando com Miroslav Klose como maior artilheiro da história da Copa do Mundo. Será que ele ultrapassa o alemão em jogo marcado para a próxima segunda-feira (22), contra a Áustria? Até lá, apreciemos o futebol de Messi enquanto é tempo.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
