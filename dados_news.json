@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Na Copa, a zebra também vive de segundos. Curaçao entrou no radar das redes enquanto ainda segurava o empate contra a Alemanha — antes de o placar virar goleada. O mesmo aconteceu com o Haiti: por um momento, o improvável pareceu possível, e foi o suficiente para acender o alerta de surpresa nas conversas. No fim, o “zebrou” não mede só quem venceu ou perdeu, mas quem conseguiu fazer o favorito suar, mexer com a expectativa da torcida e transformar um jogo aparentemente previsível em assunto.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781619665170.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781619665170.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781709287232.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1781709287232.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
