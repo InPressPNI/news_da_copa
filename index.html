@@ -63,6 +63,12 @@
         
         .ql-editor { word-break: break-word; overflow-wrap: break-word; font-family: 'Inter', sans-serif !important; }
         .ql-editor img { max-width: 100%; height: auto; }
+        .ql-editor .ql-align-center { text-align: center; }
+        .ql-editor .ql-align-right { text-align: right; }
+        .ql-editor .ql-align-justify { text-align: justify; }
+        .ql-editor span[style*="color: rgb(255, 255, 255)"], 
+        .ql-editor span[style*="color: #ffffff"], 
+        .ql-editor span[style*="color: white"] { background-color: #666; }
     </style>
 </head>
 <body>
@@ -140,13 +146,14 @@
     let currentFileSha = ""; 
     let temAlteracoesNuvem = false; 
     
-    const toolbarOptions = [
-        ['bold', 'italic', 'underline', 'link'], 
-        [{ 'color': [] }], 
-        [{ 'list': 'bullet' }], 
-        ['clean']
-    ];
-
+const toolbarOptions = [
+    [{ 'header': [1, 2, false] }],
+    ['bold', 'italic', 'underline', 'link'],
+    [{ 'align': [] }],
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+    [{ 'color': [] }],
+    ['clean']
+];
     const URL_IMAGEM_DESTAQUE_FIXA = "https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/img_dados_do_dashboard.png";
 
     function bytesToBase64(bytes) {
@@ -161,8 +168,15 @@
         return Uint8Array.from(binString, (m) => m.codePointAt(0));
     }
 
+    function criarEditor(seletor) {
+        return new Quill(seletor, { 
+            theme: 'snow', 
+            modules: { toolbar: toolbarOptions } 
+        });
+    }    
+
     function init() {
-        editorDestaques = new Quill('#quill-destaques', { theme: 'snow', modules: { toolbar: toolbarOptions } });
+        editorDestaques = criarEditor('#quill-destaques');
 
         const rascunho = localStorage.getItem('rascunho_boletim_v9_final');
         if (rascunho) {
@@ -487,7 +501,7 @@
             lista.appendChild(container);
 
             if (sessao.tipo !== 'cta-only') {
-                const quill = new Quill(`#editor-${sessao.sessao}-0`, { theme: 'snow', modules: { toolbar: toolbarOptions } });
+               const quill = criarEditor(`#editor-${sessao.sessao}-0`);
                 quill.root.innerHTML = b.texto || '';
                 quill.on('text-change', () => { 
                     if(sessoesDados[sIndex] && sessoesDados[sIndex].blocos[0]) {
@@ -501,8 +515,17 @@
 
     function processarTextoEmail(htmlContent) {
         if (!htmlContent) return '';
-        const parser = new DOMParser(); const doc = parser.parseFromString(htmlContent, 'text/html');
+        const parser = new DOMParser(); 
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Corrige margens de parágrafos
         doc.querySelectorAll('p').forEach(p => { p.style.margin = "0"; p.style.padding = "0"; });
+        
+        // Converte classes de alinhamento do Quill para estilos inline
+        doc.querySelectorAll('.ql-align-center').forEach(el => { el.style.textAlign = 'center'; el.classList.remove('ql-align-center'); });
+        doc.querySelectorAll('.ql-align-right').forEach(el => { el.style.textAlign = 'right'; el.classList.remove('ql-align-right'); });
+        doc.querySelectorAll('.ql-align-justify').forEach(el => { el.style.textAlign = 'justify'; el.classList.remove('ql-align-justify'); });
+        
         return doc.body.innerHTML;
     }
 
@@ -603,7 +626,7 @@
         });
 
         renderArea.innerHTML = `
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="650" id="tabela-principal" style="table-layout: fixed; border-collapse: collapse; background-color: #ffffff; font-family: 'Inter', Arial, sans-serif; text-align: left!important; width: 650px; max-width: 650px; word-wrap: break-word; overflow-wrap: break-word;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="650" id="tabela-principal" style="table-layout: fixed; border-collapse: collapse; background-color: #ffffff; font-family: 'Inter', Arial, sans-serif; width: 650px; max-width: 650px; word-wrap: break-word; overflow-wrap: break-word;">
                 <tr><td align="center" bgcolor="#FFFFFF" style="padding: 0px; font-family: 'Inter', Arial, sans-serif;"><img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/header_dash_copa.png" alt="Header Copa" style="max-width: 650px; width: 100%; display: block;"></td></tr>
                 ${htmlLinhasDinâmicas}
                 <tr><td align="center" bgcolor="#FFFFFF" style="padding: 0; font-family: 'Inter', Arial, sans-serif;"><img src="https://raw.githubusercontent.com/InPressPNI/news_da_copa/refs/heads/main/Imagens/rodape_dash_copa.png" alt="Rodapé Copa" style="max-width: 650px; width: 100%; display: block;"></td></tr>
