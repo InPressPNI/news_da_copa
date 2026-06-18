@@ -40,8 +40,8 @@
       "blocos": [
         {
           "titulo": "É DASH AGORA EM ÁUDIO!",
-          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">Além da leitura diária das nossas análises, agora você  pode acompanhar os insights do nosso dashboard - e a opinião do nosso time de especialistas - também no </span><a href=\"https://open.spotify.com/show/033AxMn66wy4hnYfqpYJPH?si=f42d5b3b7b734bfc\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">Spotify</a><span style=\"color: rgb(255, 255, 255);\"> e no </span><a href=\"https://www.youtube.com/watch?v=px7ujBRHsVQ\" target=\"_blank\" style=\"color: rgb(255, 255, 255);\">YouTube</a><span style=\"color: rgb(255, 255, 255);\">. Todas às quintas, temos episódios novos com um balanço do que rola na Copa. Então já sabe: curta agora mesmo para receber, em primeira mão, assim que ele for ao ar. </span></p>",
-          "corFundo": "#0a7517",
+          "texto": "<p><span style=\"color: rgb(0, 97, 0);\">Além da leitura diária das nossas análises, agora você  pode acompanhar os insights do nosso dashboard - e a opinião do nosso time de especialistas - também no </span><a href=\"https://open.spotify.com/show/033AxMn66wy4hnYfqpYJPH?si=f42d5b3b7b734bfc\" target=\"_blank\" style=\"color: rgb(0, 97, 0);\">Spotify</a><span style=\"color: rgb(0, 97, 0);\"> e no </span><a href=\"https://www.youtube.com/watch?v=px7ujBRHsVQ\" target=\"_blank\" style=\"color: rgb(0, 97, 0);\">YouTube</a><span style=\"color: rgb(0, 97, 0);\">. Todas às quintas, temos episódios novos com um balanço do que rola na Copa. Então já sabe: curta agora mesmo para receber, em primeira mão, assim que ele for ao ar. </span></p>",
+          "corFundo": "#0dd325",
           "layout": "img-left",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1781794619001.png",
           "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1781794619001.png",
