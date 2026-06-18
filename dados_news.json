@@ -104,7 +104,7 @@
       "blocos": [
         {
           "titulo": "17",
-          "texto": "<p><span style=\"background-color: transparent;\">é o número de atletas nascidos na França que estão inscritos na Copa do Mundo 2026, segundo levantamento feito pelo </span><a href=\"https://x.com/nytimes/status/2066940893001650564\" target=\"_blank\" style=\"background-color: transparent;\">The Athletic, site do The New York Times</a><span style=\"background-color: transparent;\"> que está cobrindo a Copa nos EUA. Ou seja: há mais atletas nascidos na França do que em qualquer outro país disputando o torneio. Um reflexo do multiculturalismo cada vez mais em evidência em grandes torneios esportivos.</span></p>",
+          "texto": "<p>Nem Messi, nem Klose: <a href=\"https://www.instagram.com/p/DZsz8_Qkhoo/?igsh=MWw5Z2t6b2cwc3NjNw%3D%3D&amp;img_index=1\" target=\"_blank\">a artilharia em Copas ainda é do Brasil graças à Rainha Marta</a> que, em seis edições, vibrou com a torcida 17 vezes. E por mais que Messi, Mbappe e outros craques ainda possam alcançá-la, a camisa 10 brasileira terá a oportunidade de ampliar sua marca em 2027, na Copa do Mundo Feminina que acontece aqui no Brasil. E já é hora das marcas começarem a falar e se apropriar da Copa do Brasil. Quem deixar para o ano que vem, estará perdendo a grande oportunidade de liderar esta conversa.</p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,7 +119,7 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "RONALDO, KANE E MODRIC. ",
+          "titulo": "DE OLHO NAS PRÓXIMAS RODADAS",
           "texto": "<p><span style=\"background-color: transparent;\">E tem mais craque logo mais em campo! Às 14h, é a vez de Cristiano Ronaldo estrear naquela que pode ser sua última Copa do Mundo, em jogo contra a República Democrática do Congo, em Houston. Logo na sequência, às 17h, em Dallas, tem a Inglaterra de Harry Kane contra a Croácia de Luka Modric - reedição de uma das semifinais da Copa 2018, quando os croatas levaram a melhor. Por fim, mais duas partidas: Gana x Panamá, às 20h, em Toronto (Canadá); e Uzbequistão x Colômbia, às 23h, no Azteca (México).</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
