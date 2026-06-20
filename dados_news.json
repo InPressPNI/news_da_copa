@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "24",
-          "texto": "<p><span style=\"background-color: transparent;\">milhões de seguidores tornam </span><a href=\"https://www1.folha.uol.com.br/blogs/hashtag/2026/06/brasil-lidera-engajamento-no-instagram-entre-selecoes-da-copa-do-mundo.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">a Seleção Brasileira o time mais popular no Instagram</a><span style=\"background-color: transparent;\">, de acordo com levantamento da ferramenta MLabs. O time é seguido por Portugal e México entre os times com mais seguidores e interações na rede social. Dentre os que mais crescem, estão seleções estreantes na Copa, como Cabo Verde e Curaçao, carregados pelo carisma dos seus times e das suas torcidas.</span></p>",
+          "titulo": "64",
+          "texto": "<p><span style=\"background-color: transparent;\">Em segundos, foi o tempo que Matias Galarza levou para marcar pelo Paraguai contra a Turquia. O gol mais rápido da Copa de 2026 até agora. Curiosidade: o gol mais rápido da história das Copas também envolveu um turco, só que do outro lado da história. Hakan Şükür precisou de apenas 11 segundos para balançar a rede contra a Coreia do Sul, na disputa de terceiro lugar de 2002. Recorde que segue intocado.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "BRASIL SEGUE SEM NEYMAR",
-          "texto": "<p><span style=\"background-color: transparent;\">Enquanto os jogadores se preparam na Filadélfia para a partida de hoje contra o Haiti, Neymar Jr. segue seu processo de recuperação em Nova York. A expectativa é que o craque brasileiro consiga entrar no terceiro jogo da primeira fase, contra a Escócia, mas nada ainda foi confirmado. Mas nem só de Neymar vive uma Copa, por isso o jogo Escócia e Marrocos também terá o olhar do torcedor brasileiro, já que pode definir o líder do grupo e qual será o caminho da Seleção nas próximas fases do torneio.</span></p>",
+          "titulo": "Brasil assume a liderança do Grupo C ",
+          "texto": "<p>Com a vitória de 3x0 sobre o Haiti, a Seleção chegou aos 4 pontos e ficou na liderança, empatada no número de pontos com o Marrocos, mas na frente pelo saldo de gols. A Escócia vem logo atrás, com 3 pontos, e o Haiti fecha a tabela ainda sem pontuar. A briga pela classificação tá apertada. Falta uma rodada e qualquer combinação ainda pode mexer no topo.</p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
