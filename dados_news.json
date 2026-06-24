@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 36.291",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(+21,3% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 25.433",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-16,2% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -11,8 +11,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782227327197.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782227327197.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782317389080.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782317389080.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -24,11 +24,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Com o alívio da vitória brasileira na noite de sexta, o final de semana do torcedor foi puro entretenimento e emoção: misturando zebras, sufoco, goleadas e jogos decididos no detalhe.</span></p><p><span style=\"background-color: transparent;\">Com isso, fizemos um ranking dos jogos mais comentados, considerando o volume de publicações sobre os oito jogos no sábado e domingo e resumindo cada confronto em uma palavra-síntese a partir do social listening — não o termo mais repetido, mas a melhor tradução da reação das redes.</span></p><p><span style=\"background-color: transparent;\">No topo ficou Uruguai x Cabo Verde, definido como “Histórico”: o empate manteve Cabo Verde vivo e reforçou a seleção como uma das grandes histórias afetivas da Copa. O ranking mostra que nem todo jogo repercute do mesmo jeito: alguns explodem pelo placar, outros pela tensão — e outros porque carregam uma história maior do que o resultado.</span></p><p><br></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿</span>Com a ajuda da inteligência artificial, analisamos 44 mil publicações, desde o primeiro jogo do Brasil, para saber onde o brasileiro está assistindo aos jogos. O tópico dominante é “amigos, família e resenha”, a cara do nosso jeito de torcer.</span></p><p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_3_1782227332135.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_3_1782227332135.png",
+          "layout": "text-only",
+          "imagem": "",
+          "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
