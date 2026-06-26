@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 50.989",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(+100.5% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 33.261",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-34,1% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Antes mesmo da bola rolar, a torcida já estava em campo. </span><a href=\"https://www.instagram.com/reel/DZ_YH9Kv6U3/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">O cumprimento de Ronaldinho à Seleção</a><span style=\"background-color: transparent;\"> e a</span><a href=\"https://www.instagram.com/p/DZ-0xqNgTy4/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\"> onda de memes sobre a “abdução” prevista por Vó Bahiana</a><span style=\"background-color: transparent;\"> ajudaram a empurrar o humor das redes para o pico pré-jogo (+35,9). O clima de expectativa ganhou ainda mais força com </span><a href=\"https://www.instagram.com/reel/DZ-12Yvgdd8/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">a chegada de Neymar ao estádio</a><span style=\"background-color: transparent;\">, tratada como um evento à parte.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando a bola rolou, o jogo mexeu rápido com a curva. </span><a href=\"https://www.instagram.com/p/DZ_Dgy5t5bJ/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">O 1x0 de Vini Jr.</a><span style=\"background-color: transparent;\"> confirmou o bom início do Brasil, mas a anulação do lance seguinte derrubou o humor (-22,4), mostrando que a rede reagiu menos ao placar e mais ao debate em torno do VAR. A recuperação veio com o segundo gol validado de Vini e, depois, com o 3x0 de Matheus Cunha.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, a narrativa voltou para a festa. </span><a href=\"https://www.instagram.com/reel/DZ_UsVkMrDG/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">A entrada de Neymar</a><span style=\"background-color: transparent;\"> reacendeu a conversa nas redes, e o pós-jogo consolidou a sensação de alívio e confiança: Brasil classificado, Vini protagonista e a </span><a href=\"https://www.instagram.com/reel/DZ_UsVkMrDG/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">leitura bem-humorada de que o “Bruxo” talvez tenha mesmo levado sorte para a Seleção</a><span style=\"background-color: transparent;\">.</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Segunda-feira, 14h. Brasil × Japão. E as redes esqueceram o futebol por um segundo para resolver uma questão mais urgente: como é que a gente assiste a esse jogo?</span></p><p><br></p><p><span style=\"background-color: transparent;\">Monitoramos mais de 2 mil publicações entre 24 e 26 de junho que conectavam o jogo ao horário comercial. O tema que mais mobilizou foi o próprio horário — 1.549 menções. Logo atrás, a torcida CLT entrou em campo: trabalho, chefe, reunião, expediente. Depois vieram as soluções: onde transmite, quem libera folga, qual bar vai passar no telão.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando a confirmação do horário chegou, a conversa mais que dobrou em 24h: de 611 para 1.542 publicações, alta de 152%.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No mata-mata, o adversário do Brasil é o Japão. Mas, para o torcedor, o primeiro duelo é contra o expediente.<span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782487429931.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782487429931.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
