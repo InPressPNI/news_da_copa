@@ -104,7 +104,7 @@
       "blocos": [
         {
           "titulo": "12",
-          "texto": "<p>é o número de Copas do Mundo consecutivas em que o Brasil terminou a primeira fase como líder de seu grupo. É a ampliação de um recorde que começou na edição de 1982, na Espanha. </p>",
+          "texto": "<p>é o número de Copas do Mundo consecutivas em que o Brasil terminou a primeira fase como líder de seu grupo. É a ampliação de <a href=\"https://exame.com/esporte/brasil-alcanca-marca-historica-e-exclusiva-na-historia-das-copas-apos-vencer-a-escocia/\" target=\"_blank\">um recorde que começou na edição de 1982, na Espanha</a>. Nenhuma outra seleção conseguiu alcançar uma marca semelhante: a que chegou mais próximo é a Alemanha, que liderou seus grupos em sete Copas seguidas, entre 1990 e 2014.</p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,7 +119,7 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Dia de conhecer o adversário",
+          "titulo": "Duelo de artilheiros",
           "texto": "<p><span style=\"background-color: transparent;\">A briga pela liderança do grupo F continua indefinida, mas a gente está de olho no segundo colocado, já que o time que terminar a primeira rodada nessa posição vai enfrentar o Brasil na fase de 16 avos de final. Holanda e Japão lideram o grupo com 4 pontos, seguidos da Suécia com 3. Os japoneses enfrentam os suecos em um confronto direto pela vaga, enquanto a Holanda pega a já eliminada Tunísia, que não marcou nenhum ponto no grupo. </span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
