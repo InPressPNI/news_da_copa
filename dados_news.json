@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Antes mesmo da bola rolar, a torcida já estava em campo. </span><a href=\"https://www.instagram.com/reel/DZ_YH9Kv6U3/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">O cumprimento de Ronaldinho à Seleção</a><span style=\"background-color: transparent;\"> e a</span><a href=\"https://www.instagram.com/p/DZ-0xqNgTy4/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\"> onda de memes sobre a “abdução” prevista por Vó Bahiana</a><span style=\"background-color: transparent;\"> ajudaram a empurrar o humor das redes para o pico pré-jogo (+35,9). O clima de expectativa ganhou ainda mais força com </span><a href=\"https://www.instagram.com/reel/DZ-12Yvgdd8/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">a chegada de Neymar ao estádio</a><span style=\"background-color: transparent;\">, tratada como um evento à parte.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando a bola rolou, o jogo mexeu rápido com a curva. </span><a href=\"https://www.instagram.com/p/DZ_Dgy5t5bJ/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">O 1x0 de Vini Jr.</a><span style=\"background-color: transparent;\"> confirmou o bom início do Brasil, mas a anulação do lance seguinte derrubou o humor (-22,4), mostrando que a rede reagiu menos ao placar e mais ao debate em torno do VAR. A recuperação veio com o segundo gol validado de Vini e, depois, com o 3x0 de Matheus Cunha.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, a narrativa voltou para a festa. </span><a href=\"https://www.instagram.com/reel/DZ_UsVkMrDG/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">A entrada de Neymar</a><span style=\"background-color: transparent;\"> reacendeu a conversa nas redes, e o pós-jogo consolidou a sensação de alívio e confiança: Brasil classificado, Vini protagonista e a </span><a href=\"https://www.instagram.com/reel/DZ_UsVkMrDG/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">leitura bem-humorada de que o “Bruxo” talvez tenha mesmo levado sorte para a Seleção</a><span style=\"background-color: transparent;\">.</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Antes mesmo da bola rolar, a torcida já estava em campo. </span><a href=\"https://www.instagram.com/reel/DZ_YH9Kv6U3/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">O cumprimento de Ronaldinho à Seleção</a><span style=\"background-color: transparent;\"> e a</span><a href=\"https://www.instagram.com/p/DZ-0xqNgTy4/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\"> onda de memes sobre a “abdução” prevista por Vó Bahiana</a><span style=\"background-color: transparent;\"> ajudaram a empurrar o humor das redes para o pico pré-jogo (+35,9). O clima de expectativa ganhou ainda mais força com </span><a href=\"https://www.instagram.com/reel/DZ-12Yvgdd8/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">a chegada de Neymar ao estádio</a><span style=\"background-color: transparent;\">, tratada como um evento à parte.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando a bola rolou, o jogo mexeu rápido com a curva. </span><a href=\"https://www.instagram.com/p/DZ_Dgy5t5bJ/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">O 1x0 de Vini Jr.</a><span style=\"background-color: transparent;\"> confirmou o bom início do Brasil, mas a anulação do lance seguinte derrubou o humor (-22,4), mostrando que a rede reagiu menos ao placar e mais ao debate em torno do VAR. A recuperação veio com o segundo gol validado de Vini e, depois, com o 3x0 de Matheus Cunha.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, a narrativa voltou para a festa. </span><a href=\"https://www.instagram.com/reel/DZ_UsVkMrDG/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">A entrada de Neymar</a><span style=\"background-color: transparent;\"> reacendeu a conversa nas redes, e o pós-jogo consolidou a sensação de alívio e confiança: Brasil classificado, Vini protagonista e a </span><a href=\"https://www.instagram.com/reel/DZ_UsVkMrDG/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">leitura bem-humorada de que o “Bruxo” talvez tenha mesmo levado sorte para a Seleção</a><span style=\"background-color: transparent;\">.</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
           "corFundo": "#ffffff",
-          "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782403222203.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782403222203.png",
+          "layout": "text-only",
+          "imagem": "",
+          "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -58,9 +58,9 @@
           "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782486469941.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782486469941.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "O Brasil tem um novo Rei",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">O jogo de ontem cristalizou Vini Jr. como o maior nome do Brasil nessa Copa. Lutando pela artilharia do torneio com 4 gols, atrás apenas de Lionel Messi, o craque brasileiro ainda rendeu uma das melhores imagens do torneio, feita pela Agência Reuters: a placa de publicidade que, curiosamente, reforçou um título que a torcida brasileira busca há anos, o de Rei do nosso futebol.</span></p>",
+          "titulo": "Comemoração para extravasar",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">O ato de subir até a grade da arquibancada para comemorar com a família o gol de Gonzalo Plata para sacramentar a virada do Equador sobre a Alemanha foi um momento de alívio para extravasar a pressão que Sebastián Beccacece vinha sofrendo de torcedores e jornalistas equatorianos, que questionavam o trabalho do treinador após uma derrota e um empate nos dois primeiros jogos no grupo. A energia que o treinador argentino passa aos jogadores à beira do campo, além da vibração na classificação da seleção equatoriana, tornou Beccacece mais um dos personagens singulares desta Copa.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
