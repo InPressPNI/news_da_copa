@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Comemoração para extravasar",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">O ato de subir até a grade da arquibancada para comemorar com a família o gol de Gonzalo Plata foi um momento de alívio para extravasar a pressão que Sebastián Beccacece vinha sofrendo de torcedores e jornalistas equatorianos, que questionavam o trabalho do treinador após uma derrota e um empate nos dois primeiros jogos no grupo. A energia que o treinador argentino passa aos jogadores à beira do campo, além da vibração na classificação da seleção equatoriana, tornou Beccacece mais um dos personagens singulares desta Copa.</span></p>",
+          "titulo": "Cabo Verde festeja vaga na segunda fase da Copa do Mundo.",
+          "texto": "<p class=\"ql-align-justify\"><em style=\"background-color: transparent; color: rgb(255, 255, 255);\">“Somos um exemplo. Os pequenos também podem chegar a conseguir objetivos grandes, desde que tenham foco, tenham determinação, que trabalhem com organização. Demonstramos que nada é impossível. Representamos o nosso país, mas também representamos a África, os países pequenos de todo o mundo, que têm essa ambição. Nós somos um exemplo.”</em></p><p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(255, 255, 255);\">Bubista, Técnico de Cabo Verde</strong></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Shakira, Leo Santana e Filipe Ret produziram uma versão em português de \"Dai Dai\", a música oficial da Copa do Mundo FIFA 2026. Esta versão conecta o futebol e a cultura pop latina, sem esquecer a brasilidade. A música estreou na TV Globo, após a vitória do Brasil sobre a Escócia na última quarta-feira. O <a href=\"https://www.instagram.com/reels/DaBjPGphrjZ/\" target=\"_blank\">post compartilhado dos músicos no Instagram</a> rendeu bastante interação com os seguidores, e mostra como trilha sonora também vira ativo de engajamento para a Copa.</p>",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">O </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">GRU Airport</strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\"> espalhou pontos de troca de figurinhas pelos Terminais 2 e 3, criando um espaço para completar coleções e encontrar exemplares raros antes do embarque. Além disso, em parceria com o Café Três Corações, o Terminal 3 ganhou um espaço dedicado à transmissão dos jogos ao vivo. Os jogos também rodam nas Salas VIP e em restaurantes como TGI Fridays, Ráscal, Cortés e Pecorino. Quem disse que a Copa só acontece dentro do estádio, ainda não passou por Guarulhos.</span></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
