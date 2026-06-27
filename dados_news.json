@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 33.261",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-34,1% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 33.512",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(+0,75% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -8,7 +8,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Segunda-feira, 14h. Brasil × Japão. E as redes esqueceram o futebol por um segundo para resolver uma questão mais urgente: como é que a gente assiste a esse jogo?</span></p><p><br></p><p><span style=\"background-color: transparent;\">Monitoramos mais de 2 mil publicações entre 24 e 26 de junho que conectavam o jogo ao horário comercial. O tema que mais mobilizou foi o próprio horário — 1.549 menções. Logo atrás, a torcida CLT entrou em campo: trabalho, chefe, reunião, expediente. Depois vieram as soluções: onde transmite, quem libera folga, qual bar vai passar no telão.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando a confirmação do horário chegou, a conversa mais que dobrou em 24h: de 611 para 1.542 publicações, alta de 152%.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No mata-mata, o adversário do Brasil é o Japão. Mas, para o torcedor, o primeiro duelo é contra o expediente.<span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿</span></span></p><p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Segunda-feira, 14h. Brasil × Japão. E as redes esqueceram o futebol por um segundo para resolver uma questão mais urgente: como é que a gente assiste a esse jogo?</span></p><p><br></p><p><span style=\"background-color: transparent;\">Monitoramos mais de 2 mil publicações entre 24 e 26 de junho que conectavam o jogo ao horário comercial. O tema que mais mobilizou foi o próprio horário — 1.549 menções. Logo atrás, a torcida CLT entrou em campo: trabalho, chefe, reunião, expediente. Depois vieram as soluções: onde transmite, quem libera folga, qual bar vai passar no telão.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quando a confirmação do horário chegou, a conversa mais que dobrou em 24h: de 611 para 1.542 publicações, alta de 152%.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No mata-mata, o adversário do Brasil é o Japão. Mas, para o torcedor, o primeiro duelo é contra o expediente.<span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿﻿</span></span></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782487429931.png",
