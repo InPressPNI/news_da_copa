@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">No decorrer da fase de grupos, as falhas dos goleiros renderam um campeonato paralelo entre os internautas. Muslera virou o principal personagem após uma sequência de erros pelo Uruguai, Kim Seung-gyu protagonizou um dos lances mais comentados da primeira fase e até goleiros que haviam sido tratados como heróis, como Vozinha, passaram a conviver com memes depois de uma única falha.</span></p><p><br></p><p><span style=\"background-color: transparent;\">O levantamento mostra que o torcedor não comenta apenas o placar: ele cria personagens. Entre \"mão de alface\", \"aceitou\" e \"frangueiro\", os erros dos goleiros ganharam vida própria e provaram que, na Copa das redes, uma defesa pode render aplausos — mas um frango rende assunto por dias.</span></p>",
+          "texto": "<p><br></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782571122798.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782571122798.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782659335902.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782659335902.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">A </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">Brahma </strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">promete presentear os consumidores com cerveja, gratuitamente, para que todos possam brindar à vitória, caso a Seleção Brasileira seja hexacampeã mundial neste ano. Essa promoção da marca foi anunciada logo no início da competição, mas foi lembrada nos últimos dias, sobretudo depois da classificação da Seleção para a fase do mata-mata. Assim, </span><a href=\"https://www.meioemensagem.com.br/midia/com-promessa-de-cerveja-brahma-lidera-engajamento-na-copa\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">a marca liderou o ranking de marcas mais lembradas nesta semana de Copa do Mundo, segundo o relatório da Stilingue by Blip</a><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">. </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">McDonald’s</strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\"> e </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">iFood</strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">, clientes do Grupo In Press, também aparecem entre as dez marcas mais lembradas.<span class=\"ql-cursor\">﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">A </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">Brahma </strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">promete presentear os consumidores com cerveja, gratuitamente, para que todos possam brindar à vitória, caso a Seleção Brasileira seja hexacampeã mundial neste ano. Essa promoção da marca foi anunciada logo no início da competição, mas foi lembrada nos últimos dias, sobretudo depois da classificação da Seleção para a fase do mata-mata. Assim, </span><a href=\"https://www.meioemensagem.com.br/midia/com-promessa-de-cerveja-brahma-lidera-engajamento-na-copa\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">a marca liderou o ranking de marcas mais lembradas nesta semana de Copa do Mundo, segundo o relatório da Stilingue by Blip</a><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">. </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">McDonald’s</strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\"> e </span><strong style=\"background-color: transparent; color: rgb(34, 34, 34);\">iFood</strong><span style=\"background-color: transparent; color: rgb(34, 34, 34);\">, clientes do Grupo In Press, também aparecem entre as dez marcas mais lembradas.<span class=\"ql-cursor\">﻿﻿﻿</span></span></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
