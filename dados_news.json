@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 24.769",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-12,1% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 57.662",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(+ 132,8% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><br></p><p><span style=\"background-color: transparent;\">O Japão não virou o tema do dia por causa de um craque. Nas 4.361 publicações sociais monitoradas na véspera do jogo, o que dominou a conversa foi um conjunto: o time organizado, o rival disciplinado, o adversário que complica — e, de quebra, o jogo das 14h que invadiu o expediente e os animes que ressurgiram na timeline.</span></p><p><span style=\"background-color: transparent;\">O maior cluster não é tático. É de serviço: 2.093 publicações conectam o Japão ao horário do jogo, à transmissão, a Houston e ao \"onde assistir\". Nas redes, Japão já virou quase sinônimo de \"o jogo das 14h de segunda\". O segundo maior fala de trabalho, CLT, folga e ponto facultativo. Só no terceiro aparece o favoritismo do Brasil — com hexa, classificação e \"vamos pra cima\". O insight central do monitoramento: as redes leem o Japão como coletivo, não como elenco.</span></p><p><br></p>",
+          "texto": "<p><br></p><p><span style=\"background-color: transparent;\">O Brasil se classificou, mas a torcida sentiu cada minuto.</span></p><p><span style=\"background-color: transparent;\">Às 12h, o pré-jogo chegou com o maior índice de humor da tarde: +40,4. Confiança, expectativa e a certeza de o Brasil ia passar. Às 14h, a bola rolou e a curva começou a cair. Às 14h30, o Japão assustou — e o índice despencou para –27,3, o pior número desta Copa no monitoramento. Por quinze minutos, as redes falaram mais em medo e eliminação do que em festa.</span></p><p><span style=\"background-color: transparent;\">Aí veio Casemiro. O volante mais criticado da fase de grupos marcou o gol do empate e devolveu o fôlego para a torcida. A curva voltou ao positivo e Martinelli fechou a virada. Às 16h, 2.223 publicações em 15 minutos registraram o maior volume por janela de tempo desta Copa: alívio, dança de Ancelotti e passagem às oitavas.</span></p><p><span style=\"background-color: transparent;\">O jogo que mais assustou foi também o que mais emocionou. Esta é a Copa que as redes estão vivendo.</span></p><p><br></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782744813725.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782744813725.jpeg",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782830905090.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782830905090.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
