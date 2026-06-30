@@ -59,8 +59,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782744933754.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782744933754.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782831145891.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782831145891.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "O primeiro a cair",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Canadá e África do Sul fizeram o primeiro confronto da fase de 16 avos de final. Foi a primeira vez das duas seleções na fase de mata-mata das Copas e, em uma partida estudada, o Canadá levou a melhor por 1 a 0&nbsp; chegando à uma inédita fase de oitavas de final.&nbsp;</span></p>",
+          "titulo": "Aura",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">No momento da comemoração do gol de Gabriel Martinelli que deu a classificação à Seleção Brasileira, Rayan subiu em uma placa de publicidade, se apoiou em Fabinho e ergueu o braço esquerdo. Pouco depois, se apoiou em Léo Pereira e ergueu o braço direito. Nesses poucos segundos, as fotos surgiram. O camisa 26, cercado de fotógrafos e companheiros de seleção, se destacou em meio aos demais. Foi difícil não lembrar da comemoração de Pelé, no Tri de 1970. Como se costuma dizer nas redes sociais, Rayan “farmou aura”.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
