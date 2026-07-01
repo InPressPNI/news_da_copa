@@ -58,9 +58,9 @@
           "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782920534408.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1782920534408.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Aura",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">No momento da comemoração do gol de Gabriel Martinelli que deu a classificação à Seleção Brasileira, Rayan subiu em uma placa de publicidade, se apoiou em Fabinho e ergueu o braço esquerdo. Pouco depois, se apoiou em Léo Pereira e ergueu o braço direito. Nesses poucos segundos, as fotos surgiram. O camisa 26, cercado de fotógrafos e companheiros de seleção, se destacou em meio aos demais. Foi difícil não lembrar da comemoração de Pelé, no Tri de 1970. Como se costuma dizer nas redes sociais, Rayan “farmou aura”.</span></p>",
+          "titulo": "Delírio mexicano",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Outra grande história desta Copa do Mundo é a relação da seleção mexicana com seu torcedor. Mais um capítulo desta lua-de-mel foi vista na noite de ontem, com vitória por 2x0 sobre o Equador, com belos gols de Quiñones e Jiménez, e a classificação garantida para as oitavas. E o próximo jogo também será no Estádio Azteca, onde o México nunca perdeu jogos disputados em Copas do Mundo.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><strong>Brahma e o \"Guru da Copa\"</strong></p><p>Uma vitória que derruba qualquer estatística, inclusive do renomado “Guru da Copa”, Joachim Klemant. Famoso por acertar os últimos campeões da Copa do Mundo, o economista tinha cravado: eliminação da Seleção Brasileira para o Japão no primeiro jogo eliminatório. Mas quando falamos do Brasil em Mundiais, qualquer probabilidade fica para trás. E até mesmo o estudioso resolver rever seus conceitos após aquele incentivo de Brahma. Patrocinadora da Seleção Brasileira, a marca de cerveja da Ambev, colocou em cena nesta Copa do Mundo o movimento “Tá Liberado Acreditar”, um convite para o brasileiro assumir algo que nunca deixou de existir: acreditar na Seleção Brasileira de Futebol. Em um momento em que a confiança no hexa, segundo pesquisas recentes de Datafolha e Quaest, está entre as mais baixas das últimas décadas, com apenas cerca de 3 em cada 10 brasileiros acreditando no título, a marca propõe transformar a dúvida em combustível para reacender a paixão que sempre moveu o país. E até derrubar qualquer previsão do “Guru da Copa”. <a href=\"https://www.instagram.com/reels/DaMKmUxOIBm/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Confira o vídeo aqui</a>.</p><p><br></p><p><strong>Rexona nunca abandona Everaldo Marques</strong></p><p>Como marca patrocinadora da Copa do Mundo e com seu posicionamento de “Nunca Te Abandona”, Rexona criou campanha após viralizar o assunto sobre a camisa suada do narrador Everaldo Marques durante transmissão de Brasil x Escócia, no dia 24/06. Ontem, pouco antes do duelo do Brasil contra o Japão, <a href=\"https://www.instagram.com/reels/DaLJTmoRDL1/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Evê apareceu com seu Rexona nas redes sociais</a> se preparando para mais uma grande transmissão.</p><p><br></p>",
+          "texto": "<p><strong>Nivea: </strong></p><p>Uma vitória que derruba qualquer estatística, inclusive do renomado “Guru da Copa”, Joachim Klemant. Famoso por acertar os últimos campeões da Copa do Mundo, o economista tinha cravado: eliminação da Seleção Brasileira para o Japão no primeiro jogo eliminatório. Mas quando falamos do Brasil em Mundiais, qualquer probabilidade fica para trás. E até mesmo o estudioso resolver rever seus conceitos após aquele incentivo de Brahma. Patrocinadora da Seleção Brasileira, a marca de cerveja da Ambev, colocou em cena nesta Copa do Mundo o movimento “Tá Liberado Acreditar”, um convite para o brasileiro assumir algo que nunca deixou de existir: acreditar na Seleção Brasileira de Futebol. Em um momento em que a confiança no hexa, segundo pesquisas recentes de Datafolha e Quaest, está entre as mais baixas das últimas décadas, com apenas cerca de 3 em cada 10 brasileiros acreditando no título, a marca propõe transformar a dúvida em combustível para reacender a paixão que sempre moveu o país. E até derrubar qualquer previsão do “Guru da Copa”. <a href=\"https://www.instagram.com/reels/DaMKmUxOIBm/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Confira o vídeo aqui</a>.</p><p><br></p><p><strong>Rexona nunca abandona Everaldo Marques</strong></p><p>Como marca patrocinadora da Copa do Mundo e com seu posicionamento de “Nunca Te Abandona”, Rexona criou campanha após viralizar o assunto sobre a camisa suada do narrador Everaldo Marques durante transmissão de Brasil x Escócia, no dia 24/06. Ontem, pouco antes do duelo do Brasil contra o Japão, <a href=\"https://www.instagram.com/reels/DaLJTmoRDL1/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Evê apareceu com seu Rexona nas redes sociais</a> se preparando para mais uma grande transmissão.</p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
