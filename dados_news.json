@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 36.840",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(- 36% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 29.124",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-20,9% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><br></p><p><span style=\"background-color: transparent;\">Desde o fim da fase de grupos, as redes criaram o próprio bolão. Entre 28 de junho e 1º de julho — janela que cobre o encerramento dos grupos, o começo do mata-mata e a classificação dramática do Brasil sobre o Japão —, foram 60.643 publicações nas redes sociais associando seleções a termos de favoritismo, título, hexa, taça, palpite e bolão. O resultado revela dois tipos de candidato: o favorito afetivo e os favoritos da razão.</span></p><p><br></p><p><span style=\"background-color: transparent;\">O Brasil lidera com folga: 9.356 menções, seis vezes o volume do segundo colocado. Mas o que move essa conversa não é só otimismo — é mistura de hexa, sofrimento contra o Japão, Martinelli herói e o medo do próximo adversário. O Brasil não é o favorito racional das redes; é o favorito do coração.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Em segundo lugar, a Noruega. Não como candidata ao título, mas como ameaça imediata: Haaland virou o \"chefão da próxima fase\" no imaginário do torcedor. A França aparece na terceira posição como a seleção que as redes respeitam taticamente — é a favorita da razão. Argentina e Paraguai completam o top 5, com o Paraguai ganhando tração como zebra quente após eliminar a Alemanha.</span></p><p><br></p><p><span style=\"background-color: transparent;\">O mata-mata embaralhou o bolão. Depois de Alemanha e Holanda caírem, ninguém mais tem certeza de nada.</span></p><p><br></p><p><br></p>",
+          "texto": "<p><br></p><p><span style=\"background-color: transparent;\">O Brasil lidera com folga: 9.356 menções, seis vezes o volume do segundo colocado. Mas o que move essa conversa não é só otimismo — é mistura de hexa, sofrimento contra o Japão, Martinelli herói e o medo do próximo adversário. O Brasil não é o favorito racional das redes; é o favorito do coração.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Em segundo lugar, a Noruega. Não como candidata ao título, mas como ameaça imediata: Haaland virou o \"chefão da próxima fase\" no imaginário do torcedor. A França aparece na terceira posição como a seleção que as redes respeitam taticamente — é a favorita da razão. Argentina e Paraguai completam o top 5, com o Paraguai ganhando tração como zebra quente após eliminar a Alemanha.</span></p><p><br></p><p><span style=\"background-color: transparent;\">O mata-mata embaralhou o bolão. Depois de Alemanha e Holanda caírem, ninguém mais tem certeza de nada.</span></p><p><br></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782921374394.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1782921374394.jpeg",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783007073207.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783007073207.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
