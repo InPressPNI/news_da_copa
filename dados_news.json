@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Uma homenagem que parou o estádio.",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"color: rgb(255, 255, 255);\">Após a vitória sobre a Croácia, os jogadores de Portugal posaram perfilados com a camisa 21 de Diogo Jota, que faleceu há um ano em um acidente de carro junto ao irmão. O técnico Roberto Martínez dedicou a classificação a Diogo, a André e também ao pai de Ricardo Carvalho, que perdeu o pai esta semana. Há noites em que o futebol para e cede espaço para algo maior.</span></p>",
+          "titulo": "O gol da Copa",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Depois de ontem, um consenso se formou pelas redes sociais: o golaço de Sidny Lopes Cabral aos 13 minutos do primeiro tempo da prorrogação entre Argentina e Cabo Verde é o gol mais bonito desta Copa do Mundo. Será difícil alguém alcançar a precisão e a beleza da finalização do jogador cabo-verdiano, cuja trajetória da bola enganou o experiente goleiro Dibu Martinez. A comemoração de Cabral também foi singular: ele correu para as arquibancadas para dar um abraço caloroso em sua namorada, Jayley da Cruz; mais tarde, </span><a href=\"https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/07/04/mensagem-de-apoio-viraliza-apos-gol-antologico-de-sidny-por-cabo-verde.ghtm\" target=\"_blank\" style=\"color: rgb(255, 255, 255); background-color: transparent;\">ela disse estar bastante orgulhosa de Sidny</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">, mesmo que Cabo Verde não tenha avançado.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>A <strong>Budweiser </strong>transformou a Copa em teste de personalidade. Em parceria com o Papel Pop, a<a href=\"https://www.instagram.com/p/DZdYLD7D9gE/?igsh=MW5lc2FrcXRpa2FjNg%3D%3D&amp;img_index=4\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\"> marca lançou um quiz para descobrir qual é o seu perfil de torcedor.</a> Fanático, festeiro, sofredor, ou algo no meio do caminho? Enquanto responde, o público conhece as histórias por trás das garrafas de alumínio colecionáveis da Bud. A Copa do jeito que Bud sabe fazer.</p>",
+          "texto": "<p><strong>Braham e Olodum: Tá Liberado Acreditar</strong></p><p>Às vésperas do decisivo confronto entre Brasil e Noruega, Brahma, marca de cerveja da Ambev, traz um novo capítulo do movimento “Tá Liberado Acreditar”, com uma ação especial para motivar a torcida e espalhar energias positivas. Unindo-se ao Olodum, um dos maiores símbolos das manifestações populares do País, a marca lança um conteúdo para as redes sociais que conecta os torcedores por meio da música e da paixão pelo futebol. Inspirado na famosa \"remada viking\", tradicional coreografia da torcida norueguesa, o vídeo inicia com batidas ritmadas de atabaque que remetem à cultura adversária, criando suspense. Em seguida, o ritmo explode no samba-reggae, transformando o gesto nórdico na ginga brasileira já reconhecida por celebrar nossa riqueza e envolver a Seleção no caminho rumo à vitória. <a href=\"https://www.instagram.com/reels/DaX3DYXuBCh/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Confira o vídeo clicando aqui</a>.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,7 +103,7 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "88,1%",
+          "titulo": "5",
           "texto": "<p class=\"ql-align-justify\">É a proporção de participantes do Bolão 2026, iniciativa gratuita do Mercado Pago e Mercado Livre, que apostam na<a href=\"https://exame.com/esporte/brasil-x-noruega-881-apostam-em-vitoria-brasileira-por-2x1-nas-oitavas-de-final/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\"> vitória do Brasil contra a Noruega</a>. O levantamento reúne cerca de 9 milhões de participantes no Brasil e 22 milhões na América Latina. O placar mais votado é 2 a 1. Depois da vitória sobre o Japão, a confiança da torcida não para de crescer. E nove milhões de brasileiros raramente erram juntos.</p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
