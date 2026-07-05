@@ -59,8 +59,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783179591032.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783179591032.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783259292275.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783259292275.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "O gol da Copa",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Depois de ontem, um consenso se formou pelas redes sociais: o golaço de Sidny Lopes Cabral aos 13 minutos do primeiro tempo da prorrogação entre Argentina e Cabo Verde é o gol mais bonito desta Copa do Mundo. Será difícil alguém alcançar a precisão e a beleza da finalização do jogador cabo-verdiano, cuja trajetória da bola enganou o experiente goleiro Dibu Martinez. A comemoração de Cabral também foi singular: ele correu para as arquibancadas para dar um abraço caloroso em sua namorada, Jayley da Cruz; mais tarde, </span><a href=\"https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/07/04/mensagem-de-apoio-viraliza-apos-gol-antologico-de-sidny-por-cabo-verde.ghtm\" target=\"_blank\" style=\"color: rgb(255, 255, 255); background-color: transparent;\">ela disse estar bastante orgulhosa de Sidny</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">, mesmo que Cabo Verde não tenha avançado.</span></p>",
+          "texto": "<p class=\"ql-align-justify\"><strong style=\"background-color: transparent; color: rgb(255, 255, 255);\">O legado norueguês que atravessa gerações </strong><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Thorstvedt, Sørloth e Haaland são sobrenomes que se repetem no futebol norueguês. Três atletas da Noruega que estão nesta Copa são filhos de ex-jogadores que disputaram o Mundial de 1994. A história do futebol sendo passada literalmente de pai para filho, dentro de campo, na mesma competição.</span></p><p class=\"ql-align-justify\"><br></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
