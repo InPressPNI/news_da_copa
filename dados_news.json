@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><strong>Braham e Olodum: Tá Liberado Acreditar</strong></p><p>Às vésperas do decisivo confronto entre Brasil e Noruega, Brahma, marca de cerveja da Ambev, traz um novo capítulo do movimento “Tá Liberado Acreditar”, com uma ação especial para motivar a torcida e espalhar energias positivas. Unindo-se ao Olodum, um dos maiores símbolos das manifestações populares do País, a marca lança um conteúdo para as redes sociais que conecta os torcedores por meio da música e da paixão pelo futebol. Inspirado na famosa \"remada viking\", tradicional coreografia da torcida norueguesa, o vídeo inicia com batidas ritmadas de atabaque que remetem à cultura adversária, criando suspense. Em seguida, o ritmo explode no samba-reggae, transformando o gesto nórdico na ginga brasileira já reconhecida por celebrar nossa riqueza e envolver a Seleção no caminho rumo à vitória. <a href=\"https://www.instagram.com/reels/DaX3DYXuBCh/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Confira o vídeo clicando aqui</a>.</p>",
+          "texto": "<p>O<strong> Mercado Livre </strong>quer te levar pra final. A marca lançou o concurso cultural <a href=\"https://www.infomoney.com.br/esportes/mercado-livre-leva-brasileiros-final-copa-do-mundo/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">#MeConvocaMeli,</a> que vai levar um torcedor brasileiro e um acompanhante para assistir à final da Copa do Mundo em Nova York. Como Fornecedor Oficial da competição, o Mercado Livre convidou consumidores a postarem vídeos nas redes explicando por que merecem ser convocados.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "5",
-          "texto": "<p class=\"ql-align-justify\">Ao conseguir a classificação para as oitavas-de-final, derrotando a Austrália nas cobranças de pênalti, o Egito se tornou a quinta seleção da África a se classificar para uma segunda fase de mata-mata em Copas do Mundo. Camarões em 1990, Senegal em 2002, Gana em 2010 e Marrocos em 2022 e 2026 são as outras seleções do continente africano a conseguir esta marca.</p>",
+          "titulo": "O fantasma de 5 de julho",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">A data carrega uma das memórias mais dolorosas do futebol brasileiro. Em 5 de julho de 1982, a Seleção de Zico, Sócrates e Falcão, considerada uma das mais talentosas de todos os tempos, foi eliminada da Copa da Espanha após perder por 3 a 2 para a Itália, com três gols de Paolo Rossi.</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Hoje, no mesmo 5 de julho, o Brasil entra em campo contra a Noruega. A data é a mesma. Mas a torcida quer um novo destino.</span></p><p class=\"ql-align-justify\"><br></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
