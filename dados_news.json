@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Começam as oitavas",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">As oitavas-de-final da Copa já começam hoje com dois duelos: às 14h, em Houston, Canadá x Marrocos decidem a primeira vaga para as quartas; e às 18h, na Filadélfia, a França de Mbappé e companhia enfrenta o Paraguai - reedição de duelo na mesma fase na Copa de 1998, em que os franceses levaram a melhor.</span></p><p><br></p><p><br></p>",
+          "titulo": "Guerreiros do frio contra os filhos do sol",
+          "texto": "<p><span style=\"background-color: transparent;\">Não, não é um filme do Glauber Rocha. É o roteiro da Copa do Mundo se escrevendo sozinho. A Seleção Brasileira enfrenta os noruegueses neste domingo, às 17h, em duelo que vale vaga nas quartas de final. Em quatro jogos disputados entre as equipes, a Noruega soma duas vitórias e dois empates, se mantendo invicta contra o Brasil.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
