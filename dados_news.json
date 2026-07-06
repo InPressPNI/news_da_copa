@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><a href=\"https://www.instagram.com/p/DabZ83-Io7a/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">O mote “Não te abandona” da campanha de <strong>Rexona</strong> foi demonstrado no post da marca após o jogo</a>, substituindo a gota de suor combatida pelos produtos da marca por uma gota que só é superada com apoio: a das lágrimas dos torcedores após a eliminação. Uma posição corajosa de Rexona, que sustenta a afirmação de nunca abandonar o torcedor, mesmo nas derrotas mais sofridas.&nbsp;&nbsp;</p><p><br></p>",
+          "texto": "<p><a href=\"https://www.instagram.com/p/DabZ83-Io7a/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">O mote “Não te abandona” da campanha de <strong>Rexona</strong> foi demonstrado no post da marca após o jogo</a>, substituindo a gota de suor combatida pelos produtos da marca por uma gota que só é superada com apoio: a das lágrimas dos torcedores após a eliminação. Uma posição corajosa de Rexona, que sustenta a afirmação de nunca abandonar o torcedor, mesmo nas derrotas mais sofridas.&nbsp;&nbsp;</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "O fantasma de 5 de julho",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">A data carrega uma das memórias mais dolorosas do futebol brasileiro. Em 5 de julho de 1982, a Seleção de Zico, Sócrates e Falcão, considerada uma das mais talentosas de todos os tempos, foi eliminada da Copa da Espanha após perder por 3 a 2 para a Itália, com três gols de Paolo Rossi.</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Hoje, no mesmo 5 de julho, o Brasil entra em campo contra a Noruega. A data é a mesma. Mas a torcida quer um novo destino.</span></p><p class=\"ql-align-justify\"><br></p>",
+          "titulo": "1986",
+          "texto": "<p>foi a última vez que o Brasil perdeu um pênalti no tempo normal de jogo, quando Zico teve sua cobrança contra a França defendida pelo goleiro Bats, nas quartas-de-final do torneio disputado, curiosamente, no México.&nbsp;</p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Guerreiros do frio contra os filhos do sol",
-          "texto": "<p><span style=\"background-color: transparent;\">Não, não é um filme do Glauber Rocha. É o roteiro da Copa do Mundo se escrevendo sozinho. A Seleção Brasileira enfrenta os noruegueses neste domingo, às 17h, em duelo que vale vaga nas quartas de final. Em quatro jogos disputados entre as equipes, a Noruega soma duas vitórias e dois empates, se mantendo invicta contra o Brasil.</span></p>",
+          "titulo": "Confronto da península ibérica",
+          "texto": "<p><span style=\"background-color: transparent;\">Das batalhas que remontam a época das chamadas “grandes navegações” ao primeiro confronto futebolístico em 1921, Espanha e Portugal sustentam uma rivalidade que, agora, será acirrada com o confronto pelas oitavas-de-final da Copa do Mundo. Cristiano Ronaldo tenta manter os passos da sua última dança em Copas, enquanto a Espanha tenta manter sua hegemonia de 4 vitórias contra os portugueses em Copas do Mundo.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
