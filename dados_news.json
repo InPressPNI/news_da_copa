@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "O gol que parou Atlanta.",
-          "texto": "<p>Mostafa Zico, camisa 11 do Egito, comemora o gol que colocou os Faraós na frente por 2 a 0 contra a Argentina nas oitavas. O apelido não é coincidência, é herança, já que o pai do jogador é um grande fã do futebol brasileiro e do eterno craque do Flamengo. E a comemoração diz tudo: o Egito acreditou até quando ninguém mais acreditava por eles.</p><p>A Argentina virou depois. Mas esse momento existiu. E entrou para a história desta Copa.</p>",
+          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">Mostafa Zico, camisa 11 do Egito, comemora o gol que colocou os Faraós na frente por 2 a 0 contra a Argentina nas oitavas. O apelido não é coincidência, é herança, já que o pai do jogador é um grande fã do futebol brasileiro e do eterno craque do Flamengo. E a comemoração diz tudo: o Egito acreditou até quando ninguém mais acreditava por eles.</span></p><p><span style=\"color: rgb(255, 255, 255);\">A Argentina virou depois. Mas esse momento existiu. E entrou para a história desta Copa.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>A <a href=\"https://www.instagram.com/p/DadV2aQx2Uy/?igsh=cHBobnp3ZXk2MHVh\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\"><strong>Brahma </strong></a>publicou um texto que circulou com força nas redes: assumiu a dor, celebrou o ato de acreditar e encerrou com a promessa de estar junto quando a alegria voltar. Sem forçar. Sem exagerar. Do jeito que a torcida precisava ouvir.</p><p><br></p><p>O<a href=\"https://www.instagram.com/reel/DaeKDQogj-z/?igsh=MWJqMThhYndhMWczaA==\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\"> <strong>Guaraná Antarctica</strong></a> foi buscar a voz que resumiu tudo. A marca usou o áudio viral de uma criança dizendo \"Eu nasci o quê? Se eu morrer, vou morrer brasileiro\" para fechar sua comunicação de Copa. Simples, verdadeiro e impossível de assistir sem sentir alguma coisa. O crédito foi dado ao criador original, o que fez a ação ganhar ainda mais simpatia nas redes.</p>",
+          "texto": "<p>A <a href=\"https://www.instagram.com/p/DagdUGlnO4a/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\"><strong>Garmin </strong></a>colocou o coração do Scaloni à prova. A marca publicou no Instagram registrando as batidas cardíacas do técnico argentino durante Argentina x Egito e pediu nos comentários que os seguidores compartilhassem o auge das batidas registradas pelos próprios relógios durante o jogo. Dados reais, emoção real, comunidade engajada.</p><p>A melhor ativação é aquela que o próprio produto já vive. A Garmin só precisou mostrar.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "1.434",
-          "texto": "<p>Em dias, é o quanto falta para a próxima Copa do Mundo e a chance do hexa. Parece longe, mas brasileiro não desiste nunca.</p>",
+          "titulo": "47",
+          "texto": "<p><span style=\"background-color: transparent;\">O minuto da virada. Enzo Fernández, de cabeça, aos 47 do segundo tempo, selou a classificação da Argentina. A sequência foi cirúrgica: Romero descontou aos 34, Messi empatou aos 38 e Enzo fechou aos 47. Treze minutos para desfazer dois gols de vantagem.</span></p><p><span style=\"background-color: transparent;\">O Egito estava a 43 minutos de eliminar a Argentina. Ficou a 3.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,7 +119,7 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Os “Faraós” nunca venceram a Argentina",
+          "titulo": "Duas seleções, uma história que o Mediterrâneo não consegue separar.",
           "texto": "<p>Hoje eles tentam de novo, às 13h, no Mercedes-Benz Stadium, em Atlanta. Nos dois jogos oficiais entre as seleções, os argentinos venceram as duas vezes. Por isso, os egípcios chegam às oitavas com a missão de quebrar um tabu que ainda não tem exceção. Além disso, o duelo entre Messi e Salah chama a atenção, já que são dois craques que caminham para um final de ciclo nas suas seleções.&nbsp;</p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
