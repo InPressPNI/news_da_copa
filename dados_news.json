@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 39.759",
-  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-35% no volume de menções)</strong></p><p><br></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 36.242",
+  "textoDestaque": "<p><strong style=\"background-color: transparent; color: rgb(89, 89, 89);\">nas últimas 24 horas</strong></p><p><strong>(-8,8% no volume de menções)</strong></p><p><br></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Duas despedidas marcaram o pós-oitavas: Neymar e Cristiano Ronaldo chegaram ao fim de seus ciclos em Copas, mas as redes reagiram de jeitos diferentes.</span></p><p><span style=\"background-color: transparent;\">Neymar mobilizou a dor mais íntima da torcida brasileira: eliminação, cobrança, frustração e a sensação de que uma geração ficou sem o hexa. Cristiano, por outro lado, transformou sua despedida em um evento global, puxado por homenagens, transmissões e pela dimensão histórica da sua carreira.</span></p><p><span style=\"background-color: transparent;\">No fim, o contraste é esse: um saiu de cena como ferida brasileira; o outro, como marco mundial de fim de era.</span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Com a Seleção fora da Copa, as redes brasileiras começaram a procurar uma nova torcida — mas essa escolha não seguiu apenas o caminho mais óbvio.</span></p><p><span style=\"background-color: transparent;\">Entre carisma, rivalidade, memória afetiva e vontade de torcer contra, as quartas de final viraram uma espécie de “adoção às avessas”: algumas seleções conquistaram simpatia pelo futebol ou pela campanha, outras entraram no radar por meme, personagem ou antipatia ao adversário.</span></p><p><span style=\"background-color: transparent;\">A Noruega aparece como o caso mais curioso: eliminou o Brasil, mas também virou esperança para uma parte da torcida. Já a Argentina mostra o outro lado da moeda — muita conversa, pouca adoção.</span></p><p><span style=\"background-color: transparent;\">No fim, o brasileiro parece dividido entre escolher uma nova seleção, secar rivais ou simplesmente decretar que, sem o Brasil, a Copa acabou.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783434370996.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783434370996.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783522721958.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783522721958.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
