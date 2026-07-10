@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "8",
-          "texto": "<p><span style=\"background-color: transparent;\">Faltam oito jogos para a taça. Quatro quartas, duas semis, um terceiro lugar e uma final. O torneio que começou com 48 seleções chegou na sua reta. Agora resta saber qual será a melhor seleção do mundo.</span></p>",
+          "titulo": "3",
+          "texto": "<p><span style=\"background-color: transparent;\">A França é apenas a terceira seleção a conseguir chegar a três semifinais consecutivas de Copas do Mundo (2018-2026). A Alemanha conseguiu este feito duas vezes: 3 semifinais entre 1982 e 1990, e 4 entre 2002 e 2014. A outra seleção é o Brasil, que chegou a 3 semifinais seguidas entre 1994 e 2002.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "VAR dentro do estádio",
-          "texto": "<p><span style=\"background-color: transparent;\">França x Marrocos abre as quartas nesta quinta, às 17h, em Boston, com uma novidade no protocolo de arbitragem. A FIFA decidiu colocar o </span><a href=\"https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/09/franca-x-marrocos-tera-novidade-no-var-apos-decisao-da-fifa-diz-jornal.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">AVAR e o AVAR suplente fisicamente dentro do estádio,</a><span style=\"background-color: transparent;\"> medida que serve como plano de contingência caso haja falha de conexão entre Boston e a central do VAR em Dallas.</span></p><p><span style=\"background-color: transparent;\">O uruguaio Leodán González e a nicaraguense Tatiana Guzmán estarão no local. Se a conexão cair, a revisão acontece de dentro do estádio mesmo. A Copa nas quartas não comporta improviso técnico.</span></p>",
+          "titulo": "Duelo com gosto de revanche",
+          "texto": "<p><span style=\"background-color: transparent;\">Espanha x Bélgica se enfrentam às 16h, em Los Angeles, para definir quem será o adversário da França nas semifinais. O confronto tem um sabor de revanche para os espanhóis: na Copa de 1986, no México, as duas seleções se enfrentaram, e os belgas levaram a melhor nos pênaltis. No duelo de 2026, a Espanha é apontada como favorita, pela evolução demonstrada durante o torneio e a liderança de Lamine Yamal; mas a Bélgica vem de uma contundente goleada sobre os anfitriões, os EUA. Quem leva a melhor?</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
