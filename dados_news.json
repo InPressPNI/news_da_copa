@@ -59,8 +59,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783603582972.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783603582972.jpeg",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783699199858.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783699199858.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Simplesmente o maior troféu da Copa do Mundo de LEGO",
-          "texto": "<p><span style=\"color: rgb(255, 255, 255);\">No Rockefeller Plaza, em Nova York, o capitão do pentacampeonato brasileiro ajudou a finalizar a montagem de uma réplica gigante da taça da Copa do Mundo feita com mais de 1 milhão de peças de Lego. O troféu tem 8,47 metros de altura e foi certificado como a maior construção móvel já feita pela Lego e a maior réplica da taça existente no mundo.</span></p><p><span style=\"color: rgb(255, 255, 255);\">Cafu com as mãos na taça, ainda que seja de Lego. Alguns símbolos resistem a qualquer material.</span></p>",
+          "titulo": "O artilheiro inevitável",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">No primeiro tempo, Mbappé perdeu um pênalti, facilmente defendido pelo marroquino Bounou. Mas quem se acostumou a vê-lo nesta Copa do Mundo sabia que o francês não iria sair de mãos abanando, e no segundo tempo Mbappé balançou as redes com mais um golaço. São oito gols e três assistências no torneio, mostrando ao mesmo tempo liderança em campo (é a primeira Copa que Mbappé joga como capitão dos Bleus) e disputa acirrada com Messi na artilharia da competição.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><a href=\"https://www.instagram.com/p/DakUMm0D5It/?igsh=ajYwaWNsbGx3cG82\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\"><strong>O Ifood</strong></a> atingiu mais de 185 milhões de pessoas em 350 publicações durante a Copa, mesmo com a eliminação precoce do Brasil nas oitavas. A vice-presidente de marketing Ana Gabriela Lopes explicou o motivo: em vez de apostar em uma única trajetória da Seleção, a marca desenvolveu planos de comunicação para cada fase da competição, o que permitiu adaptação rápida conforme o torneio evoluiu.</p><p>A empresa não encerra o ciclo aqui. Já mira a Copa do Mundo Feminina de 2027, no Brasil.&nbsp;</p>",
+          "texto": "<p><a href=\"https://economia.uol.com.br/colunas/aline-sordili/2026/07/10/consumo-na-copa-sai-da-arquibancada-e-entra-no-algoritmo.htm\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">Em sua coluna mais recente no UOL, a jornalista Aline Sordili</a> traz dados de estudos da Valometry/Ana Couto e da Ranqia que indicam que o consumo na Copa de 2026 migrou para decisões individuais, com compras por app, delivery e consultas ao ChatGPT. A conclusão da autora é que, se antes as marcas disputavam a narrativa do evento, agora disputam microdecisões: o que vestir, o que beber, onde comprar, onde assistir, quem seguir, qual aparelho usar, qual entrega chega antes do próximo jogo. As marcas que mais se destacarem nessa Copa são as que unirão presença cultural, utilidade real e legibilidade informacional.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
