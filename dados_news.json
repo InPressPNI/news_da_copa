@@ -42,7 +42,7 @@
           "titulo": "TEM EPISÓDIO NOVO DO DASH NO AR!",
           "texto": "<p><span style=\"background-color: transparent;\">No quarto episódio do É dash que o povo gosta, falamos da relação dos brasileiros com a Copa do Mundo, após a eliminação precoce (ao menos para nós) da nossa Seleção. Nós gostamos mais do time canarinho ou do torneio? Quem agora vai ganhar o apoio da nossa torcida? Quais oportunidades surgem para marcas em um cenário com a seleção fora de campo? A resposta para essas e outras questões você ouve agora, no nosso mais novo episódio disponível no </span><a href=\"https://open.spotify.com/episode/0clPn1Ptk5XDWqQ5eH0XW5?si=OXWPLzOcTAyhT7iVI2-Evg\" target=\"_blank\" style=\"background-color: transparent;\">Spotify</a><span style=\"background-color: transparent;\"> e no </span><a href=\"https://www.youtube.com/watch?v=gZOtRINMxsw\" target=\"_blank\" style=\"background-color: transparent;\">YouTube</a><span style=\"background-color: transparent;\">!</span></p>",
           "corFundo": "#43d20f",
-          "layout": "img-top",
+          "layout": "img-left",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1783784160664.png",
           "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1783784160664.png",
           "btnTexto": "Acessar Dashboard",
@@ -59,8 +59,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783699199858.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783699199858.png",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783784220753.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783784220753.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "O artilheiro inevitável",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">No primeiro tempo, Mbappé perdeu um pênalti, facilmente defendido pelo marroquino Bounou. Mas quem se acostumou a vê-lo nesta Copa do Mundo sabia que o francês não iria sair de mãos abanando, e no segundo tempo Mbappé balançou as redes com mais um golaço. São oito gols e três assistências no torneio, mostrando ao mesmo tempo liderança em campo (é a primeira Copa que Mbappé joga como capitão dos Bleus) e disputa acirrada com Messi na artilharia da competição.</span></p>",
+          "titulo": "Um dia para esquecer",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">No minuto 71 de Espanha x Bélgica, o experiente goleiro belga Courtois sentiu uma lesão muscular e, chorando, teve que ser substituído por Lammens. 16 minutos depois, o jovem reserva da Bélgica falhou no lance do segundo gol espanhol, dando rebote em uma bola defensável chutada por Cubarsí e permitindo que Merino marcasse o gol. Imediatamente, a transmissão oficial da Copa do Mundo exibiu Courtois no banco, com cara de poucos amigos; uma reação que viralizou nas redes sociais. Definitivamente, um dia para Courtois esquecer, naquela que pode ter sido sua última partida em Copas.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
