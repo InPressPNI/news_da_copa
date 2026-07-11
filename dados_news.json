@@ -39,10 +39,10 @@
       "tipo": "unico",
       "blocos": [
         {
-          "titulo": "",
+          "titulo": "TEM EPISÓDIO NOVO DO DASH NO AR!",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
+          "layout": "img-left",
           "imagem": "",
           "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
