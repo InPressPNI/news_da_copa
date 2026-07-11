@@ -40,11 +40,11 @@
       "blocos": [
         {
           "titulo": "TEM EPISÓDIO NOVO DO DASH NO AR!",
-          "texto": "<p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">No quarto episódio do É dash que o povo gosta, falamos da relação dos brasileiros com a Copa do Mundo, após a eliminação precoce (ao menos para nós) da nossa Seleção. Nós gostamos mais do time canarinho ou do torneio? Quem agora vai ganhar o apoio da nossa torcida? Quais oportunidades surgem para marcas em um cenário com a seleção fora de campo? A resposta para essas e outras questões você ouve agora, no nosso mais novo episódio disponível no Spotify e no TouTube!</span></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-left",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1783769803823.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1783769803823.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
