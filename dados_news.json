@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><a href=\"https://economia.uol.com.br/colunas/aline-sordili/2026/07/10/consumo-na-copa-sai-da-arquibancada-e-entra-no-algoritmo.htm\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">O UOL traz dados de estudos da Valometry/Ana Couto e da Ranqia</a> que indicam que o consumo na Copa de 2026 migrou para decisões individuais, com compras por app, delivery e consultas ao ChatGPT. A conclusão que se tira das pesquisas é que, se antes as marcas disputavam a narrativa do evento, agora disputam microdecisões: o que vestir, o que beber, onde comprar, onde assistir, quem seguir, qual aparelho usar, qual entrega chega antes do próximo jogo. As marcas que mais se destacarem nessa Copa são as que unirão presença cultural, utilidade real e legibilidade informacional.</p>",
+          "texto": "<p><a href=\"https://www.meioemensagem.com.br/midia/ifood-lidera-buzz-na-semana-de-eliminacao-do-brasil\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">O iFood assumiu a liderança do ranking da Stilingue by Blip</a> como a marca mais citada nas redes sociais que estão diretamente envolvidas com a Copa do Mundo. O aplicativo de delivery conseguiu esse destaque pela iniciativa de oferecer cupons de desconto aos usuários, sobretudo no X, incentivando as interações com a marca. A empresa também conseguiu bastante engajamento por conta de um vídeo, feito com a cantora Luísa Sonza, que explorou a semelhança entre a cantora e o jogador norueguês Haaland, algo muito comentado nas redes sociais.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "3",
-          "texto": "<p><span style=\"background-color: transparent;\">A França é apenas a terceira seleção a conseguir chegar a três semifinais consecutivas de Copas do Mundo (2018-2026). A Alemanha conseguiu este feito duas vezes: 3 semifinais entre 1982 e 1990, e 4 entre 2002 e 2014. A outra seleção é o Brasil, que chegou a 3 semifinais seguidas entre 1994 e 2002.</span></p>",
+          "titulo": "2",
+          "texto": "<p><span style=\"background-color: transparent;\">Mikel Merino não começou como titular nos jogos pela Espanha, mas isso não impede que ele tenha seu destaque nesta edição da Copa. Afinal, com o gol da classificação contra a Bélgica, ele se tornou </span><a href=\"https://x.com/OptaJoe/status/2075693322799132929\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">o primeiro reserva a decidir dois jogos de mata-mata em Copas do Mundo</a><span style=\"background-color: transparent;\"> - foi dele também o gol da vitória dos espanhóis sobre Portugal nas oitavas. É a definição de “jogador decisivo”.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Duelo com gosto de revanche",
-          "texto": "<p><span style=\"background-color: transparent;\">Espanha x Bélgica se enfrentam às 16h, em Los Angeles, para definir quem será o adversário da França nas semifinais. O confronto tem um sabor de revanche para os espanhóis: na Copa de 1986, no México, as duas seleções se enfrentaram, e os belgas levaram a melhor nos pênaltis. No duelo de 2026, a Espanha é apontada como favorita, pela evolução demonstrada durante o torneio e a liderança de Lamine Yamal; mas a Bélgica vem de uma contundente goleada sobre os anfitriões, os EUA. Quem leva a melhor?</span></p>",
+          "titulo": "Hora de definir a segunda semifinal",
+          "texto": "<p><span style=\"background-color: transparent;\">Neste sábado, ocorrem os dois últimos confrontos das quartas de final da Copa do Mundo, definindo a segunda semifinal do torneio. Às 18h, Noruega e Inglaterra se enfrentam em Miami, colocando frente a frente dois dos principais artilheiros da competição, Erling Haaland e Harry Kane. Mais tarde, às 22h, é a vez de Argentina e Suíça em Kansas City; os argentinos capitaneados por Lionel Messi não tiveram vida fácil até agora no mata-mata, e tentam confirmar o favoritismo de maneira menos complicada contra os suíços.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
