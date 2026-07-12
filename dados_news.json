@@ -104,7 +104,7 @@
       "blocos": [
         {
           "titulo": "40",
-          "texto": "<p><span style=\"background-color: transparent;\">Quarenta anos após se encontrarem pela última vez em mata-matas, Argentina e Inglaterra voltarão a se enfrentar na Copa do Mundo, desta vez valendo uma vaga para a grande final. O duelo de 1986 no México ficou marcado pelo seu simbolismo, ainda recente da guerra dos dois países pelas Ilhas Maldivas, e por ter sido um dos jogos que ajudou a tornar Diego Armando Maradona uma lenda do futebol em todo o planeta: o primeiro gol foi marcado de mão, naquilo que passou a ser conhecido como “La Mano de Diós”, e o segundo, com Maradona disparando do campo de defesa e passando pela marcação inglesa, é considerado por muitos o gol mais bonito da história das Copas.</span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Quarenta anos após se encontrarem pela última vez em mata-matas, Argentina e Inglaterra voltarão a se enfrentar na Copa do Mundo, desta vez valendo uma vaga para a grande final. O duelo de 1986 no México ficou marcado pelo seu simbolismo, ainda recente da guerra dos dois países pelas Ilhas Malvinas, e por ter sido um dos jogos que ajudou a tornar Diego Armando Maradona uma lenda do futebol em todo o planeta: o primeiro gol foi marcado de mão, naquilo que passou a ser conhecido como “La Mano de Diós”, e o segundo, com Maradona disparando do campo de defesa e passando pela marcação inglesa, é considerado por muitos o gol mais bonito da história das Copas.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Hora de definir a segunda semifinal",
-          "texto": "<p><span style=\"background-color: transparent;\">Neste sábado, ocorrem os dois últimos confrontos das quartas de final da Copa do Mundo, definindo a segunda semifinal do torneio. Às 18h, Noruega e Inglaterra se enfrentam em Miami, colocando frente a frente dois dos principais artilheiros da competição, Erling Haaland e Harry Kane. Mais tarde, às 22h, é a vez de Argentina e Suíça em Kansas City; os argentinos capitaneados por Lionel Messi não tiveram vida fácil até agora no mata-mata, e tentam confirmar o favoritismo de maneira menos complicada contra os suíços.</span></p>",
+          "titulo": "Domingo sem jogo? O que fazer?",
+          "texto": "<p><span style=\"background-color: transparent;\">Até chegarem as semifinais, serão dois dias sem jogos. A Copa do Mundo se encaminha para a reta final, mas isso não é motivo para deixar o clima da maior competição de futebol do planeta arrefecer. Pensando nisso, e ainda como uma maneira de lidar com mais uma frustração da nossa seleção brasileira, recomendamos documentários disponíveis no Globoplay, focados em três dos maiores jogadores que já vestiram a amarelinha: “Isto é Pelé”, de Eduardo Escorel e Luiz Carlos Barreto; “Garrincha - Alegria do Povo”, de Joaquim Pedro de Andrade, e “Ronaldo - O Fenômeno”, de Duncan McMath.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
