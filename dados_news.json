@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA:  21.893",
-  "textoDestaque": "<p><strong style=\"background-color: transparent;\">nas últimas 24 horas</strong></p><p><strong>(-13,7% no volume de menções)</strong></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 24.459",
+  "textoDestaque": "<p><strong style=\"background-color: transparent;\">nas últimas 24 horas</strong></p><p><strong>(+11,9% no volume de menções)</strong></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -11,8 +11,8 @@
           "texto": "<p>Messi e Mbappé aparecem nas redes como dois personagens diferentes da mesma Copa. De um lado, o argentino concentra volume, legado e reverência: sua conversa gira em torno de história, recordes e peso simbólico. Do outro, Mbappé cresce como o nome do agora: o jogador do momento, impulsionado pelo mata-mata e pela sensação de que ainda pode decidir os capítulos finais do torneio.</p><p><br></p><p>O recorte mostra que Messi segue sendo o centro gravitacional da conversa, com mais publicações, mais repercussão e mais impacto acumulado desde o início da Copa. Mbappé, porém, encurta a distância quando o assunto é temperatura do momento: sua curva sobe na reta decisiva e o coloca como o protagonista mais quente entre os semifinalistas.</p><p><br></p><p>No fim, as redes desenham um duelo que vai além do campo: Messi representa a história que já foi construída; Mbappé, a história que ainda está sendo escrita.</p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783783980679.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783783980679.jpeg",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783869450787.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783869450787.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
