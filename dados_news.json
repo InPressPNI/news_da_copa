@@ -59,8 +59,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783784220753.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783784220753.jpeg",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783869810696.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783869810696.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Um dia para esquecer",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">No minuto 71 de Espanha x Bélgica, o experiente goleiro belga Courtois sentiu uma lesão muscular e, chorando, teve que ser substituído por Lammens. 16 minutos depois, o jovem reserva da Bélgica falhou no lance do segundo gol espanhol, dando rebote em uma bola defensável chutada por Cubarsí e permitindo que Merino marcasse o gol. Imediatamente, a transmissão oficial da Copa do Mundo exibiu Courtois no banco, com cara de poucos amigos; uma reação que viralizou nas redes sociais. Definitivamente, um dia para Courtois esquecer, naquela que pode ter sido sua última partida em Copas.</span></p>",
+          "titulo": "O clima esquentou?",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Mesmo com o passaporte inglês carimbado para as semifinais, uma divergência entre o treinador Thomas Tuchel e o herói da partida de ontem, Jude Bellingham, chamou a atenção no pós-jogo. Em entrevista coletiva, Tuchel afirmou que, mesmo com a classificação, a atuação britânica foi \"desleixada e com muitos erros\" e que não estava de todo feliz com o resultado em campo. Logo depois, Bellingham fez questão de elogiar a entrega dos jogadores em campo, e comentou: “talvez ele não saiba como é jogar nessas condições, contra Erling Haaland, Ødegaard, Nusa, Sorloth. Não é um time fácil de enfrentar”. A ver se essa divergência irá influenciar nas semifinais.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
