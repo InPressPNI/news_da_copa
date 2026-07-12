@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "O clima esquentou?",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Mesmo com o passaporte inglês carimbado para as semifinais, uma divergência entre o treinador Thomas Tuchel e o herói da partida de ontem, Jude Bellingham, chamou a atenção no pós-jogo. Em entrevista coletiva, Tuchel afirmou que, mesmo com a classificação, a atuação britânica foi \"desleixada e com muitos erros\" e que não estava de todo feliz com o resultado em campo. Logo depois, Bellingham fez questão de elogiar a entrega dos jogadores em campo, e comentou: “talvez ele não saiba como é jogar nessas condições, contra Erling Haaland, Ødegaard, Nusa, Sorloth. Não é um time fácil de enfrentar”. A ver se essa divergência irá influenciar nas semifinais.</span></p>",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Mesmo com o passaporte inglês carimbado para as semifinais, uma divergência entre o treinador Thomas Tuchel e o herói da partida de ontem, Jude Bellingham, chamou a atenção no pós-jogo. Em entrevista coletiva, Tuchel afirmou que, mesmo com a classificação, a atuação britânica foi \"desleixada e com muitos erros\" e que não estava de todo feliz com o resultado em campo. Logo depois, Bellingham fez questão de elogiar a entrega dos jogadores em campo, e comentou: “talvez ele (Tuchel) não saiba como é jogar nessas condições, contra Erling Haaland, Ødegaard, Nusa, Sorloth. Não é um time fácil de enfrentar”. A ver se essa divergência irá influenciar nas semifinais.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p><a href=\"https://www.meioemensagem.com.br/midia/ifood-lidera-buzz-na-semana-de-eliminacao-do-brasil\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">O iFood assumiu a liderança do ranking da Stilingue by Blip</a> como a marca mais citada nas redes sociais que estão diretamente envolvidas com a Copa do Mundo. O aplicativo de delivery conseguiu esse destaque pela iniciativa de oferecer cupons de desconto aos usuários, sobretudo no X, incentivando as interações com a marca. A empresa também conseguiu bastante engajamento por conta de um vídeo, feito com a cantora Luísa Sonza, que explorou a semelhança entre a cantora e o jogador norueguês Haaland, algo muito comentado nas redes sociais.</p>",
+          "texto": "<p>Ele não entrará mais em campo nesta Copa do Mundo, mas é inegável que Erling Haaland já é um dos principais personagens da edição de 2026. Não somente pelo faro de artilheiro e pela liderança em campo, mas também pelo carisma e pelo visual que se tornou marca registrada: os cabelos longos, costumeiramente presos e criando um rabo de cavalo, <a href=\"https://www.instagram.com/reel/Daqfyj0P6wP/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">viraram molde para que memes nas redes sociais fossem criados e para que as marcas pudessem aproveitar a onda viking através de anúncios criativos</a>. Além de ter sido um craque dentro das quatro linhas, Haaland também foi matéria-prima para ações criativas pelas marcas.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
