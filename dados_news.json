@@ -58,9 +58,9 @@
           "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783956267463.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783956267463.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "O clima esquentou?",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Mesmo com o passaporte inglês carimbado para as semifinais, uma divergência entre o treinador Thomas Tuchel e o herói da partida de ontem, Jude Bellingham, chamou a atenção no pós-jogo. Em entrevista coletiva, Tuchel afirmou que, mesmo com a classificação, a atuação britânica foi \"desleixada e com muitos erros\" e que não estava de todo feliz com o resultado em campo. Logo depois, Bellingham fez questão de elogiar a entrega dos jogadores em campo, e comentou: “talvez ele (Tuchel) não saiba como é jogar nessas condições, contra Erling Haaland, Ødegaard, Nusa, Sorloth. Não é um time fácil de enfrentar”. A ver se essa divergência irá influenciar nas semifinais.</span></p>",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Uma das frases mais repetidas por aí é que a edição atual, realizada nos EUA, Canadá e México, é a “Copa dos Protagonistas”, pelo poder de decisão que os principais jogadores das seleções têm demonstrado nas partidas. Amanhã e quarta, Mbappé (França), Yamal (Espanha), Messi (Argentina) e Kane (Inglaterra) colocarão à prova esse poder, em duelos nos quais a liderança e a capacidade técnica farão a diferença. A </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/selecoes-top-4-da-copa-chegam-para-as-semifinais-com-armas-diferentes.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">Folha de S.Paulo fez uma reportagem</a><span style=\"background-color: transparent;\"> em que detalha, com dados e estatísticas, os estilos de jogo de cada seleção.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
