@@ -71,7 +71,7 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "O clima esquentou?",
+          "titulo": "Qual dos quatro jogadores será campeão do mundial neste domingo?",
           "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Uma das frases mais repetidas por aí é que a edição atual, realizada nos EUA, Canadá e México, é a “Copa dos Protagonistas”, pelo poder de decisão que os principais jogadores das seleções têm demonstrado nas partidas. Amanhã e quarta, Mbappé (França), Yamal (Espanha), Messi (Argentina) e Kane (Inglaterra) colocarão à prova esse poder, em duelos nos quais a liderança e a capacidade técnica farão a diferença. A </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/selecoes-top-4-da-copa-chegam-para-as-semifinais-com-armas-diferentes.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Folha de S.Paulo fez uma reportagem</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\"> em que detalha, com dados e estatísticas, os estilos de jogo de cada seleção.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
