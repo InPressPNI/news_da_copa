@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "O clima esquentou?",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Uma das frases mais repetidas por aí é que a edição atual, realizada nos EUA, Canadá e México, é a “Copa dos Protagonistas”, pelo poder de decisão que os principais jogadores das seleções têm demonstrado nas partidas. Amanhã e quarta, Mbappé (França), Yamal (Espanha), Messi (Argentina) e Kane (Inglaterra) colocarão à prova esse poder, em duelos nos quais a liderança e a capacidade técnica farão a diferença. A </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/selecoes-top-4-da-copa-chegam-para-as-semifinais-com-armas-diferentes.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">Folha de S.Paulo fez uma reportagem</a><span style=\"background-color: transparent;\"> em que detalha, com dados e estatísticas, os estilos de jogo de cada seleção.</span></p>",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Uma das frases mais repetidas por aí é que a edição atual, realizada nos EUA, Canadá e México, é a “Copa dos Protagonistas”, pelo poder de decisão que os principais jogadores das seleções têm demonstrado nas partidas. Amanhã e quarta, Mbappé (França), Yamal (Espanha), Messi (Argentina) e Kane (Inglaterra) colocarão à prova esse poder, em duelos nos quais a liderança e a capacidade técnica farão a diferença. A </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/selecoes-top-4-da-copa-chegam-para-as-semifinais-com-armas-diferentes.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Folha de S.Paulo fez uma reportagem</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\"> em que detalha, com dados e estatísticas, os estilos de jogo de cada seleção.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Ele não entrará mais em campo nesta Copa do Mundo, mas é inegável que Erling Haaland já é um dos principais personagens da edição de 2026. Não somente pelo faro de artilheiro e pela liderança em campo, mas também pelo carisma e pelo visual que se tornou marca registrada: os cabelos longos, costumeiramente presos e criando um rabo de cavalo, <a href=\"https://www.instagram.com/reel/Daqfyj0P6wP/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">viraram molde para que memes nas redes sociais fossem criados e para que as marcas pudessem aproveitar a onda viking através de anúncios criativos</a>. Além de ter sido um craque dentro das quatro linhas, Haaland também foi matéria-prima para ações criativas pelas marcas.</p>",
+          "texto": "<p>Este é um daqueles cases de interações entre marcas nas redes sociais que deve virar referência. As companhias aéreas Norwegian Air, da Noruega, e British Airways, da Inglaterra, fizeram uma aposta antes da partida entre seus respectivos países no último sábado: quem perdesse, precisaria colocar a logo da outra empresa como foto de perfil no Instagram durante 24 horas. Com a classificação inglesa consumada, a Norwegian pagou a promessa. Toda a interação <a href=\"https://www.instagram.com/p/Dau6NYUMQ3k/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">ocorreu em clima de cordialidade entre as duas marcas e os dois países</a>.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "40",
-          "texto": "<p><span style=\"background-color: transparent;\">Quarenta anos após se encontrarem pela última vez em mata-matas, Argentina e Inglaterra voltarão a se enfrentar na Copa do Mundo, desta vez valendo uma vaga para a grande final. O duelo de 1986 no México ficou marcado pelo seu simbolismo, ainda recente da guerra dos dois países pelas Ilhas Malvinas, e por ter sido um dos jogos que ajudou a tornar Diego Armando Maradona uma lenda do futebol em todo o planeta: o primeiro gol foi marcado de mão, naquilo que passou a ser conhecido como “La Mano de Diós”, e o segundo, com Maradona disparando do campo de defesa e passando pela marcação inglesa, é considerado por muitos o gol mais bonito da história das Copas.</span></p>",
+          "titulo": "6.527.410",
+          "texto": "<p><span style=\"background-color: transparent;\">Esse número expressivo é o </span><a href=\"https://exame.com/esporte/copa-de-2026-ja-teve-mais-publico-do-que-os-torneios-de-2018-e-2022-somados/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">total de torcedores que compareceram aos estádios da Copa do Mundo de 2026</a><span style=\"background-color: transparent;\">, faltando ainda quatro partidas a serem disputadas. O número supera a soma do público total registrado pelas edições de 2018, realizada na Rússia, e de 2022, no Catar. Reflexo do aumento do número de seleções, mas também do alto comparecimento de torcedores nos jogos.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
