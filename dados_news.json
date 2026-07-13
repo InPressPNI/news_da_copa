@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Em dia de Argentina x Suíça, as redes brasileiras mostraram que a rivalidade continua viva — mas não de forma tão simples.</span></p><p><br></p><p><span style=\"background-color: transparent;\">A torcida ficou praticamente dividida entre apoiar a rival sul-americana e secar o país vizinho. O que realmente unificou a conversa, no entanto, foi a desconfiança. </span></p><p><br></p><p><span style=\"background-color: transparent;\">Durante e após a partida, cresceram as críticas à arbitragem, acompanhadas por acusações de favorecimento e pela percepção de que a classificação argentina veio cercada de polêmicas.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Messi seguiu no centro da narrativa, ora como protagonista, ora como alvo de cobranças. No fim, o placar do engajamento da torcida terminou tecnicamente empatado.</span></p><p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Nem sempre quem aparece mais é quem desperta mais emoção.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Romário lidera a Seleção da Saudade em volume de posts nostálgicos, com 69 publicações, seguido de perto por Ronaldinho Gaúcho e Ronaldo Fenômeno. Mas, quando o olhar vai para as interações, o destaque muda: Kaká lidera com 1,32 milhão, mesmo aparecendo em apenas 16 posts.</span></p><p><br></p><p><span style=\"background-color: transparent;\">A diferença mostra que volume de publicações e comoção não são a mesma coisa. Enquanto Romário mantém presença constante na memória da torcida, conteúdos ligados às gerações de 2002 e 2006 — especialmente com Kaká, Ronaldo e Roberto Carlos — concentram picos de engajamento e reativam lembranças afetivas de uma era ainda muito viva nas redes.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, a saudade também tem escalação: alguns nomes dominam a conversa; outros transformam uma única imagem em máquina do tempo.</span></p><p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783956568218.jpeg",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1783956568218.jpeg",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
