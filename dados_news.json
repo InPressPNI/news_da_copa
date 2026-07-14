@@ -59,8 +59,8 @@
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783956267463.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1783956267463.jpeg",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1784042614593.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1784042614593.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Qual dos quatro jogadores será campeão do mundial neste domingo?",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Uma das frases mais repetidas por aí é que a edição atual, realizada nos EUA, Canadá e México, é a “Copa dos Protagonistas”, pelo poder de decisão que os principais jogadores das seleções têm demonstrado nas partidas. Amanhã e quarta, Mbappé (França), Yamal (Espanha), Messi (Argentina) e Kane (Inglaterra) colocarão à prova esse poder, em duelos nos quais a liderança e a capacidade técnica farão a diferença. A </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/selecoes-top-4-da-copa-chegam-para-as-semifinais-com-armas-diferentes.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Folha de S.Paulo fez uma reportagem</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\"> em que detalha, com dados e estatísticas, os estilos de jogo de cada seleção.</span></p>",
+          "titulo": "Vingadores: Neymar infinito",
+          "texto": "<p class=\"ql-align-justify\"><a href=\"https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/13/neymar-reage-a-video-que-sugere-sua-participacao-na-copa-do-mundo-de-2030.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Em um vídeo criado por inteligência artificial baseado no filme Vingadores, Neymar</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\"> se encontra com versões suas de linhas temporais diferentes para um ato final: a busca pela Copa do Mundo em 2030. Entre a emoção dos fãs do craque com o vídeo e as piadas de quem não quer mais que ele jogue pela Seleção Brasileira, o vídeo ganhou as redes e gerou discussões que passam pelo futebol e vão até o uso de IA para criar conteúdo.&nbsp;</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Este é um daqueles cases de interações entre marcas nas redes sociais que deve virar referência. As companhias aéreas Norwegian Air, da Noruega, e British Airways, da Inglaterra, fizeram uma aposta antes da partida entre seus respectivos países no último sábado: quem perdesse, precisaria colocar a logo da outra empresa como foto de perfil no Instagram durante 24 horas. Com a classificação inglesa consumada, a Norwegian pagou a promessa. Toda a interação <a href=\"https://www.instagram.com/p/Dau6NYUMQ3k/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">ocorreu em clima de cordialidade entre as duas marcas e os dois países</a>.</p>",
+          "texto": "<p>Não é só em campo que a disputa pela Copa acontece. A Máquina do Esporte, uma das principais plataformas brasileiras de gestão e marketing esportivo, abriu a “Copa das Marcas”, uma seleção de 16 campanhas brasileiras voltadas para a Copa do Mundo que vão concorrer entre si por meio de votação popular, <a href=\"https://www.instagram.com/p/DavPLQ-Dl13/?utm_source=ig_embed&amp;ig_rid=AwLd2l-a4SaZHX82KaFG4UO\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">no perfil da Máquina do Esporte no Instagram</a>. A primeira batalha acontece entre as campanhas “De volta para o país do futebol”, do Mercado Livre, e “Sonhos”, da Volkswagen.&nbsp;</p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
