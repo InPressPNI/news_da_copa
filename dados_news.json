@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Não é só em campo que a disputa pela Copa acontece. A Máquina do Esporte, uma das principais plataformas brasileiras de gestão e marketing esportivo, abriu a “Copa das Marcas”, uma seleção de 16 campanhas brasileiras voltadas para a Copa do Mundo que vão concorrer entre si por meio de votação popular, <a href=\"https://www.instagram.com/p/DavPLQ-Dl13/?utm_source=ig_embed&amp;ig_rid=AwLd2l-a4SaZHX82KaFG4UO\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">no perfil da Máquina do Esporte no Instagram</a>. A primeira batalha acontece entre as campanhas “De volta para o país do futebol”, do Mercado Livre, e “Sonhos”, da Volkswagen.&nbsp;</p><p><br></p>",
+          "texto": "<p>Não é só em campo que a disputa pela Copa acontece. A Máquina do Esporte, uma das principais plataformas brasileiras de gestão e marketing esportivo, abriu a “Copa das Marcas”, uma seleção de 16 campanhas brasileiras voltadas para a Copa do Mundo que vão concorrer entre si por meio de votação popular, <a href=\"https://www.instagram.com/p/DavPLQ-Dl13/?utm_source=ig_embed&amp;ig_rid=AwLd2l-a4SaZHX82KaFG4UO\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">no perfil da Máquina do Esporte no Instagram</a>. A primeira batalha acontece entre as campanhas “De volta para o país do futebol”, do Mercado Livre, e “Sonhos”, da Volkswagen.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "6.527.410",
-          "texto": "<p><span style=\"background-color: transparent;\">Esse número expressivo é o </span><a href=\"https://exame.com/esporte/copa-de-2026-ja-teve-mais-publico-do-que-os-torneios-de-2018-e-2022-somados/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">total de torcedores que compareceram aos estádios da Copa do Mundo de 2026</a><span style=\"background-color: transparent;\">, faltando ainda quatro partidas a serem disputadas. O número supera a soma do público total registrado pelas edições de 2018, realizada na Rússia, e de 2022, no Catar. Reflexo do aumento do número de seleções, mas também do alto comparecimento de torcedores nos jogos.</span></p>",
+          "titulo": "3",
+          "texto": "<p><a href=\"https://www1.folha.uol.com.br/colunas/coluna-folha-stats/2026/07/valeu-atacar-nesta-copa.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">dos quatro melhores ataques da Copa</a><span style=\"background-color: transparent;\"> se enfrentam nas semifinais. Quem lidera o bonde dos artilheiros é a Argentina, com 17 gols no torneio. A França vem logo na sequência, com 16 gols, e a Inglaterra segura a quarta posição, com 13 gols. Única fora dos quatro melhores ataques entre os semifinalistas, a Espanha tem 11 gols marcados até essa fase da Copa.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Ele está voltando… o Brasileirão",
-          "texto": "<p>O clima de Copa do Mundo continua, mas alguns torcedores já estão com a cabeça no retorno do futebol de clubes. O Brasileirão volta nesta semana, antes mesmo da Copa terminar: na próxima quinta-feira, Botafogo x Santos e Vitória x Vasco entram em campo pela última rodada do primeiro turno da competição.</p>",
+          "titulo": "Onde nasceu a guerrilha",
+          "texto": "<p><span style=\"background-color: transparent;\">Mesmo dividindo a mesma zona econômica e fronteira, França e Espanha têm sua história marcada por confrontos como a Guerra Peninsular, travada por Napoleão Bonaparte e que inspirou os espanhóis a combaterem as forças napoleônicas com uma nova tática, usando civis e militares irregulares. Nascia ali o termo guerrilha, que depois virou até sinônimo de formato de campanha de comunicação. E é certo pensar que veremos uma batalha sendo travada em campo hoje, às 16 horas, com um dos melhores ataques do torneio (a França, com 16 gols) frente a frente com a melhor defesa da Copa (a Espanha, com apenas um gol sofrido).&nbsp;</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
