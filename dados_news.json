@@ -8,7 +8,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Com a eliminação da Seleção Brasileira, restou ao brasileiro fã de futebol escolher um outro time para torcer na Copa. Marrocos já teve essa torcida, Cabo Verde ganhou nossos corações e até os belgas ganharam nosso carinho após a polêmica do cartão vermelho retirado do atacante norte-americano Balogun. Mas, na semifinal de hoje, o brasileiro virou uma espécie de Anya Taylor-Joy: a atriz, argentina de nascimento e inglesa de criação, se tornou símbolo do impasse das redes. De um lado, a Argentina, que a gente até apoia pelo Messi. Mas, basta lembrar da eliminação do Brasil e da rivalidade histórica entre os países que bate aquela tristeza. Do outro, a Inglaterra, que não tem lá muito carisma, garante pouca torcida por aqui. Jude Bellingham é o nome forte entre os ingleses, conquistando pelo estilo jovem e atrativo. O veredito? Rejeição para os dois lados.&nbsp;</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Com a eliminação da Seleção Brasileira, restou ao brasileiro fã de futebol escolher um outro time para torcer na Copa. Marrocos já teve essa torcida, Cabo Verde ganhou nossos corações e até os belgas ganharam nosso carinho após a polêmica do cartão vermelho retirado do atacante norte-americano Balogun. Mas, na semifinal de hoje, o brasileiro virou uma espécie de Anya Taylor-Joy: a atriz, argentina de nascimento e inglesa de criação, se tornou símbolo do impasse das redes. De um lado, a Argentina, que a gente até apoia pelo Messi. Mas, basta lembrar da eliminação do Brasil e da rivalidade histórica entre os países que bate aquela tristeza. Do outro, a Inglaterra, que não tem lá muito carisma, garante pouca torcida por aqui. Jude Bellingham é o nome forte entre os ingleses, conquistando pelo estilo jovem e atrativo. O veredito? Rejeição para os dois lados.&nbsp;</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿</span></span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1784130507105.png",
@@ -58,9 +58,9 @@
           "titulo": "",
           "texto": "<p><br></p>",
           "corFundo": "#ffffff",
-          "layout": "text-only",
-          "imagem": "",
-          "imagemAltaRes": "",
+          "layout": "img-top",
+          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1784130687106.png",
+          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_5_1784130687106.png",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "Vingadores: Neymar infinito",
-          "texto": "<p class=\"ql-align-justify\"><a href=\"https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/13/neymar-reage-a-video-que-sugere-sua-participacao-na-copa-do-mundo-de-2030.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">Em um vídeo criado por inteligência artificial baseado no filme Vingadores, Neymar</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\"> se encontra com versões suas de linhas temporais diferentes para um ato final: a busca pela Copa do Mundo em 2030. Entre a emoção dos fãs do craque com o vídeo e as piadas de quem não quer mais que ele jogue pela Seleção Brasileira, o vídeo ganhou as redes e gerou discussões que passam pelo futebol e vão até o uso de IA para criar conteúdo.&nbsp;</span></p>",
+          "titulo": "Espanha na final",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Em uma partida quase perfeita, a Espanha anulou os craques Mbappé, Olise e Dembélé e garantiu sua vaga na grande final da Copa do Mundo, após a vitória de 2 a 0 sobre a França. Na foto, o lateral direito Pedro Porro busca o canto direito de Maignan para fechar o placar, após tabela com o meia Dani Olmo.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Não é só em campo que a disputa pela Copa acontece. A Máquina do Esporte, uma das principais plataformas brasileiras de gestão e marketing esportivo, abriu a “Copa das Marcas”, uma seleção de 16 campanhas brasileiras voltadas para a Copa do Mundo que vão concorrer entre si por meio de votação popular, <a href=\"https://www.instagram.com/p/DavPLQ-Dl13/?utm_source=ig_embed&amp;ig_rid=AwLd2l-a4SaZHX82KaFG4UO\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">no perfil da Máquina do Esporte no Instagram</a>. A primeira batalha acontece entre as campanhas “De volta para o país do futebol”, do Mercado Livre, e “Sonhos”, da Volkswagen.</p>",
+          "texto": "<p>Na numerologia, o 19 traz consigo o começo (1) e o final (9). No tarô, ele é a carta do Sol. Em ambos, retrata o encontro dos extremos e a necessidade de equilíbrio. Já no futebol, o número 19 é o dia da final da Copa e a idade de um dos craques do torneio, o espanhol Lamine Yamal. Com esse número constante na vida do jogador, <a href=\"https://www.instagram.com/reel/DavSuU0uMZp/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">a Adidas trouxe a campanha “O número da moda”</a>, protagonizada pela joia espanhola. Vamos combinar: Copa, inícios e fins têm tudo a ver. Então, cabalisticamente, será esta a Copa de Yamal? No domingo, teremos a resposta.&nbsp;</p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
