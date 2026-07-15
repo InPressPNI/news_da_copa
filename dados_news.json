@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Na véspera da semifinal, Espanha e França conquistam os torcedores brasileiros por caminhos diferentes.</span></p><p><br></p><p><span style=\"background-color: transparent;\">A Espanha aparece cercada por uma conversa mais leve, puxada por Lamine Yamal, pela juventude do elenco e pela ideia de um futebol técnico, ousado e renovado. Já a França mobiliza mais volume e carrega o peso de quem sabe chegar: Mbappé, experiência de campeão, força coletiva e uma seleção acostumada a decidir.</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, o contraste não é apenas entre duas equipes. É entre a novidade que encanta e a potência que impõe respeito. A Espanha entra com mais simpatia; a França, com mais peso.</span></p><p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Com a eliminação da Seleção Brasileira, restou ao brasileiro fã de futebol escolher um outro time para torcer na Copa. Marrocos já teve essa torcida, Cabo Verde ganhou nossos corações e até os belgas ganharam nosso carinho após a polêmica do cartão vermelho retirado do atacante norte-americano Balogun. Mas, na semifinal de hoje, o brasileiro virou uma espécie de Anya Taylor-Joy: a atriz, argentina de nascimento e inglesa de criação, se tornou símbolo do impasse das redes. De um lado, a Argentina, que a gente até apoia pelo Messi. Mas, basta lembrar da eliminação do Brasil e da rivalidade histórica entre os países que bate aquela tristeza. Do outro, a Inglaterra, que não tem lá muito carisma, garante pouca torcida por aqui. Jude Bellingham é o nome forte entre os ingleses, conquistando pelo estilo jovem e atrativo. O veredito? Rejeição para os dois lados.&nbsp;</span></p>",
           "corFundo": "#ffffff",
-          "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1784042554573.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1784042554573.jpeg",
+          "layout": "text-only",
+          "imagem": "",
+          "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
