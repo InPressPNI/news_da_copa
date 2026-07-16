@@ -72,7 +72,7 @@
       "blocos": [
         {
           "titulo": "A faixa da discórdia",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">Em uma partida quase perfeita, a Espanha anulou os craques Mbappé, Olise e Dembélé e garantiu sua vaga na grande final da Copa do Mundo, após a vitória de 2 a 0 sobre a França. Na foto, o lateral direito Pedro Porro busca o canto direito de Maignan para fechar o placar, após tabela com o meia Dani Olmo.</span></p>",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">O duelo entre Argentina e Inglaterra, mais uma vez, foi marcado por uma rivalidade que foi além das quatro linhas: a guerra entre os dois países pelo controle das Malvinas, ou Ilhas Falkland para os ingleses, em 1982, ainda reverbera, mesmo que o discurso de jogadores e equipes técnicas antes da partida tenha afastado essa animosidade. Após o apito final, em meio à comemoração com a torcida, os jogadores argentinos celebraram com uma faixa que dizia “As Malvinas são argentinas”. Antes do jogo, a FIFA emitiu determinação para que fossem proibidas entradas de torcedores com qualquer referência à guerra ou outras mensagens provocativas. Resta ver como a entidade que comanda a Copa irá reagir a essa faixa.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Na numerologia, o 19 traz consigo o começo (1) e o final (9). No tarô, ele é a carta do Sol. Em ambos, retrata o encontro dos extremos e a necessidade de equilíbrio. Já no futebol, o número 19 é o dia da final da Copa e a idade de um dos craques do torneio, o espanhol Lamine Yamal. Com esse número constante na vida do jogador, <a href=\"https://www.instagram.com/reel/DavSuU0uMZp/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">a Adidas trouxe a campanha “O número da moda”</a>, protagonizada pela joia espanhola. Vamos combinar: Copa, inícios e fins têm tudo a ver. Então, cabalisticamente, será esta a Copa de Yamal? No domingo, teremos a resposta.</p>",
+          "texto": "<p>A Louis Vuitton, grife francesa de bolsas e malas de viagem, produz baús personalizados para transporte de troféus de competições esportivas desde os anos 1980. Na Copa do Mundo, a marca assina o chamado “Trophy Trunk” da taça desde a edição de 2010, na África do Sul. Nesta semana, ela apresentou <a href=\"https://exame.com/marketing/louis-vuitton-apresenta-bau-especial-para-transportar-a-taca-da-copa-do-mundo/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">o baú oficial que levará a taça da Copa do Mundo 2026</a> até a partida final, que ocorrerá domingo (19), em Nova York/Nova Jersey. A peça foi produzida artesanalmente nos ateliês da Louis Vuitton, com sede em Paris (França).</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,7 +103,7 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "40",
+          "titulo": "20",
           "texto": "<p><span style=\"background-color: transparent;\">anos separam a “Mão de Deus”, gol clássico de Maradona contra a Inglaterra na Copa do México de 1986. Além do gol de mão, o craque argentino ainda fez outro antológico, driblando metade do time inglês desde o meio de campo, incluindo o goleiro. A vitória foi uma espécie de “vingança” contra os ingleses, já que aconteceu durante a Guerra das Malvinas, confronto geopolítico entre os dois países na disputa pelo arquipélago austral das Malvinas, que também são conhecidas como Falklands, após a vitória inglesa no conflito.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
