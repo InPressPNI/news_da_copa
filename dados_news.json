@@ -1,6 +1,6 @@
 {
-  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 31.782",
-  "textoDestaque": "<p><strong style=\"background-color: transparent;\">nas últimas 24 horas</strong></p><p><strong>(+27,8% no volume de menções)</strong></p>",
+  "tituloDestaque": "VOLUME DE PUBLICAÇÕES DA COPA: 18.809",
+  "textoDestaque": "<p><strong style=\"background-color: transparent;\">nas últimas 24 horas</strong></p><p><strong>(-40,8% no volume de menções)</strong></p>",
   "sessoesDados": [
     {
       "sessao": 2,
@@ -8,11 +8,11 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\">Antes de vestir a braçadeira e a camisa 10, Messi já dividia estúdio com um bebê chamado Lamine Yamal. Dezenove anos depois, os dois se encontram — mas agora um de cada lado da grande decisão.</span></p><p><br></p><p><span style=\"background-color: transparent;\">E as redes já escolheram um jeito de torcer: Messi manda no volume, Yamal manda na emoção. O argentino é mencionado em mais posts. O espanhol arranca 2,7x mais interação de cada um deles.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quem pesa mais na decisão: a história ou o momento?</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">Antes de vestir a braçadeira e a camisa 10, Messi já dividia estúdio com um bebê chamado Lamine Yamal. Dezenove anos depois, os dois se encontram — mas agora um de cada lado da grande decisão.</span></p><p><br></p><p><span style=\"background-color: transparent;\">E as redes já escolheram um jeito de torcer: Messi manda no volume, Yamal manda na emoção. O argentino é mencionado em mais posts. O espanhol arranca 2,7x mais interação de cada um deles.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Quem pesa mais na decisão: a história ou o momento?</span></p><p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿</span></span></p>",
           "corFundo": "#ffffff",
-          "layout": "img-top",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1784215112879.jpeg",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1784215112879.jpeg",
+          "layout": "text-only",
+          "imagem": "",
+          "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
