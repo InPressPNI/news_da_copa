@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>A Louis Vuitton, grife francesa de bolsas e malas de viagem, produz baús personalizados para transporte de troféus de competições esportivas desde os anos 1980. Na Copa do Mundo, a marca assina o chamado “Trophy Trunk” da taça desde a edição de 2010, na África do Sul. Nesta semana, ela apresentou <a href=\"https://exame.com/marketing/louis-vuitton-apresenta-bau-especial-para-transportar-a-taca-da-copa-do-mundo/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">o baú oficial que levará a taça da Copa do Mundo 2026</a> até a partida final, que ocorrerá domingo (19), em Nova York/Nova Jersey. A peça foi produzida artesanalmente nos ateliês da Louis Vuitton, com sede em Paris (França).</p>",
+          "texto": "<p>Fundado na Argentina, o Mercado Livre não deixou de comemorar a vitória dos hermanos contra os ingleses com o típico humor portenho: <a href=\"https://www.instagram.com/p/Da1MWxdRs7N/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">com um aviso de que o “It's coming home”,</a> lema do time e da torcida inglesa para uma segunda conquista de Copa, teve a entrega cancelada pois, de acordo com a marca, algumas coisas não se podem controlar.&nbsp;</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "20",
-          "texto": "<p><span style=\"background-color: transparent;\">A opção do técnico da seleção inglesa, Thomas Tuchel, em adotar uma postura extremamente defensiva após o gol de Gordon mostrou-se bastante equivocada com a virada conseguida pelos argentinos. As estatísticas do jogo reforçam o erro de Tuchel: no período entre o gol de Gordon, aos nove minutos do segundo tempo, e o da virada argentina, marcado por Lautaro Martínez, aos 46 minutos, a Inglaterra </span><a href=\"https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/16/inglaterra-teve-apenas-20-passes-completos-no-periodo-entre-o-gol-marcado-e-a-virada-da-argentina.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">conseguiu completar apenas 20 passes</a><span style=\"background-color: transparent;\">, contra 255 passes da Argentina. Em posse de bola, foram impressionantes </span><a href=\"https://oglobo.globo.com/esportes/copa-do-mundo-2026/noticia/2026/07/15/apos-gol-de-gordon-selecao-da-inglaterra-teve-apenas-12percent-de-posse-de-bola-contra-a-argentina-na-semi-da-copa.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">88% da Argentina e somente 12% da Inglaterra em 37 minutos de jogo</a><span style=\"background-color: transparent;\">.</span></p>",
+          "titulo": "49",
+          "texto": "<p><span style=\"background-color: transparent;\">bebês pernambucanos nasceram durante a Copa com um pé na Noruega. </span><a href=\"https://exame.com/pop/haaland-conquista-os-cartorios-49-bebes-recebem-nome-do-atacante-em-pernambuco/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">Isso porque os recém-nascidos ganharam o nome Erling Haaland</a><span style=\"background-color: transparent;\">, em homenagem ao atacante norueguês que, mesmo sendo fundamental na eliminação do Brasil no torneio, ganhou a nossa torcida com o seu carisma. Haaland segue o caminho de outros craques que inspiram pais e mães por todo o Brasil, como Cristiano Ronaldo, Lionel Messi, Kylian Mbappé e Lamine Yamal.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Olho no retrospecto entre os finalistas",
-          "texto": "<p><span style=\"background-color: transparent;\">Espanha e Argentina, as finalistas da Copa do Mundo 2026, já se enfrentaram 14 vezes. E o retrospecto é equilibrado: seis vitórias para cada lado, e dois empates. Em Copas do Mundo, apenas um jogo foi disputado entre as duas seleções: em 1966, na fase de grupos, a Argentina levou a melhor, por 2x1. Chama atenção as goleadas dos últimos dois duelos: em 2010, a Argentina venceu por 4x1, e oito anos depois, em 2018, a Espanha se vingou com um sonoro 6x1. Para 2026, qual será o resultado que irá desempatar o duelo? </span></p>",
+          "titulo": "Um novo último tango",
+          "texto": "<p><span style=\"background-color: transparent;\">O MetLife Stadium, palco da grande final da Copa, não traz boas lembranças para Lionel Messi. Foi nele que o atleta </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/messi-volta-a-palco-de-derrota-que-causou-sua-aposentadoria-da-selecao.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">se aposentou pela primeira</a><span style=\"background-color: transparent;\"> vez da Seleção Argentina, após perder a final da Copa América Centenário para o Chile, em 2016. Após a derrota e o anúncio de aposentadoria, uma campanha nacional clamou pela volta do craque aos gramados como jogador da Seleção. O resultado: Messi empilhou títulos, incluindo uma Copa do Mundo, e chega agora a mais uma final para, quem sabe, dessa vez se aposentar com a taça nas mãos.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
