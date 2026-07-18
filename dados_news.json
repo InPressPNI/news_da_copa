@@ -71,8 +71,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "E essa selfie cheia de craques?",
-          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">A foto do fofo bebê Lamine Yamal sendo banhado por Messi no início da carreira poderia muito bem ser mais uma arte criada pela torcida com inteligência artificial. Mas ela realmente aconteceu, há 19 anos, quando os pais de Yamal </span><a href=\"https://f5.folha.uol.com.br/voceviu/2026/07/a-historia-por-tras-das-fotos-de-messi-dando-banho-em-yamal-bebe-ele-nao-sabia-o-que-fazer-diz-fotografo.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">participaram de um sorteio</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\"> promovido pelo jornal catalão Sport, em parceria com a patrocinadora da camisa do Barcelona e a UNICEF, organização internacional voltada à assistência infantil. Yamal, com então cinco meses, ganhou o banho de Messi no vestiário do Barcelona e, quase duas décadas depois, dá para dizer que o destino queria mesmo colocar os dois frente a frente. Resta esperar, agora, para saber qual dos dois vai dar outro banho, dessa vez de bola, no domingo.</span></p>",
+          "titulo": "E esta selfie cheia de craques?",
+          "texto": "<p class=\"ql-align-justify\"><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">A dois dias da grande final da Copa do Mundo, um evento cheio de estrelas proporcionou essa selfie, postada pelo jogador da NBA Kevin Durant em seu </span><a href=\"https://www.instagram.com/p/Da6X8isOKS_/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(255, 255, 255);\">perfil no Instagram</a><span style=\"background-color: transparent; color: rgb(255, 255, 255);\">. Lionel Messi e Dibu Martínez, craques argentinos que jogarão a final, aparecem ao lado de nomes como Durant, a lenda da NFL Tom Brady, o multicampeão de torneios de Grand Slam de tênis Novak Djokovic e o ex-jogador britânico Rio Ferdinand. Nada mal para uma selfie.</span></p>",
           "corFundo": "#2e62ff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_6_1781232031753.png",
@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Fundado na Argentina, o Mercado Livre não deixou de comemorar a vitória dos hermanos contra os ingleses com o típico humor portenho: <a href=\"https://www.instagram.com/p/Da1MWxdRs7N/\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">com um aviso de que o “It's coming home”,</a> lema do time e da torcida inglesa para uma segunda conquista de Copa, teve a entrega cancelada pois, de acordo com a marca, algumas coisas não se podem controlar.&nbsp;</p>",
+          "texto": "<p>Quando o assunto é marca fornecedora de material esportivo, a Adidas é, sem dúvida, o grande destaque desta Copa: ela será a fornecedora oficial das duas seleções que decidirão o título, e patrocina ainda o argentino Lionel Messi e o espanhol Lamine Yamal, duas das maiores estrelas dos finalistas. Assina também a Trionda, a bola oficial do jogo, e, ainda por cima, vestirá até os árbitros e assistentes da partida decisiva. Além disso, <a href=\"https://economia.uol.com.br/noticias/redacao/2026/07/17/quem-venceu-a-batalha-das-marcas-na-copa-do-mundo.ghtm\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">especialistas em marketing ouvidos pelo colunista do UOL, Renato Pezzotti</a>, afirmam que a Adidas venceu com uma estratégia de marketing que vendeu a união entre comportamento e cultura, sem contar o uso de nostalgia com camisas históricas de edição limitada.</p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
