@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "49",
-          "texto": "<p><span style=\"background-color: transparent;\">bebês pernambucanos nasceram durante a Copa com um pé na Noruega. </span><a href=\"https://exame.com/pop/haaland-conquista-os-cartorios-49-bebes-recebem-nome-do-atacante-em-pernambuco/\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">Isso porque os recém-nascidos ganharam o nome Erling Haaland</a><span style=\"background-color: transparent;\">, em homenagem ao atacante norueguês que, mesmo sendo fundamental na eliminação do Brasil no torneio, ganhou a nossa torcida com o seu carisma. Haaland segue o caminho de outros craques que inspiram pais e mães por todo o Brasil, como Cristiano Ronaldo, Lionel Messi, Kylian Mbappé e Lamine Yamal.</span></p>",
+          "titulo": "17",
+          "texto": "<p><span style=\"background-color: transparent;\">minutos: esta será a duração do intervalo da final da Copa do Mundo, </span><a href=\"https://www.band.com.br/esportes/futebol/copa-do-mundo/noticias/final-da-copa-do-mundo-fifa-confirma-duracao-do-show-do-intervalo-202607171409\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">segundo informação que repassada pela FIFA às federações de Espanha e Argentina</a><span style=\"background-color: transparent;\">. Especulações de bastidores sugeriam que o confronto poderia ficar paralisado por até 30 minutos para a realização do show do intervalo, que terá Madonna, BTS, Shakira e Justin Bieber como atrações principais. No entanto, o plano operacional para o espetáculo foi planejado de forma compacta para não prejudicar o ritmo dos atletas. </span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Um novo último tango",
-          "texto": "<p><span style=\"background-color: transparent;\">O MetLife Stadium, palco da grande final da Copa, não traz boas lembranças para Lionel Messi. Foi nele que o atleta </span><a href=\"https://www1.folha.uol.com.br/esporte/2026/07/messi-volta-a-palco-de-derrota-que-causou-sua-aposentadoria-da-selecao.shtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">se aposentou pela primeira</a><span style=\"background-color: transparent;\"> vez da Seleção Argentina, após perder a final da Copa América Centenário para o Chile, em 2016. Após a derrota e o anúncio de aposentadoria, uma campanha nacional clamou pela volta do craque aos gramados como jogador da Seleção. O resultado: Messi empilhou títulos, incluindo uma Copa do Mundo, e chega agora a mais uma final para, quem sabe, dessa vez se aposentar com a taça nas mãos.</span></p>",
+          "titulo": "Tem disputa do terceiro lugar hoje",
+          "texto": "<p><span style=\"background-color: transparent;\">Ainda enfrentando a ressaca de não poderem ser campeões em 2026, França e Inglaterra disputam hoje, às 18h, em Miami, o terceiro lugar da Copa do Mundo. Um prêmio de consolação que tem significados diferentes para as duas seleções: para os franceses, significa dar uma despedida digna ao técnico Didier Deschamps, que finaliza seu ciclo como comandante dos Bleus depois de 14 anos; para os ingleses, significa recuperar alguma moral após a derrota de virada para a Argentina.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
