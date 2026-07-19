@@ -88,7 +88,7 @@
       "blocos": [
         {
           "titulo": "Golaços das marcas",
-          "texto": "<p>Quando o assunto é marca fornecedora de material esportivo, a Adidas é, sem dúvida, o grande destaque desta Copa: ela será a fornecedora oficial das duas seleções que decidirão o título, e patrocina ainda o argentino Lionel Messi e o espanhol Lamine Yamal, duas das maiores estrelas dos finalistas. Assina também a Trionda, a bola oficial do jogo, e, ainda por cima, vestirá até os árbitros e assistentes da partida decisiva. Além disso, <a href=\"https://economia.uol.com.br/noticias/redacao/2026/07/17/quem-venceu-a-batalha-das-marcas-na-copa-do-mundo.ghtm\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">especialistas em marketing ouvidos pelo colunista do UOL, Renato Pezzotti</a>, afirmam que a Adidas venceu com uma estratégia de marketing que vendeu a união entre comportamento e cultura, sem contar o uso de nostalgia com camisas históricas de edição limitada.</p>",
+          "texto": "<p>Além das tradicionais medalhas e da taça, os jogadores da seleção campeã da Copa irão receber uma novidade criada este ano pela FIFA: <a href=\"https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/16/campeoes-da-copa-do-mundo-vao-receber-aneis-exclusivos-veja-detalhes.ghtml\" target=\"_blank\" style=\"color: rgb(17, 85, 204);\">um anel personalizado exclusivo</a>. A ideia segue uma tradição dos esportes norte-americanos, que entrega anéis aos campeões de toda temporada. Segundo a FIFA, 30 anéis serão distribuídos para a seleção ganhadora e outros 1.996 modelos serão comercializados para torcedores de todo o mundo. </p>",
           "corFundo": "#ffffff",
           "layout": "text-only",
           "imagem": "",
@@ -103,8 +103,8 @@
       "tipo": "split-esq",
       "blocos": [
         {
-          "titulo": "17",
-          "texto": "<p><span style=\"background-color: transparent;\">minutos: esta será a duração do intervalo da final da Copa do Mundo, </span><a href=\"https://www.band.com.br/esportes/futebol/copa-do-mundo/noticias/final-da-copa-do-mundo-fifa-confirma-duracao-do-show-do-intervalo-202607171409\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">segundo informação repassada pela FIFA às federações de Espanha e Argentina</a><span style=\"background-color: transparent;\">. Especulações de bastidores sugeriam que o confronto poderia ficar paralisado por até 30 minutos para a realização do show do intervalo, que terá Madonna, BTS, Shakira e Justin Bieber como atrações principais. No entanto, o plano operacional para o espetáculo foi planejado de forma compacta para não prejudicar o ritmo dos atletas. </span></p>",
+          "titulo": "10",
+          "texto": "<p><span style=\"background-color: transparent;\">gols em um jogo de Copa do Mundo é algo raro, muito raro. Por isso, França 4x6 Inglaterra pela disputa do terceiro lugar, ontem, entrou para a história: está entre os </span><a href=\"https://oglobo.globo.com/esportes/copa-do-mundo-2026/noticia/2026/07/18/franca-x-inglaterra-entra-no-top-5-de-jogos-com-mais-gols-da-historia-das-copas-equipes-batem-recordes-positivos-e-negativos-em-mundiais.ghtml\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">seis jogos na história das Copas que tiveram mais gols</a><span style=\"background-color: transparent;\">, e é o jogo com mais bolas na rede desde o Hungria 10x1 El Salvador na Copa de 1982. A partida da competição com mais gols marcados segue sendo Áustria 7 x 5 Suíça, em 1954, na Suíça, com um total de 12 gols.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,7 +119,7 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Tem disputa do terceiro lugar hoje",
+          "titulo": "Não há outra coisa para se pensar hoje!",
           "texto": "<p><span style=\"background-color: transparent;\">Ainda enfrentando a ressaca de não poderem ser campeões em 2026, França e Inglaterra disputam hoje, às 18h, em Miami, o terceiro lugar da Copa do Mundo. Um prêmio de consolação que tem significados diferentes para as duas seleções: para os franceses, significa dar uma despedida digna ao técnico Didier Deschamps, que finaliza seu ciclo como comandante dos Bleus depois de 14 anos; para os ingleses, significa recuperar alguma moral após a derrota de virada para a Argentina.</span></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
