@@ -8,7 +8,7 @@
       "blocos": [
         {
           "titulo": "",
-          "texto": "<p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿</span>A final ninguém esquece. Já o terceiro lugar, ninguém quer jogar.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Enquanto Espanha e Argentina se preparam para a decisão pela taça, França e Inglaterra encaram algo mais estranho: uma partida para decidir quem fica com o \"quase\". A Inglaterra mobiliza mais gente nas redes (1.724 posts). A França entra com um clima mais favorável — favoritismo, tradição e a certeza de que Mbappé ainda pode decidir sozinho.</span></p><p><br></p><p><span style=\"background-color: transparent;\">627 posts já falam diretamente do jogo, e o tom é quase unânime: \"a partida que ninguém queria jogar.\"</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, a disputa pelo terceiro lugar virou um teste de motivação — duas seleções ainda abaladas pela eliminação, tentando transformar frustração em despedida digna.</span></p><p><br></p>",
+          "texto": "<p><span style=\"background-color: transparent;\"><span class=\"ql-cursor\">﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿</span>A final ninguém esquece. Já o terceiro lugar, ninguém quer jogar.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Enquanto Espanha e Argentina se preparam para a decisão pela taça, França e Inglaterra encaram algo mais estranho: uma partida para decidir quem fica com o \"quase\". A Inglaterra mobiliza mais gente nas redes (1.724 posts). A França entra com um clima mais favorável — favoritismo, tradição e a certeza de que Mbappé ainda pode decidir sozinho.</span></p><p><br></p><p><span style=\"background-color: transparent;\">627 posts já falam diretamente do jogo, e o tom é quase unânime: \"a partida que ninguém queria jogar.\"</span></p><p><br></p><p><span style=\"background-color: transparent;\">No fim, a disputa pelo terceiro lugar virou um teste de motivação — duas seleções ainda abaladas pela eliminação, tentando transformar frustração em despedida digna.</span></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_2_1784387899446.jpeg",
@@ -39,12 +39,12 @@
       "tipo": "unico",
       "blocos": [
         {
-          "titulo": "Já ouviu o episódio novo do \"É DASH que o povo gosta?\"",
-          "texto": "<p><span style=\"background-color: transparent;\">No quinto episódio do nosso podcast “É DASH que o povo gosta”, falamos de um assunto que há alguns anos parecia distante, mas hoje é comum no dia a dia dos brasileiros tanto quanto uma rodada do Campeonato Brasileiro: a inteligência artificial. O nosso papo abordou o seu uso no futebol, dentro de campo, na parceria da FIFA com a Lenovo e do Google com a Confederação Brasileira de Futebol, e fora dele, com os torcedores usando a ferramenta para “prever” quem ganha o torneio. Ouça agora, no </span><a href=\"https://open.spotify.com/episode/1zngmuV51jnTuTKeTxcW7o?si=8b305dc7f80b4378\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">Spotify</a><span style=\"background-color: transparent;\"> ou no </span><a href=\"http://youtube.com/watch?si=WF46pblJPvWobOw5&amp;v=sbsI3UOZa7w&amp;feature=youtu.be\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">YouTube</a><span style=\"background-color: transparent;\">.</span></p><p><br></p>",
-          "corFundo": "#09c816",
-          "layout": "img-left",
-          "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1784304925985.png",
-          "imagemAltaRes": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_4_1784304925985.png",
+          "titulo": "",
+          "texto": "<p><br></p>",
+          "corFundo": "#ffffff",
+          "layout": "text-only",
+          "imagem": "",
+          "imagemAltaRes": "",
           "btnTexto": "Acessar Dashboard",
           "btnUrl": "#"
         }
