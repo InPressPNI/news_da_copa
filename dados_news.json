@@ -104,7 +104,7 @@
       "blocos": [
         {
           "titulo": "1",
-          "texto": "<p><span style=\"background-color: transparent;\">A Espanha é a primeira seleção a ser campeã de Copa do Mundo tendo sofrido apenas um gol em uma edição de Copa do Mundo. A Bélgica foi a única seleção que conseguiu balançar as redes da seleção espanhola, com De Ketelaere, nas quartas de final. Uma estatística impressionante, que simboliza o futebol bastante eficiente que os espanhóis apresentaram nos EUA, com sete vitórias em oito jogos.</span></p>",
+          "texto": "<p><span style=\"background-color: transparent;\">A Espanha é a primeira seleção a ser campeã de Copa do Mundo tendo sofrido apenas um gol. A Bélgica foi a única seleção que conseguiu balançar as redes da seleção espanhola, com De Ketelaere, nas quartas de final. Uma estatística impressionante, que simboliza o futebol bastante eficiente que os espanhóis apresentaram nos EUA, com sete vitórias em oito jogos.</span></p>",
           "corFundo": "#fce5cd",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_8_1781232555242.png",
@@ -119,8 +119,8 @@
       "tipo": "split-dir",
       "blocos": [
         {
-          "titulo": "Não há outra coisa para se pensar hoje!",
-          "texto": "<p><span style=\"background-color: transparent;\">Para quem é fã de futebol (mesmo para aqueles que torcem para seleções que foram eliminadas pelo caminho), hoje é o dia em que só se pensa em uma coisa: quem irá levantar a tão sonhada taça. A cada quatro anos, bilhões de pessoas param diante de TVs, celulares e demais telas para acompanhar uma batalha de 90 minutos, com possibilidade de prorrogação e pênaltis. Logo mais, às 16h, no estádio de Nova York/Nova Jersey, o duelo Espanha x Argentina define quem será a campeã da Copa do Mundo 2026. Uma destas seleções terá mais uma Copa para lembrar para sempre.</span></p>",
+          "titulo": "Esta Copa terminou, mas em 2027 e 2030 tem mais!",
+          "texto": "<p><span style=\"background-color: transparent;\">A Copa do Mundo 2026, a primeira a ser realizada em três países (Estados Unidos, Canadá e México), terminou. Mas, pensando pelo lado positivo, a contagem regressiva para a próxima edição já começou: em 2030, as seleções masculinas voltam a disputar a taça mais famosa do mundo, no torneio que será disputado na Espanha, em Portugal e no Marrocos, além de partidas inaugurais no Uruguai, na Argentina e no Paraguai, para celebrar o centenário da Copa.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Só que não precisaremos esperar por mais quatro anos: afinal, ano que vem também tem Copa! Será a vez do futebol feminino disputar a taça mais cobiçada, e ela será disputada no Brasil. Será o momento para torcermos para as brabas da nossa seleção em nosso nacional. Pode começar a contar: em 339 dias, tudo começa outra vez.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Aproveitamos para agradecer a você, que nos acompanhou durante as 40 edições desta newsletter. O trabalho não para, e vem muito mais por aí. Continue torcendo junto com a gente!</span></p><p><br></p>",
           "corFundo": "#ffffff",
           "layout": "img-top",
           "imagem": "https://raw.githubusercontent.com/InPressPNI/news_da_copa/main/Imagens/img_sessao_9_1781232556342.png",
